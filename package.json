@@ -1,0 +1,23 @@
+{
+  "name": "humans",
+  "version": "1.0.0",
+  "description": "Humans prototype",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urbica/humans.git"
+  },
+  "author": "Stepan Kuzmin <to.stepan.kuzmin@gmail.com> (stepankuzmin.ru)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/urbica/humans/issues"
+  },
+  "homepage": "https://github.com/urbica/humans#readme",
+  "devDependencies": {
+    "http-server": "0.9.0"
+  }
+}
