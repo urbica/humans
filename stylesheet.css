@@ -9,3 +9,47 @@ body {
   bottom: 0;
   width: 100%;
 }
+
+.mapboxgl-popup-content {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+  border-top-color: #45AE6C;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.photo {
+  display: block;
+  width: 120px;
+  height: 64px;
+  padding: 4px;
+  object-fit: cover;
+  border-radius: 6px;
+  background-color: #45AE6C;
+}
+
+.title {
+  display: block;
+  color: #fff;
+  padding: 2px 2px 8px;
+  min-width: 80px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0;
+  background-color: #45AE6C;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
