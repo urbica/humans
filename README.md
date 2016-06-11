@@ -1,4 +1,4 @@
-# Humans
+# Humans 🙆
 
 **Demo**: [http://urbica.github.io/humans](http://urbica.github.io/humans)
 
@@ -11,3 +11,5 @@ npm i
 npm start
 open http://127.0.0.1:8080
 ```
+
+👯
