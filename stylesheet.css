@@ -23,7 +23,7 @@ body {
 /* переопределение стилей mapbox-gl-js: хвостик */
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
   border-top-color: #45AE6C;
-  padding-bottom: 10px;
+  padding-bottom: 4px;
 }
 
 /* контейнер фотографии и надписи */
