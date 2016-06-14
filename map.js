@@ -26,7 +26,7 @@ map.on('load', () => {
     type: 'circle', // тип отображения слоя
     source: 'markers', // идентификатор данных
     paint: {
-      'circle-radius': 5, // радиус кружка
+      'circle-radius': 3, // радиус кружка
       'circle-color': '#45AE6C' // цвет кружка
     }
   });
