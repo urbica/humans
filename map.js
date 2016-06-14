@@ -1,10 +1,10 @@
 document.getElementById('map').classList.add('loading');
-mapboxgl.accessToken = 'pk.eyJ1Ijoic3RlcGFua3V6bWluIiwiYSI6Ik1ieW5udm8ifQ.25EOEC2-N92NCWT0Ci9w-Q';
+mapboxgl.accessToken = 'pk.eyJ1IjoiaHVtYW5zIiwiYSI6ImNpcDZzdm80cjAwMTB1d203ZmRqZTdwbWEifQ.up9_Pt9XqDhp6m0KLHcbIw';
 
 // настройка карты
 var map = new mapboxgl.Map({
   container: 'map', // идентификатор html куда будет рендериться карта
-  style: 'mapbox://styles/mapbox/light-v8', // стиль карты по умлочанию
+  style: 'mapbox://styles/humans/cip9hxybc003edmm2i1eqlap8', // стиль карты по умлочанию
   center: [-74.0059, 40.7127], // начальные координаты карты
   zoom: 12 // начальный уровень приближения
 });
