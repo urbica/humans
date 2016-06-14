@@ -27,7 +27,7 @@ map.on('load', () => {
     source: 'markers', // идентификатор данных
     paint: {
       'circle-radius': 3, // радиус кружка
-      'circle-color': '#222' // цвет кружка
+      'circle-color': '#666' // цвет кружка
     }
   });
 
