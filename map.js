@@ -16,9 +16,15 @@ var markers = new mapboxgl.GeoJSONSource({
   clusterRadius: 40 // размер кластера в пикселях
 });
 
+// настройка данных для точек
+var miniMarkers = new mapboxgl.GeoJSONSource({
+  data: {} // данных пока нет, они загрузяться позже
+});
+
 // эта функция будет выполнена после загрузки карты
 map.on('load', () => {
   map.addSource('markers', markers); // добавляем на карту данные маркеров
+  map.addSource('miniMarkers', miniMarkers); // добавляем на карту данные маркеров
 
   // добавляем на карту слой маркеров
   map.addLayer({
@@ -31,6 +37,17 @@ map.on('load', () => {
     }
   });
 
+  // добавляем на карту слой маркеров
+  map.addLayer({
+    id: 'miniMarkers', // идентификатор слоя
+    type: 'circle', // тип отображения слоя
+    source: 'miniMarkers', // идентификатор данных
+    paint: {
+      'circle-radius': 3, // радиус кружка
+      'circle-color': '#555' // цвет кружка
+    }
+  });
+
   setTimeout(render, 1000); // отрисовать попапы через секунду
 });
 
@@ -38,6 +55,7 @@ map.on('load', () => {
 fetch('data.geojson')
   .then(response => response.json().then(data => {
     markers.setData(data); // загрузка данных в маркеры
+    miniMarkers.setData(data);
     document.getElementById('map').classList.remove('loading');
   }))
   .catch(error => console.error('Error loading data.geojson', error));
