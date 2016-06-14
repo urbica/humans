@@ -45,6 +45,7 @@ map.on('load', () => {
     paint: {
       'circle-radius': 3, // радиус кружка
       'circle-color': '#555' // цвет кружка
+    opacity: 0.5;
     }
   });
 
