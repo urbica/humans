@@ -17,6 +17,7 @@ body {
   border: none;
   box-shadow: none;
   background-color: transparent;
+  padding-bottom: 100px;
 }
 
 /* переопределение стилей mapbox-gl-js: хвостик */
