@@ -17,7 +17,61 @@ body {
   border: none;
   box-shadow: none;
   background-color: transparent;
+  height:75px;
+  width:70px;
+  -webkit-box-shadow:0px 11px 15px -3px rgba(0,0,0,0.4), 0px 5px 5px -5px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 11px 15px -3px rgba(0,0,0,0.4), 0px 5px 5px -5px rgba(0,0,0,0.6);
+  box-shadow: 0px 11px 15px -3px rgba(0,0,0,0.4), 0px 5px 5px -5px rgba(0,0,0,0.6);
+}
 
+.mapboxgl-popup-content > div {
+  height:75px;
+  width:70px;
+}
+
+
+.mapboxgl-popup-content .photo {
+  height: 55px;
+  width: 70px;
+  min-width: 70px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: white;
+  padding:0;
+}
+
+.mapboxgl-popup-content .title {
+  height: 20px;
+  width: 70px;
+  min-width: 70px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background: white;
+  padding:0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mapboxgl-popup-content .title:after {
+  content: "3.9";
+  background: url('/stars.svg') 3px 50% no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  display: block;
+  bottom: 0px;
+  color: black;
+  font-weight: 300;
+  text-indent: initial;
+  white-space: normal;
+  overflow: visible;
+  text-align: right;
+  padding: 0 4px;
+}
+
+.mapboxgl-popup-tip {
+  display:none;
 }
 
 /* переопределение стилей mapbox-gl-js: хвостик */
