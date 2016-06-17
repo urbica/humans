@@ -21,10 +21,12 @@ body {
 }
 
 /* переопределение стилей mapbox-gl-js: хвостик */
+/*
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
   border-top-color: #444;
   padding-bottom: 4px;
 }
+*/
 
 /* контейнер фотографии и надписи */
 .container {
@@ -32,8 +34,8 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 /* фотография */
@@ -53,7 +55,7 @@ body {
   color: #fff;
   padding: 2px 2px 8px;
   min-width: 80px;
-  font-size: 14px;
+  font-size: 10px;
   text-align: center;
   font-weight: bold;
   margin-bottom: 0;

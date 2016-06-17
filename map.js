@@ -33,7 +33,8 @@ map.on('load', () => {
     source: 'markers', // идентификатор данных
     paint: {
       'circle-radius': 3, // радиус кружка
-      'circle-color': '#666' // цвет кружка
+      'circle-color': '#4a90e2' // цвет кружка
+      "circle-blur": 1
     }
   });
 
@@ -44,8 +45,8 @@ map.on('load', () => {
     source: 'miniMarkers', // идентификатор данных
     paint: {
       'circle-radius': 3, // радиус кружка
-      'circle-color': '#555', // цвет кружка
-      'circle-opacity': 0.5 // непрозрачность кружка
+      'circle-color': '#4a90e2' // цвет кружка
+    blend-mode: 0.5;
     }
   });
 
