@@ -1,5 +1,6 @@
 {
   "type": "FeatureCollection",
+<<<<<<< HEAD
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
   "timestamp": "2016-06-17T12:01:02Z",
@@ -23,32 +24,59 @@
         "place": "neighbourhood",
         "tourism": "attraction",
         "wikipedia": "en:SoHo"
+=======
+  "features": [
+    {
+      "type": "Feature",
+      "id": "node/295802851",
+      "properties": {
+        "name": "PromptMD Urgent Care Center",
+        "photo": "photos/I-Lin.png"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9987505,
           40.72288
+=======
+          -74.0350199,
+          40.7380472
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/280572143",
       "properties": {
         "@id": "node/280572143",
         "tourism": "hotel"
+=======
+      "id": "node/296766358",
+      "properties": {
+        "name": "Hoboken University Medical Center",
+        "photo": "photos/George.png"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9083348,
           40.7707762
+=======
+          -74.0337646,
+          40.741063
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/299046361",
       "properties": {
         "@id": "node/299046361",
@@ -57,34 +85,58 @@
         "tourism": "attraction",
         "wheelchair": "yes",
         "wikipedia": "en:Times Square"
+=======
+      "id": "node/297456770",
+      "properties": {
+        "name": "PromptMD Family Practice",
+        "photo": "photos/Angie.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9855699,
           40.7579523
+=======
+          -74.0271502,
+          40.7500692
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/311366890",
       "properties": {
         "@id": "node/311366890",
         "created_by": "Potlatch 0.10f",
         "name": "Nicholas Roerich Museum",
         "tourism": "attraction"
+=======
+      "id": "node/357549890",
+      "properties": {
+        "name": "Boulevard Hospital",
+        "photo": "photos/I-Lin.png"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9689522,
           40.8027944
+=======
+          -73.9121693,
+          40.7587617
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/320948228",
       "properties": {
         "@id": "node/320948228",
@@ -92,17 +144,29 @@
         "tourism": "attraction",
         "wheelchair": "yes",
         "wikipedia": "en:South Street Seaport"
+=======
+      "id": "node/357554659",
+      "properties": {
+        "name": "Coler - Goldwater Memorial Hospital Coler Campus",
+        "photo": "photos/Leo.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0028376,
           40.7057752
+=======
+          -73.9423116,
+          40.7704141
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/367697349",
       "properties": {
         "@id": "node/367697349",
@@ -115,17 +179,29 @@
         "name": "Bonnel House Historical Museum",
         "source": "USGS Geonames",
         "tourism": "museum"
+=======
+      "id": "node/357558861",
+      "properties": {
+        "name": "Ewing Memorial Hospital",
+        "photo": "photos/Angie.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.2084784,
           40.6637138
+=======
+          -73.9570783,
+          40.7645704
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/367697376",
       "properties": {
         "@id": "node/367697376",
@@ -138,17 +214,29 @@
         "name": "Hoboken Fire Department Museum",
         "source": "USGS Geonames",
         "tourism": "museum"
+=======
+      "id": "node/357563570",
+      "properties": {
+        "name": "Harlem Hospital Center",
+        "photo": "photos/Emil.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0309564,
           40.739273
+=======
+          -73.9399754,
+          40.8143054
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/367697388",
       "properties": {
         "@id": "node/367697388",
@@ -161,17 +249,29 @@
         "name": "Hoboken Historical Museum",
         "source": "USGS Geonames",
         "tourism": "museum"
+=======
+      "id": "node/357566747",
+      "properties": {
+        "name": "Jewish Hospital Medical Center of Brooklyn",
+        "photo": "photos/Victoria.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0245846,
           40.7523237
+=======
+          -73.95944,
+          40.67556
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/367697399",
       "properties": {
         "@id": "node/367697399",
@@ -184,17 +284,29 @@
         "name": "Bergen Museum of Art and Science",
         "source": "USGS Geonames",
         "tourism": "museum"
+=======
+      "id": "node/357568917",
+      "properties": {
+        "name": "Lenox Hill Hospital",
+        "photo": "photos/Evan.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0423625,
           40.8856549
+=======
+          -73.9616613,
+          40.7732745
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/367697417",
       "properties": {
         "@id": "node/367697417",
@@ -207,17 +319,29 @@
         "name": "Fort Lee Museum at the Judge Moore House",
         "source": "USGS Geonames",
         "tourism": "museum"
+=======
+      "id": "node/357569063",
+      "properties": {
+        "name": "Lincoln Hospital",
+        "photo": "photos/Leo.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9693048,
           40.8478779
+=======
+          -73.9098589,
+          40.8070453
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/368043598",
       "properties": {
         "@id": "node/368043598",
@@ -239,17 +363,29 @@
         "website": "http://www.thestonewallinnnyc.com/",
         "wheelchair": "limited",
         "wikipedia": "en:Stonewall Inn"
+=======
+      "id": "node/357571389",
+      "properties": {
+        "name": "Metropolitan Hospital Center",
+        "photo": "photos/Ben.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0021484,
           40.7338007
+=======
+          -73.9448133,
+          40.7849033
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/368061337",
       "properties": {
         "@id": "node/368061337",
@@ -261,17 +397,29 @@
         "name:es": "Museo Nacional de Indigena",
         "tourism": "museum",
         "wheelchair": "yes"
+=======
+      "id": "node/357572587",
+      "properties": {
+        "name": "Mount Sinai Medical Center",
+        "photo": "photos/Evan.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0137472,
           40.7040265
+=======
+          -73.953714,
+          40.7897367
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/368061366",
       "properties": {
         "@id": "node/368061366",
@@ -282,17 +430,29 @@
         "gnis:feature_id": "2083221",
         "name": "Times Square Museum & Visitor Center",
         "tourism": "information"
+=======
+      "id": "node/357573246",
+      "properties": {
+        "name": "Weill Cornell Medical College",
+        "photo": "photos/Omar.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9846955,
           40.7588235
+=======
+          -73.9550117,
+          40.7643775
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/368061418",
       "properties": {
         "@id": "node/368061418",
@@ -314,17 +474,29 @@
         "source": "USGS Geonames",
         "tourism": "hotel",
         "website": "http://www.hotelbelleclaire.com/"
+=======
+      "id": "node/357577677",
+      "properties": {
+        "name": "Polyclinic Hospital (historical)",
+        "photo": "photos/Angie.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9812484,
           40.7825165
+=======
+          -73.9876391,
+          40.7634348
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/368061423",
       "properties": {
         "@id": "node/368061423",
@@ -337,17 +509,29 @@
         "name": "Hotel Churchill",
         "source": "USGS Geonames",
         "tourism": "hotel"
+=======
+      "id": "node/357585752",
+      "properties": {
+        "name": "Saint Luke's Hospital Center",
+        "photo": "photos/Victoria.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9825,
           40.7819444
+=======
+          -73.9616886,
+          40.8049909
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/368061438",
       "properties": {
         "@id": "node/368061438",
@@ -360,17 +544,29 @@
         "name": "Most Worshipful Enoch Grand Lodge",
         "source": "USGS Geonames",
         "tourism": "hotel"
+=======
+      "id": "node/357592111",
+      "properties": {
+        "name": "Sydenham Hospital",
+        "photo": "photos/Angie.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9498441,
           40.6828269
+=======
+          -73.953749,
+          40.809823
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/368061480",
       "properties": {
         "@id": "node/368061480",
@@ -383,17 +579,29 @@
         "source": "USGS Geonames",
         "tourism": "museum",
         "website": "http://www.garibaldimeuccimuseum.org/"
+=======
+      "id": "node/357594124",
+      "properties": {
+        "name": "United States Naval Clinic",
+        "photo": "photos/Leo.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0736112,
           40.6152779
+=======
+          -73.9709719,
+          40.6967695
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/368061514",
       "properties": {
         "@id": "node/368061514",
@@ -406,17 +614,29 @@
         "name": "Museum of Bronx History",
         "source": "USGS Geonames",
         "tourism": "museum"
+=======
+      "id": "node/357607586",
+      "properties": {
+        "name": "Beth Israel Medical Center - Phillips Ambulatory Care Center",
+        "photo": "photos/Emil.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.8797222,
           40.8769444
+=======
+          -73.9897658,
+          40.7348271
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/368061518",
       "properties": {
         "@id": "node/368061518",
@@ -432,17 +652,29 @@
         "name": "Bronx Museum of the Arts",
         "source": "USGS Geonames",
         "tourism": "museum"
+=======
+      "id": "node/357607599",
+      "properties": {
+        "name": "Columbia Presbyterian Medical Center",
+        "photo": "photos/Angie.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9199471,
           40.8310911
+=======
+          -73.9695829,
+          40.7856567
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/368061605",
       "properties": {
         "@id": "node/368061605",
@@ -455,10 +687,17 @@
         "name": "Yeshiva University Museum",
         "source": "USGS Geonames",
         "tourism": "museum"
+=======
+      "id": "node/357607688",
+      "properties": {
+        "name": "Kirby Forensic Psychiatric Center",
+        "photo": "photos/George.png"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9938889,
           40.7377778
         ]
@@ -7241,11 +7480,16 @@
         "coordinates": [
           -74.0159547,
           40.6927068
+=======
+          -73.9322574,
+          40.7865276
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4088705662",
       "properties": {
         "@id": "node/4088705662",
@@ -7257,83 +7501,143 @@
         "description": "A 16-story, 139-room hotel.",
         "tourism": "hotel",
         "website": "http://qns.com/story/2016/03/18/a-16-story-139-unit-hotel-will-rise-in-long-island-city/"
+=======
+      "id": "node/357607743",
+      "properties": {
+        "name": "Memorial Sloan - Kettering Cancer Center",
+        "photo": "photos/Angie.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9418327,
           40.7562653
+=======
+          -73.9561118,
+          40.7640249
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4097207404",
       "properties": {
         "@id": "node/4097207404",
         "name": "Entrance to Oculus",
         "tourism": "information"
+=======
+      "id": "node/357609193",
+      "properties": {
+        "name": "Saint Joseph's Hospital (historical)",
+        "photo": "photos/Emil.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0122354,
           40.7106626
+=======
+          -73.9156923,
+          40.8109341
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4097207406",
       "properties": {
         "@id": "node/4097207406",
         "name": "Memorial Entrance",
         "ref": "Memorial Entrance",
         "tourism": "information"
+=======
+      "id": "node/357609904",
+      "properties": {
+        "name": "Northern Dispensary (historical)",
+        "photo": "photos/Emil.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0125171,
           40.7116203
+=======
+          -74.0013222,
+          40.7336906
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4097207413",
       "properties": {
         "@id": "node/4097207413",
         "name": "Observatory Entrance",
         "ref": "Observatory Entrance",
         "tourism": "information"
+=======
+      "id": "node/357609910",
+      "properties": {
+        "name": "William J. Syms Operating Theater Roosevelt Hospital (historical)",
+        "photo": "photos/Evan.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0134317,
           40.7133055
+=======
+          -73.9852381,
+          40.7692012
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4097207416",
       "properties": {
         "@id": "node/4097207416",
         "name": "One World Trade Center Observatory - See Forever",
         "tourism": "viewpoint"
+=======
+      "id": "node/357616245",
+      "properties": {
+        "name": "Manhattan Children's Psychiatric Center",
+        "photo": "photos/I-Lin.png"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0131769,
           40.7132791
+=======
+          -73.9280556,
+          40.785
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4107744104",
       "properties": {
         "@id": "node/4107744104",
@@ -7341,98 +7645,170 @@
         "name": "The Ace Hotel",
         "opening_hours": "24/7",
         "tourism": "hotel"
+=======
+      "id": "node/357616405",
+      "properties": {
+        "name": "Woman's Hospital",
+        "photo": "photos/Ben.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9880426,
           40.7456727
+=======
+          -73.9619444,
+          40.8055556
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4114487389",
       "properties": {
         "@id": "node/4114487389",
         "addr:housenumber": "161",
         "addr:street": "Lexington Avenue",
         "tourism": "hotel"
+=======
+      "id": "node/357618377",
+      "properties": {
+        "name": "Western Queens Community Hospital",
+        "photo": "photos/Angie.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9813734,
           40.7443588
+=======
+          -73.925,
+          40.7683333
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4119157391",
       "properties": {
         "@id": "node/4119157391",
         "name": "25 Plaza Street West #3B",
         "tourism": "viewpoint"
+=======
+      "id": "node/357618839",
+      "properties": {
+        "name": "Bishop Francis J Mugavero Center for Geriatric Care",
+        "photo": "photos/Robert.png"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9716719,
           40.6745711
+=======
+          -73.987353,
+          40.686292
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4121316394",
       "properties": {
         "@id": "node/4121316394",
         "name": "Tony Rosenthal 5 in 1, 1973-74 ",
         "tourism": "artwork"
+=======
+      "id": "node/357620244",
+      "properties": {
+        "name": "Lenox Health Greenwich Village",
+        "photo": "photos/Emil.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0029629,
           40.7127282
+=======
+          -74.0008333,
+          40.7377778
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4126990790",
       "properties": {
         "@id": "node/4126990790",
         "fixme": "resurvey",
         "name": "mykalram",
         "tourism": "camp_site"
+=======
+      "id": "node/357620336",
+      "properties": {
+        "name": "Ryan/NENA Comprehensive Heath Service Center",
+        "photo": "photos/Evan.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.7888569,
           40.7132724
+=======
+          -73.9805556,
+          40.7213889
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4131790689",
       "properties": {
         "@id": "node/4131790689",
         "tourism": "hotel"
+=======
+      "id": "node/357620365",
+      "properties": {
+        "name": "New York Foundling Hospital",
+        "photo": "photos/Leo.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9808605,
           40.7643783
+=======
+          -73.9954547,
+          40.7388841
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4140516089",
       "properties": {
         "@id": "node/4140516089",
@@ -7444,17 +7820,29 @@
         "phone": "1 (646) 598-0100",
         "tourism": "hotel",
         "website": "http://qandahotel.com/"
+=======
+      "id": "node/357620384",
+      "properties": {
+        "name": "Sidney Hillman Health Center",
+        "photo": "photos/Omar.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.007718,
           40.706479
+=======
+          -73.9927561,
+          40.7362964
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4143572191",
       "properties": {
         "@id": "node/4143572191",
@@ -7462,33 +7850,57 @@
         "addr:street": "50th",
         "name": "citizenM",
         "tourism": "hotel"
+=======
+      "id": "node/357620402",
+      "properties": {
+        "name": "David B Kriser Psychiatric Day Treatment Program",
+        "photo": "photos/I-Lin.png"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9849798,
           40.7615295
+=======
+          -73.9847222,
+          40.7344444
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4146347192",
       "properties": {
         "@id": "node/4146347192",
         "name": "New York City Zoo",
         "tourism": "attraction"
+=======
+      "id": "node/357620414",
+      "properties": {
+        "name": "Bernstein Pavilion Beth Israel Hospital",
+        "photo": "photos/Emil.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.8777092,
           40.8516445
+=======
+          -73.9833891,
+          40.732783
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4149441923",
       "properties": {
         "@id": "node/4149441923",
@@ -7496,17 +7908,29 @@
         "addr:street": "West 58th Street",
         "name": "Hudson New York",
         "tourism": "hotel"
+=======
+      "id": "node/357620439",
+      "properties": {
+        "name": "Skirball Institute of Biomolecular Medicine",
+        "photo": "photos/Ben.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9849444,
           40.7683534
+=======
+          -73.974123,
+          40.7424725
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4151407594",
       "properties": {
         "@id": "node/4151407594",
@@ -7514,17 +7938,29 @@
         "addr:street": "39th Street",
         "name": "Wyndham Garden",
         "tourism": "hotel"
+=======
+      "id": "node/357620711",
+      "properties": {
+        "name": "Mount Sinai Dispensary (historical)",
+        "photo": "photos/Emil.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0042811,
           40.6516487
+=======
+          -73.9641697,
+          40.7672475
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4151701694",
       "properties": {
         "@id": "node/4151701694",
@@ -7532,63 +7968,111 @@
         "addr:street": "East 75th Street",
         "name": "The Met Breuer",
         "tourism": "attraction"
+=======
+      "id": "node/357620846",
+      "properties": {
+        "name": "Klingenstein Clinical Center",
+        "photo": "photos/Evan.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9637399,
           40.773538
+=======
+          -73.9530556,
+          40.7894444
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4154552489",
       "properties": {
         "@id": "node/4154552489",
         "tourism": "hotel"
+=======
+      "id": "node/357620850",
+      "properties": {
+        "name": "Magdalene and Charles Klingenstein Pavilion",
+        "photo": "photos/George.png"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.1682714,
           40.7391318
+=======
+          -73.9541667,
+          40.7897222
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4157970366",
       "properties": {
         "@id": "node/4157970366",
         "tourism": "hotel"
+=======
+      "id": "node/357620854",
+      "properties": {
+        "name": "Guggenheim Pavilion",
+        "photo": "photos/Emil.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9818912,
           40.7818628
+=======
+          -73.9529032,
+          40.7903936
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4158117689",
       "properties": {
         "@id": "node/4158117689",
         "name": "Empíre State Building",
         "tourism": "attraction"
+=======
+      "id": "node/357620861",
+      "properties": {
+        "name": "Terence Cardinal Cooke Health Care Center",
+        "photo": "photos/Victoria.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9852828,
           40.7480932
+=======
+          -73.9512101,
+          40.7937088
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4184001252",
       "properties": {
         "@id": "node/4184001252",
@@ -7602,33 +8086,57 @@
         "phone": "+1 212 8122700",
         "tourism": "sightseeing",
         "website": "http://www.citysightsny.com"
+=======
+      "id": "node/357621045",
+      "properties": {
+        "name": "North General Hospital",
+        "photo": "photos/I-Lin.png"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.988436,
           40.7564416
+=======
+          -73.94187,
+          40.80334
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4189414689",
       "properties": {
         "@id": "node/4189414689",
         "name": "Jay's place",
         "tourism": "hotel"
+=======
+      "id": "node/357621099",
+      "properties": {
+        "name": "North General Hospital Paul Robeson Center",
+        "photo": "photos/Emil.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0259621,
           40.7686733
+=======
+          -73.9472222,
+          40.8083333
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4192142389",
       "properties": {
         "@id": "node/4192142389",
@@ -7637,81 +8145,141 @@
         "opening_hours": "Mo-Su 10:00-22:00",
         "phone": "2123443491",
         "tourism": "attraction"
+=======
+      "id": "node/357624018",
+      "properties": {
+        "name": "Williamsburg-Greenpoint Health Center",
+        "photo": "photos/Omar.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0146985,
           40.7017575
+=======
+          -73.9447222,
+          40.7111111
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4192286193",
       "properties": {
         "@id": "node/4192286193",
         "addr:street": "East 31st Street",
         "name": "HOME",
         "tourism": "hotel"
+=======
+      "id": "node/357624501",
+      "properties": {
+        "name": "Spence Lower School, formerly Smithers Alcoholism Center (historical)",
+        "photo": "photos/Robert.png"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9826999,
           40.7451206
+=======
+          -73.9552779,
+          40.785
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4199291290",
       "properties": {
         "@id": "node/4199291290",
         "tourism": "artwork"
+=======
+      "id": "node/357642719",
+      "properties": {
+        "name": "Mount Sinai Hospital of Queens",
+        "photo": "photos/George.png"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.7912236,
           40.7174297
+=======
+          -73.92488,
+          40.7682632
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4200886990",
       "properties": {
         "@id": "node/4200886990",
         "name": "East Manhattan skyline",
         "tourism": "viewpoint"
+=======
+      "id": "node/357642730",
+      "properties": {
+        "name": "Gracie Square Hospital",
+        "photo": "photos/Angie.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9902273,
           40.7048023
+=======
+          -73.9535906,
+          40.7699677
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4200886991",
       "properties": {
         "@id": "node/4200886991",
         "name": "The Godfather filming location",
         "tourism": "attraction"
+=======
+      "id": "node/357642732",
+      "properties": {
+        "name": "Cornerstone Medical Arts Hospital",
+        "photo": "photos/Victoria.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9967251,
           40.7185305
+=======
+          -73.9754995,
+          40.7639359
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4204407390",
       "properties": {
         "@id": "node/4204407390",
@@ -7719,50 +8287,86 @@
         "addr:street": "West 44th Street",
         "name": "Mela hotel",
         "tourism": "hotel"
+=======
+      "id": "node/357642735",
+      "properties": {
+        "name": "Rockefeller University Hospital",
+        "photo": "photos/Angie.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9879198,
           40.7584823
+=======
+          -73.9553606,
+          40.7620381
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4206035189",
       "properties": {
         "@id": "node/4206035189",
         "internet_access": "wlan",
         "name": "Springhill Suites",
         "tourism": "hotel"
+=======
+      "id": "node/357642745",
+      "properties": {
+        "name": "New York Eye and Ear Infirmary",
+        "photo": "photos/Robert.png"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.1699647,
           40.7094169
+=======
+          -73.9845209,
+          40.7317629
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4213565912",
       "properties": {
         "@id": "node/4213565912",
         "name": "Efuru Guest House",
         "tourism": "hotel"
+=======
+      "id": "node/357642750",
+      "properties": {
+        "name": "Manhattan Eye Ear and Throat Hospital",
+        "photo": "photos/Leo.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9485671,
           40.8047139
+=======
+          -73.9635141,
+          40.764316
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4220188487",
       "properties": {
         "@id": "node/4220188487",
@@ -7778,49 +8382,85 @@
         "operator": "QWOP Bear",
         "tourism": "artwork",
         "website": "http://babycastles.com"
+=======
+      "id": "node/357642766",
+      "properties": {
+        "name": "South Brooklyn Health Center",
+        "photo": "photos/Robert.png"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9984371,
           40.7382203
+=======
+          -74.0098317,
+          40.6778817
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4224363289",
       "properties": {
         "@id": "node/4224363289",
         "name": "Museo del Sexo",
         "tourism": "museum"
+=======
+      "id": "node/357642771",
+      "properties": {
+        "name": "Renaissance Health Care Network and Diagnostic and Treatment Center",
+        "photo": "photos/Brian.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9873576,
           40.7440374
+=======
+          -73.9490175,
+          40.8097518
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4227477566",
       "properties": {
         "@id": "node/4227477566",
         "name": "Cannon",
         "tourism": "attraction"
+=======
+      "id": "node/357648645",
+      "properties": {
+        "name": "Ajutian Stahl Health Center",
+        "photo": "photos/Angie.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0344625,
           40.6116361
+=======
+          -73.8963889,
+          40.8155556
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4229087494",
       "properties": {
         "@id": "node/4229087494",
@@ -7828,180 +8468,312 @@
         "addr:street": "West 44th Street",
         "name": "Star Wars and The Power of Costume",
         "tourism": "museum"
+=======
+      "id": "node/357719779",
+      "properties": {
+        "name": "Christ Hospital",
+        "photo": "photos/Omar.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9878065,
           40.7579927
+=======
+          -74.0493075,
+          40.734824
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4231923695",
       "properties": {
         "@id": "node/4231923695",
         "name": "Muro Berlin",
         "tourism": "attraction"
+=======
+      "id": "node/357721532",
+      "properties": {
+        "name": "Fairmont Hospital",
+        "photo": "photos/Victoria.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.974988,
           40.7596766
+=======
+          -74.0662524,
+          40.7195465
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4231983791",
       "properties": {
         "@id": "node/4231983791",
         "addr:postcode": "11228",
         "name": "Ruby & Emrys",
         "tourism": "guest_house"
+=======
+      "id": "node/357744903",
+      "properties": {
+        "name": "Palisades Medical Center",
+        "photo": "photos/Angie.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0075629,
           40.6154747
+=======
+          -73.9951392,
+          40.793712
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4232227591",
       "properties": {
         "@id": "node/4232227591",
         "name": "مطار جون اف كيندى نيويورك",
         "tourism": "artwork"
+=======
+      "id": "node/1581175993",
+      "properties": {
+        "name": "NUY Outpatient Surgery Center",
+        "photo": "photos/Omar.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.7858038,
           40.6428839
+=======
+          -73.9717827,
+          40.746453
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4236846589",
       "properties": {
         "@id": "node/4236846589",
         "name": "Domestic Airfield",
         "name:ko": "국내선 비행장",
         "tourism": "information"
+=======
+      "id": "node/2279513970",
+      "properties": {
+        "name": "Beth Israel Medical Center",
+        "photo": "photos/Victoria.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.1726352,
           40.6891432
+=======
+          -73.9817327,
+          40.7330672
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4236846590",
       "properties": {
         "@id": "node/4236846590",
         "tourism": "information"
+=======
+      "id": "node/2369328786",
+      "properties": {
+        "name": "MD Emergent Care",
+        "photo": "photos/Victoria.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.7858124,
           40.6429099
+=======
+          -74.063261,
+          40.7164597
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4236846689",
       "properties": {
         "@id": "node/4236846689",
         "name": "Rockefeller Center",
         "name:ko": "록펠러센터",
         "tourism": "attraction"
+=======
+      "id": "node/2826551489",
+      "properties": {
+        "name": "Gouverneur Health Medical Center",
+        "photo": "photos/Victoria.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9788005,
           40.7588447
+=======
+          -73.9876343,
+          40.713029
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4236846690",
       "properties": {
         "@id": "node/4236846690",
         "name": "Chelsea Market",
         "name:ko": "첼시마켓",
         "tourism": "attraction"
+=======
+      "id": "node/3501718995",
+      "properties": {
+        "name": "NewYork-Presbyterian Hospital",
+        "photo": "photos/George.png"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0069958,
           40.7429236
+=======
+          -73.9539235,
+          40.7646248
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4242973591",
       "properties": {
         "@id": "node/4242973591",
         "name": "Love",
         "tourism": "artwork"
+=======
+      "id": "node/3501723876",
+      "properties": {
+        "name": "Weill Cornell Medical College",
+        "photo": "photos/Robert.png"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9783933,
           40.7631276
+=======
+          -73.9549427,
+          40.7647995
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4243250764",
       "properties": {
         "@id": "node/4243250764",
         "name": "Understanding",
         "tourism": "artwork"
+=======
+      "id": "node/3517606878",
+      "properties": {
+        "name": "Memorial Sloan Kettering Cancer Center Outpatient Facility",
+        "photo": "photos/Victoria.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0033531,
           40.6938222
+=======
+          -73.9713106,
+          40.7642521
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4243439484",
       "properties": {
         "@id": "node/4243439484",
         "name": "Sanctuary Hotel",
         "tourism": "hotel"
+=======
+      "id": "node/3633182667",
+      "properties": {
+        "name": "Omar.jpg",
+        "photo": "photos/Omar.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9832127,
           40.7584738
+=======
+          -73.9558406,
+          40.783453
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4245589094",
       "properties": {
         "@id": "node/4245589094",
@@ -8010,17 +8782,29 @@
         "addr:street": "Old Route 3",
         "name": "Rodeway Inn Meadowlands",
         "tourism": "hotel"
+=======
+      "id": "node/3810174990",
+      "properties": {
+        "name": "Omar.jpg",
+        "photo": "photos/Omar.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -74.0576158,
           40.7931721
+=======
+          -73.9965084,
+          40.7937074
+>>>>>>> origin/gh-pages
         ]
       }
     },
     {
       "type": "Feature",
+<<<<<<< HEAD
       "id": "node/4248061489",
       "properties": {
         "@id": "node/4248061489",
@@ -8028,14 +8812,29 @@
         "name": "Q4 hotel",
         "phone": "+1 718-706-7700",
         "tourism": "hostel"
+=======
+      "id": "node/3977462059",
+      "properties": {
+        "name": "Dr. David H. Lifschutz MD",
+        "photo": "photos/Evan.jpg"
+>>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
           -73.9374603,
           40.7499358
+=======
+          -73.9969815,
+          40.7258985
+>>>>>>> origin/gh-pages
         ]
       }
     }
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/gh-pages
