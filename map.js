@@ -69,11 +69,7 @@ map.on('load', () => {
 });
 
 // загрузка маркеров из файла data.geojson
-<<<<<<< HEAD
 fetch('big_data.geojson')
-=======
-fetch('med_data.geojson')
->>>>>>> origin/gh-pages
   .then(response => response.json().then(data => {
     markers.setData(data); // загрузка данных в маркеры
     miniMarkers.setData(data);
