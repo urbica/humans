@@ -39,11 +39,11 @@ body {
 /* фотография */
 .photo {
   display: block;
-  width: 120px;
-  height: 64px;
+  width: 75px;
+  height: 50px;
   padding: 4px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 0px;
   background-color: #444;
 }
 
