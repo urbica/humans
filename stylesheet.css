@@ -19,9 +19,9 @@ body {
   background-color: transparent;
   height:75px;
   width:70px;
-  -webkit-box-shadow:0px 11px 15px -3px rgba(0,0,0,0.4), 0px 5px 5px -5px rgba(0,0,0,0.6);
-  -moz-box-shadow: 0px 11px 15px -3px rgba(0,0,0,0.4), 0px 5px 5px -5px rgba(0,0,0,0.6);
-  box-shadow: 0px 11px 15px -3px rgba(0,0,0,0.4), 0px 5px 5px -5px rgba(0,0,0,0.6);
+  -webkit-box-shadow:0px 11px 15px -3px rgba(0,0,0,0.4), 0px 5px 5px -5px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 11px 15px -3px rgba(0,0,0,0.4), 0px 5px 5px -5px rgba(0,0,0,0.4);
+  box-shadow: 0px 11px 15px -3px rgba(0,0,0,0.4), 0px 5px 5px -5px rgba(0,0,0,0.4);
 }
 
 .mapboxgl-popup-content > div {
