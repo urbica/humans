@@ -14,7 +14,7 @@ body {
 /* переопределение стилей mapbox-gl-js: контейнер попапа */
 .mapboxgl-popup
 {
-  padding-bottom:6px;
+  padding-bottom:10px;
 }
 
 .mapboxgl-popup-content {

@@ -32,9 +32,16 @@ map.on('load', () => {
     type: 'circle', // тип отображения слоя
     source: 'markers', // идентификатор данных
     paint: {
-      'circle-radius': 3, // радиус кружка
+      'circle-radius': 3,
       'circle-color': '#4a90e2', // цвет кружка
-      "circle-blur": 1,
+      'circle-opacity':{
+    "stops": [
+      [8, 0.7],
+      [10, 1],
+      [12, 1],
+      [14, 1]
+    ]
+  }
     }
   });
 
@@ -46,6 +53,15 @@ map.on('load', () => {
     paint: {
       'circle-radius': 3, // радиус кружка
       'circle-color': '#4a90e2', // цвет кружка
+      'circle-opacity': {
+    "stops": [
+      [5, 0.7],
+      [8, 0.7],
+      [10, 1],
+      [12, 1],
+      [14, 1]
+    ]
+  }
     }
   });
 
@@ -53,13 +69,13 @@ map.on('load', () => {
 });
 
 // загрузка маркеров из файла data.geojson
-fetch('data.geojson')
+fetch('big_data.geojson')
   .then(response => response.json().then(data => {
     markers.setData(data); // загрузка данных в маркеры
     miniMarkers.setData(data);
     document.getElementById('map').classList.remove('loading');
   }))
-  .catch(error => console.error('Error loading data.geojson', error));
+  .catch(error => console.error('Error loading big_data.geojson', error));
 
 // функция отрисовки содержимого попапа
 var renderFeature = (feature) => {
