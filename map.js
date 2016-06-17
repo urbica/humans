@@ -44,8 +44,8 @@ map.on('load', () => {
     source: 'miniMarkers', // идентификатор данных
     paint: {
       'circle-radius': 3, // радиус кружка
-      'circle-color': '#555' // цвет кружка
-    opacity: 0.5;
+      'circle-color': '#555', // цвет кружка
+      'circle-opacity': 0.5 // непрозрачность кружка
     }
   });
 
