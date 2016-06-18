@@ -22,7 +22,7 @@ var miniMarkers = new mapboxgl.GeoJSONSource({
 });
 
 // эта функция будет выполнена после загрузки карты
-map.on('load', () => {
+map.on('load', function() {
   map.addSource('markers', markers); // добавляем на карту данные маркеров
   map.addSource('miniMarkers', miniMarkers); // добавляем на карту данные маркеров
 
@@ -53,16 +53,14 @@ map.on('load', () => {
 });
 
 // загрузка маркеров из файла data.geojson
-fetch('med_data.geojson')
-  .then(response => response.json().then(data => {
-    markers.setData(data); // загрузка данных в маркеры
-    miniMarkers.setData(data);
-    document.getElementById('map').classList.remove('loading');
-  }))
-  .catch(error => console.error('Error loading data.geojson', error));
+$.getJSON('med_data.geojson', function(data) {
+  markers.setData(data); // загрузка данных в маркеры
+  miniMarkers.setData(data);
+  document.getElementById('map').classList.remove('loading');
+});
 
 // функция отрисовки содержимого попапа
-var renderFeature = (feature) => {
+var renderFeature = function(feature) {
   // сокращаем текст до восьми символов
   var title = feature.properties.name.substring(0, 8);
 
@@ -78,7 +76,7 @@ var renderFeature = (feature) => {
 var popups = [];
 
 // функция отрисовки попапов
-var render = () => {
+var render = function() {
   // находим все отрисованные объекты на карте в текущем экстенте
   var bounds = map.getBounds();
   var nw = map.project(bounds.getNorthWest());
@@ -87,10 +85,11 @@ var render = () => {
   var features = map.queryRenderedFeatures(bbox, { layers: ['markers'] });
 
   // удаляем все предыдущие маркеры
-  popups.map(popup => popup.remove())
+  popups.forEach(function(popup) { popup.remove() })
 
   // создаём новые маркеры — из всех найденных объектов выбираем все объекты не-кластеры
-  popups = features.filter(feature => !feature.properties.cluster).map(feature => {
+  popups = features.filter(function(feature) { return !feature.properties.cluster })
+  .map(function(feature) {
     // создаём для каждого объекты новый попап
     return new mapboxgl.Popup({ closeButton: false, closeOnClick: false, anchor: 'bottom' })
       // и добавляем его на карту
