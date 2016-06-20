@@ -2,7 +2,7 @@ document.getElementById('map').classList.add('loading');
 mapboxgl.accessToken = 'pk.eyJ1IjoiaHVtYW5zIiwiYSI6ImNpcDZzdm80cjAwMTB1d203ZmRqZTdwbWEifQ.up9_Pt9XqDhp6m0KLHcbIw';
 
 // настройка карты
-var map = new mapboxgl.Map({
+var map = window.map = new mapboxgl.Map({
   container: 'map', // идентификатор html куда будет рендериться карта
   style: 'mapbox://styles/humans/cip9hxybc003edmm2i1eqlap8', // стиль карты по умлочанию
   center: [-74.0059, 40.7127], // начальные координаты карты
@@ -72,8 +72,6 @@ map.on('load', function() {
   }
     }
   });
-
-  setTimeout(render, 1000); // отрисовать попапы через секунду
 });
 
 // загрузка маркеров из файла data.geojson
@@ -101,26 +99,29 @@ var popups = [];
 
 // функция отрисовки попапов
 var render = function() {
-  // находим все отрисованные объекты на карте в текущем экстенте
-  var bounds = map.getBounds();
-  var nw = map.project(bounds.getNorthWest());
-  var se = map.project(bounds.getSouthEast());
-  var bbox = [[nw.x, nw.y], [se.x, se.y]];
-  var features = map.queryRenderedFeatures(bbox, { layers: ['markers'] });
-
   // удаляем все предыдущие маркеры
-  popups.forEach(function(popup) { popup.remove() })
+  if (popups.length > 0) popups.forEach(function(popup) { popup.remove() })
 
-  // создаём новые маркеры — из всех найденных объектов выбираем все объекты не-кластеры
-  popups = features.filter(function(feature) { return !feature.properties.cluster })
-  .map(function(feature) {
-    // создаём для каждого объекты новый попап
-    return new mapboxgl.Popup({ closeButton: false, closeOnClick: false, anchor: 'bottom' })
-      // и добавляем его на карту
-      .setLngLat(feature.geometry.coordinates)
-      .setHTML(renderFeature(feature))
-      .addTo(map)
-  });
+  // рисуем новые попапы только ближе 12 зума
+  if (map.getZoom() >= 13) {
+    // находим все отрисованные объекты на карте в текущем экстенте
+    var bounds = map.getBounds();
+    var nw = map.project(bounds.getNorthWest());
+    var se = map.project(bounds.getSouthEast());
+    var bbox = [[nw.x, nw.y], [se.x, se.y]];
+    var features = map.queryRenderedFeatures(bbox, { layers: ['markers'] });
+
+    // создаём новые маркеры — из всех найденных объектов выбираем все объекты не-кластеры
+    popups = features.filter(function(feature) { return !feature.properties.cluster })
+    .map(function(feature) {
+      // создаём для каждого объекты новый попап
+      return new mapboxgl.Popup({ closeButton: false, closeOnClick: false, anchor: 'bottom' })
+        // и добавляем его на карту
+        .setLngLat(feature.geometry.coordinates)
+        .setHTML(renderFeature(feature))
+        .addTo(map)
+    });
+  }
 }
 
 // перерисовывать попапы после каждого движения карты
