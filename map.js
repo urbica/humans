@@ -10,7 +10,7 @@ var map = window.map = new mapboxgl.Map({
 });
 
 
-// настройка данных для маркеров
+// настройка данных для пинов
 var markers = new mapboxgl.GeoJSONSource({
   data: {}, // данных пока нет, они загрузятся позже
   cluster: true, // объединять точки в кластеры
@@ -22,31 +22,38 @@ var miniMarkers = new mapboxgl.GeoJSONSource({
   data: {} // данных пока нет, они загрузятся позже
 });
 
+// настройка данных для ареалов вокруг точек
+var areaMarkers = new mapboxgl.GeoJSONSource({
+  data: {} // данных пока нет, они загрузятся позже
+});
+
 // эта функция будет выполнена после загрузки карты
 map.on('load', function() {
   map.addSource('markers', markers); // добавляем на карту данные маркеров
   map.addSource('miniMarkers', miniMarkers); // добавляем на карту данные маркеров
+  map.addSource('areaMarkers', areaMarkers); // добавляем на карту данные ареалов маркера
 
-  // добавляем на карту слой маркеров
+
+  // добавляем на карту слой пинов
   map.addLayer({
     id: 'markers', // идентификатор слоя
     type: 'circle', // тип отображения слоя
     source: 'markers', // идентификатор данных
     paint: {
       'circle-radius': 3,
-      'circle-color': '#1987FF', // цвет кружка
+      'circle-color': 'rgba(#fff,1)', // цвет кружка
       'circle-opacity': 1
     }
   });
 
-  // добавляем на карту слой маркеров
+  // добавляем на карту слой ареалов маркера
   map.addLayer({
-    id: 'miniMarkers', // идентификатор слоя
+    id: 'areaMarkers', // идентификатор слоя
     type: 'circle', // тип отображения слоя
-    source: 'miniMarkers', // идентификатор данных
+    source: 'areaMarkers', // идентификатор данных
     paint: {
-      'circle-radius': 3, // радиус кружка
-      'circle-color': '#1987FF', // цвет кружка
+      'circle-radius': 10, // радиус кружка
+      'circle-color': 'rgba(#ff19da,1)', // цвет кружка
       'circle-opacity': {
     "stops": [
       [1, 0.1],
@@ -73,6 +80,65 @@ map.on('load', function() {
   }
     }
   });
+
+    // добавляем на карту слой маркеров
+  map.addLayer({
+    id: 'miniMarkers', // идентификатор слоя
+    type: 'circle', // тип отображения слоя
+    source: 'miniMarkers', // идентификатор данных
+    paint: {
+      'circle-radius':
+      {
+    "stops": [
+      [1, 1],
+      [2, 1],
+      [3, 1],
+      [4, 1],
+      [5, 1],
+      [6, 1],
+      [7, 1],
+      [8, 1],
+      [9, 1],
+      [10, 1],
+      [11, 1.5],
+      [12, 2],
+      [13, 2],
+      [14, 3],
+      [15, 3],
+      [16, 3],
+      [17, 3],
+      [18, 4],
+      [19, 4],
+      [20, 4]
+    ]
+  }, // радиус кружка
+      'circle-color': '#1987FF', // цвет кружка
+      'circle-opacity': {
+    "stops": [
+      [1, 0.1],
+      [2, 0.1],
+      [3, 0.1],
+      [4, 0.2],
+      [5, 0.2],
+      [6, 0.4],
+      [7, 0.4],
+      [8, 0.4],
+      [9, 0.4],
+      [10, 0.6],
+      [11, 0.6],
+      [12, 0.8],
+      [13, 0.8],
+      [14, 0.8],
+      [15, 1],
+      [16, 1],
+      [17, 1],
+      [18, 1],
+      [19, 1],
+      [20, 1]
+    ]
+  }
+    }
+});
 });
 
 // загрузка маркеров из файла data.geojson
@@ -89,7 +155,7 @@ fetch('big_data.geojson')
     miniMarkers.setData(data);
     document.getElementById('map').classList.remove('loading');
   }))
-  .catch(error => console.error('Error loading min_data.geojson', error));
+  .catch(error => console.error('Error loading big_data.geojson', error));
 
 
 // функция отрисовки содержимого попапа
