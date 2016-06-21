@@ -136,7 +136,7 @@ map.on('load', function() {
         ]
       }
     }
-});
+  });
 });
 
 // загрузка маркеров из файла data.geojson
@@ -145,6 +145,7 @@ $.getJSON('med_data.geojson', function(data) {
    // загрузка данных в маркеры
   markers.setData(data);
   miniMarkers.setData(data);
+  areaMarkers.setData(data);
   document.getElementById('map').classList.remove('loading');
 });
 
