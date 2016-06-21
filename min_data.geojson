@@ -1,32 +1,12 @@
 {
   "type": "FeatureCollection",
-<<<<<<< HEAD
-  "generator": "overpass-turbo",
-  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2016-06-17T12:02:02Z",
-=======
->>>>>>> origin/gh-pages
   "features": [
     {
       "type": "Feature",
       "id": "node/295802851",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/295802851",
-        "addr:city": "Hoboken",
-        "addr:housenumber": "309",
-        "addr:postcode": "07030",
-        "addr:street": "1st St",
-        "amenity": "hospital",
-        "name": "PromptMD Urgent Care Center",
-        "note": "Location of PromptMD Urgent Care Center.",
-        "phone": "201-222-8411",
-        "website": "http://promptmd.com/",
-        "wheelchair": "yes"
-=======
         "name": "PromptMD Urgent Care Center",
         "photo": "photos/Ben.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -40,18 +20,8 @@
       "type": "Feature",
       "id": "node/296766358",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/296766358",
-        "addr:city": "Hoboken",
-        "addr:housenumber": "308",
-        "addr:street": "Willow Ave",
-        "amenity": "hospital",
-        "created_by": "Merkaartor 0.11",
-        "name": "Hoboken University Medical Center"
-=======
         "name": "Hoboken University Medical Center",
         "photo": "photos/Robert.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -65,22 +35,8 @@
       "type": "Feature",
       "id": "node/297456770",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/297456770",
-        "addr:city": "Hoboken",
-        "addr:housenumber": "1122",
-        "addr:postcode": "07030",
-        "addr:street": "Washington St",
-        "amenity": "hospital",
-        "name": "PromptMD Family Practice",
-        "note": "Walk-in family practice clinic",
-        "phone": "201-706-8411",
-        "website": "http://promptmd.com/",
-        "wheelchair": "yes"
-=======
         "name": "PromptMD Family Practice",
         "photo": "photos/Ben.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -94,19 +50,8 @@
       "type": "Feature",
       "id": "node/357549890",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357549890",
-        "amenity": "hospital",
-        "ele": "20",
-        "gnis:county_id": "081",
-        "gnis:created": "01/23/1980",
-        "gnis:feature_id": "944492",
-        "gnis:state_id": "36",
-        "name": "Boulevard Hospital"
-=======
         "name": "Boulevard Hospital",
         "photo": "photos/Emil.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -120,21 +65,8 @@
       "type": "Feature",
       "id": "node/357554659",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357554659",
-        "amenity": "hospital",
-        "ele": "4",
-        "gnis:county_id": "061",
-        "gnis:created": "01/23/1980",
-        "gnis:edited": "04/18/2008",
-        "gnis:feature_id": "947119",
-        "gnis:state_id": "36",
-        "name": "Coler - Goldwater Memorial Hospital Coler Campus",
-        "wikipedia": "en:Coler-Goldwater Specialty Hospital"
-=======
         "name": "Coler - Goldwater Memorial Hospital Coler Campus",
         "photo": "photos/Robert.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -148,19 +80,8 @@
       "type": "Feature",
       "id": "node/357558861",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357558861",
-        "amenity": "hospital",
-        "ele": "13",
-        "gnis:county_id": "061",
-        "gnis:created": "01/23/1980",
-        "gnis:feature_id": "949784",
-        "gnis:state_id": "36",
-        "name": "Ewing Memorial Hospital"
-=======
         "name": "Ewing Memorial Hospital",
         "photo": "photos/Victoria.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -174,20 +95,8 @@
       "type": "Feature",
       "id": "node/357563570",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357563570",
-        "amenity": "hospital",
-        "ele": "6",
-        "gnis:county_id": "061",
-        "gnis:created": "01/23/1980",
-        "gnis:edited": "11/06/2008",
-        "gnis:feature_id": "952234",
-        "gnis:state_id": "36",
-        "name": "Harlem Hospital Center"
-=======
         "name": "Harlem Hospital Center",
         "photo": "photos/Omar.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -201,20 +110,8 @@
       "type": "Feature",
       "id": "node/357566747",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357566747",
-        "amenity": "hospital",
-        "ele": "35",
-        "gnis:county_id": "047",
-        "gnis:created": "01/23/1980",
-        "gnis:edited": "08/01/2005",
-        "gnis:feature_id": "954028",
-        "gnis:state_id": "36",
-        "name": "Jewish Hospital Medical Center of Brooklyn"
-=======
         "name": "Jewish Hospital Medical Center of Brooklyn",
         "photo": "photos/Omar.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -228,20 +125,8 @@
       "type": "Feature",
       "id": "node/357568917",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357568917",
-        "amenity": "hospital",
-        "ele": "19",
-        "gnis:county_id": "061",
-        "gnis:created": "01/23/1980",
-        "gnis:edited": "04/18/2008",
-        "gnis:feature_id": "955201",
-        "gnis:state_id": "36",
-        "name": "Lenox Hill Hospital"
-=======
         "name": "Lenox Hill Hospital",
         "photo": "photos/Leo.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -255,19 +140,8 @@
       "type": "Feature",
       "id": "node/357569063",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357569063",
-        "amenity": "hospital",
-        "ele": "10",
-        "gnis:county_id": "005",
-        "gnis:created": "01/23/1980",
-        "gnis:feature_id": "955368",
-        "gnis:state_id": "36",
-        "name": "Lincoln Hospital"
-=======
         "name": "Lincoln Hospital",
         "photo": "photos/Leo.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -281,23 +155,8 @@
       "type": "Feature",
       "id": "node/357571389",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357571389",
-        "addr:city": "New York",
-        "amenity": "hospital",
-        "ele": "3",
-        "emergency": "yes",
-        "gnis:county_id": "061",
-        "gnis:created": "01/23/1980",
-        "gnis:edited": "04/18/2008",
-        "gnis:feature_id": "957041",
-        "gnis:state_id": "36",
-        "name": "Metropolitan Hospital Center",
-        "wikipedia": "en:Metropolitan Hospital Center"
-=======
         "name": "Metropolitan Hospital Center",
         "photo": "photos/Angie.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -311,20 +170,8 @@
       "type": "Feature",
       "id": "node/357572587",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357572587",
-        "amenity": "hospital",
-        "ele": "18",
-        "gnis:county_id": "061",
-        "gnis:created": "01/23/1980",
-        "gnis:edited": "04/18/2008",
-        "gnis:feature_id": "957912",
-        "gnis:state_id": "36",
-        "name": "Mount Sinai Medical Center"
-=======
         "name": "Mount Sinai Medical Center",
         "photo": "photos/Evan.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -338,21 +185,8 @@
       "type": "Feature",
       "id": "node/357573246",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357573246",
-        "amenity": "hospital",
-        "ele": "10",
-        "gnis:county_id": "061",
-        "gnis:created": "01/01/2000",
-        "gnis:edited": "04/18/2008",
-        "gnis:feature_id": "958474",
-        "gnis:state_id": "36",
-        "name": "Weill Cornell Medical College",
-        "wikipedia": "en:Weill Cornell Medical College"
-=======
         "name": "Weill Cornell Medical College",
         "photo": "photos/Evan.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -366,20 +200,8 @@
       "type": "Feature",
       "id": "node/357577677",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357577677",
-        "amenity": "hospital",
-        "ele": "17",
-        "gnis:county_id": "061",
-        "gnis:created": "01/23/1980",
-        "gnis:edited": "04/15/2008",
-        "gnis:feature_id": "960870",
-        "gnis:state_id": "36",
-        "name": "Polyclinic Hospital (historical)"
-=======
         "name": "Polyclinic Hospital (historical)",
         "photo": "photos/George.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -393,20 +215,8 @@
       "type": "Feature",
       "id": "node/357585752",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357585752",
-        "amenity": "hospital",
-        "ele": "38",
-        "gnis:county_id": "061",
-        "gnis:created": "01/23/1980",
-        "gnis:edited": "04/18/2008",
-        "gnis:feature_id": "963825",
-        "gnis:state_id": "36",
-        "name": "Saint Luke's Hospital Center"
-=======
         "name": "Saint Luke's Hospital Center",
         "photo": "photos/Brian.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -420,19 +230,8 @@
       "type": "Feature",
       "id": "node/357592111",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357592111",
-        "amenity": "hospital",
-        "ele": "9",
-        "gnis:county_id": "061",
-        "gnis:created": "01/23/1980",
-        "gnis:feature_id": "966952",
-        "gnis:state_id": "36",
-        "name": "Sydenham Hospital"
-=======
         "name": "Sydenham Hospital",
         "photo": "photos/Omar.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -446,19 +245,8 @@
       "type": "Feature",
       "id": "node/357594124",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357594124",
-        "amenity": "hospital",
-        "ele": "8",
-        "gnis:county_id": "047",
-        "gnis:created": "01/23/1980",
-        "gnis:feature_id": "968246",
-        "gnis:state_id": "36",
-        "name": "United States Naval Clinic"
-=======
         "name": "United States Naval Clinic",
         "photo": "photos/Robert.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -472,20 +260,8 @@
       "type": "Feature",
       "id": "node/357607586",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357607586",
-        "amenity": "hospital",
-        "ele": "12",
-        "gnis:county_id": "061",
-        "gnis:created": "02/11/2003",
-        "gnis:feature_id": "1984531",
-        "gnis:state_id": "36",
-        "name": "Beth Israel Medical Center - Phillips Ambulatory Care Center",
-        "wheelchair": "yes"
-=======
         "name": "Beth Israel Medical Center - Phillips Ambulatory Care Center",
         "photo": "photos/Leo.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -499,19 +275,8 @@
       "type": "Feature",
       "id": "node/357607599",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357607599",
-        "amenity": "hospital",
-        "ele": "34",
-        "gnis:county_id": "061",
-        "gnis:created": "02/11/2003",
-        "gnis:feature_id": "1984535",
-        "gnis:state_id": "36",
-        "name": "Columbia Presbyterian Medical Center"
-=======
         "name": "Columbia Presbyterian Medical Center",
         "photo": "photos/Omar.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -525,19 +290,8 @@
       "type": "Feature",
       "id": "node/357607688",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357607688",
-        "amenity": "hospital",
-        "ele": "7",
-        "gnis:county_id": "061",
-        "gnis:created": "08/29/2003",
-        "gnis:feature_id": "1993311",
-        "gnis:state_id": "36",
-        "name": "Kirby Forensic Psychiatric Center"
-=======
         "name": "Kirby Forensic Psychiatric Center",
         "photo": "photos/Victoria.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -551,21 +305,8 @@
       "type": "Feature",
       "id": "node/357607743",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357607743",
-        "amenity": "hospital",
-        "ele": "11",
-        "gnis:county_id": "061",
-        "gnis:created": "01/01/2000",
-        "gnis:edited": "04/18/2008",
-        "gnis:feature_id": "2042641",
-        "gnis:state_id": "36",
-        "name": "Memorial Sloan - Kettering Cancer Center",
-        "wikipedia": "en:Memorial Sloan Kettering Cancer Center"
-=======
         "name": "Memorial Sloan - Kettering Cancer Center",
         "photo": "photos/Omar.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -579,19 +320,8 @@
       "type": "Feature",
       "id": "node/357609193",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357609193",
-        "amenity": "hospital",
-        "ele": "9",
-        "gnis:county_id": "005",
-        "gnis:created": "01/01/2000",
-        "gnis:feature_id": "2062042",
-        "gnis:state_id": "36",
-        "name": "Saint Joseph's Hospital (historical)"
-=======
         "name": "Saint Joseph's Hospital (historical)",
         "photo": "photos/George.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -605,19 +335,8 @@
       "type": "Feature",
       "id": "node/357609904",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357609904",
-        "amenity": "hospital",
-        "ele": "6",
-        "gnis:county_id": "061",
-        "gnis:created": "01/01/2000",
-        "gnis:feature_id": "2062678",
-        "gnis:state_id": "36",
-        "name": "Northern Dispensary (historical)"
-=======
         "name": "Northern Dispensary (historical)",
         "photo": "photos/Ben.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -631,19 +350,8 @@
       "type": "Feature",
       "id": "node/357609910",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357609910",
-        "amenity": "hospital",
-        "ele": "25",
-        "gnis:county_id": "061",
-        "gnis:created": "01/01/2000",
-        "gnis:feature_id": "2062680",
-        "gnis:state_id": "36",
-        "name": "William J. Syms Operating Theater Roosevelt Hospital (historical)"
-=======
         "name": "William J. Syms Operating Theater Roosevelt Hospital (historical)",
         "photo": "photos/Leo.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -657,19 +365,8 @@
       "type": "Feature",
       "id": "node/357616245",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357616245",
-        "amenity": "hospital",
-        "ele": "6",
-        "gnis:county_id": "061",
-        "gnis:created": "06/12/2006",
-        "gnis:feature_id": "2076782",
-        "gnis:state_id": "36",
-        "name": "Manhattan Children's Psychiatric Center"
-=======
         "name": "Manhattan Children's Psychiatric Center",
         "photo": "photos/George.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -683,19 +380,8 @@
       "type": "Feature",
       "id": "node/357616405",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357616405",
-        "amenity": "hospital",
-        "ele": "38",
-        "gnis:county_id": "061",
-        "gnis:created": "06/12/2006",
-        "gnis:feature_id": "2079081",
-        "gnis:state_id": "36",
-        "name": "Woman's Hospital"
-=======
         "name": "Woman's Hospital",
         "photo": "photos/Evan.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -709,19 +395,8 @@
       "type": "Feature",
       "id": "node/357618377",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357618377",
-        "amenity": "hospital",
-        "ele": "10",
-        "gnis:county_id": "081",
-        "gnis:created": "12/08/2005",
-        "gnis:feature_id": "2080472",
-        "gnis:state_id": "36",
-        "name": "Western Queens Community Hospital"
-=======
         "name": "Western Queens Community Hospital",
         "photo": "photos/Leo.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -735,19 +410,8 @@
       "type": "Feature",
       "id": "node/357618839",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357618839",
-        "amenity": "hospital",
-        "ele": "8",
-        "gnis:county_id": "047",
-        "gnis:created": "12/21/2005",
-        "gnis:feature_id": "2081521",
-        "gnis:state_id": "36",
-        "name": "Bishop Francis J Mugavero Center for Geriatric Care"
-=======
         "name": "Bishop Francis J Mugavero Center for Geriatric Care",
         "photo": "photos/Evan.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -761,20 +425,8 @@
       "type": "Feature",
       "id": "node/357620244",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357620244",
-        "amenity": "hospital",
-        "ele": "8",
-        "gnis:county_id": "061",
-        "gnis:created": "01/17/2006",
-        "gnis:edited": "08/05/2008",
-        "gnis:feature_id": "2082882",
-        "gnis:state_id": "36",
-        "name": "Lenox Health Greenwich Village"
-=======
         "name": "Lenox Health Greenwich Village",
         "photo": "photos/Leo.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -788,20 +440,8 @@
       "type": "Feature",
       "id": "node/357620336",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357620336",
-        "amenity": "hospital",
-        "ele": "5",
-        "gnis:county_id": "061",
-        "gnis:created": "01/17/2006",
-        "gnis:edited": "08/05/2008",
-        "gnis:feature_id": "2083005",
-        "gnis:state_id": "36",
-        "name": "Ryan/NENA Comprehensive Heath Service Center"
-=======
         "name": "Ryan/NENA Comprehensive Heath Service Center",
         "photo": "photos/Victoria.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -815,20 +455,8 @@
       "type": "Feature",
       "id": "node/357620365",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357620365",
-        "amenity": "hospital",
-        "ele": "10",
-        "gnis:county_id": "061",
-        "gnis:created": "01/17/2006",
-        "gnis:edited": "08/05/2008",
-        "gnis:feature_id": "2083034",
-        "gnis:state_id": "36",
-        "name": "New York Foundling Hospital"
-=======
         "name": "New York Foundling Hospital",
         "photo": "photos/Victoria.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -842,20 +470,8 @@
       "type": "Feature",
       "id": "node/357620384",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357620384",
-        "amenity": "hospital",
-        "ele": "11",
-        "gnis:county_id": "061",
-        "gnis:created": "01/17/2006",
-        "gnis:edited": "04/18/2008",
-        "gnis:feature_id": "2083043",
-        "gnis:state_id": "36",
-        "name": "Sidney Hillman Health Center"
-=======
         "name": "Sidney Hillman Health Center",
         "photo": "photos/Emil.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -869,20 +485,8 @@
       "type": "Feature",
       "id": "node/357620402",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357620402",
-        "amenity": "hospital",
-        "ele": "9",
-        "gnis:county_id": "061",
-        "gnis:created": "01/17/2006",
-        "gnis:edited": "08/05/2008",
-        "gnis:feature_id": "2083072",
-        "gnis:state_id": "36",
-        "name": "David B Kriser Psychiatric Day Treatment Program"
-=======
         "name": "David B Kriser Psychiatric Day Treatment Program",
         "photo": "photos/Evan.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -896,20 +500,8 @@
       "type": "Feature",
       "id": "node/357620414",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357620414",
-        "amenity": "hospital",
-        "ele": "8",
-        "gnis:county_id": "061",
-        "gnis:created": "01/17/2006",
-        "gnis:edited": "08/05/2008",
-        "gnis:feature_id": "2083077",
-        "gnis:state_id": "36",
-        "name": "Bernstein Pavilion Beth Israel Hospital"
-=======
         "name": "Bernstein Pavilion Beth Israel Hospital",
         "photo": "photos/Angie.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -923,21 +515,8 @@
       "type": "Feature",
       "id": "node/357620439",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357620439",
-        "amenity": "hospital",
-        "ele": "4",
-        "gnis:county_id": "061",
-        "gnis:created": "01/17/2006",
-        "gnis:edited": "08/14/2008",
-        "gnis:feature_id": "2083132",
-        "gnis:state_id": "36",
-        "name": "Skirball Institute of Biomolecular Medicine",
-        "website": "http://saturn.med.nyu.edu/"
-=======
         "name": "Skirball Institute of Biomolecular Medicine",
         "photo": "photos/George.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -951,19 +530,8 @@
       "type": "Feature",
       "id": "node/357620711",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357620711",
-        "amenity": "hospital",
-        "ele": "23",
-        "gnis:county_id": "061",
-        "gnis:created": "02/03/2006",
-        "gnis:feature_id": "2083517",
-        "gnis:state_id": "36",
-        "name": "Mount Sinai Dispensary (historical)"
-=======
         "name": "Mount Sinai Dispensary (historical)",
         "photo": "photos/Angie.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -977,19 +545,8 @@
       "type": "Feature",
       "id": "node/357620846",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357620846",
-        "amenity": "hospital",
-        "ele": "17",
-        "gnis:county_id": "061",
-        "gnis:created": "02/03/2006",
-        "gnis:feature_id": "2083568",
-        "gnis:state_id": "36",
-        "name": "Klingenstein Clinical Center"
-=======
         "name": "Klingenstein Clinical Center",
         "photo": "photos/I-Lin.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1003,19 +560,8 @@
       "type": "Feature",
       "id": "node/357620850",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357620850",
-        "amenity": "hospital",
-        "ele": "19",
-        "gnis:county_id": "061",
-        "gnis:created": "02/03/2006",
-        "gnis:feature_id": "2083569",
-        "gnis:state_id": "36",
-        "name": "Magdalene and Charles Klingenstein Pavilion"
-=======
         "name": "Magdalene and Charles Klingenstein Pavilion",
         "photo": "photos/Robert.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1029,19 +575,8 @@
       "type": "Feature",
       "id": "node/357620854",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357620854",
-        "amenity": "hospital",
-        "ele": "15",
-        "gnis:county_id": "061",
-        "gnis:created": "02/03/2006",
-        "gnis:feature_id": "2083571",
-        "gnis:state_id": "36",
-        "name": "Guggenheim Pavilion"
-=======
         "name": "Guggenheim Pavilion",
         "photo": "photos/Victoria.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1055,22 +590,8 @@
       "type": "Feature",
       "id": "node/357620861",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357620861",
-        "addr:housenumber": "1249",
-        "addr:postcode": "10029",
-        "addr:street": "5th Avenue",
-        "amenity": "hospital",
-        "ele": "7",
-        "gnis:county_id": "061",
-        "gnis:created": "02/03/2006",
-        "gnis:feature_id": "2083577",
-        "gnis:state_id": "36",
-        "name": "Terence Cardinal Cooke Health Care Center"
-=======
         "name": "Terence Cardinal Cooke Health Care Center",
         "photo": "photos/Omar.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1084,20 +605,8 @@
       "type": "Feature",
       "id": "node/357621045",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357621045",
-        "amenity": "hospital",
-        "ele": "8",
-        "gnis:county_id": "061",
-        "gnis:created": "02/03/2006",
-        "gnis:edited": "04/18/2008",
-        "gnis:feature_id": "2083697",
-        "gnis:state_id": "36",
-        "name": "North General Hospital"
-=======
         "name": "North General Hospital",
         "photo": "photos/Evan.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1111,19 +620,8 @@
       "type": "Feature",
       "id": "node/357621099",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357621099",
-        "amenity": "hospital",
-        "ele": "8",
-        "gnis:county_id": "061",
-        "gnis:created": "02/03/2006",
-        "gnis:feature_id": "2083714",
-        "gnis:state_id": "36",
-        "name": "North General Hospital Paul Robeson Center"
-=======
         "name": "North General Hospital Paul Robeson Center",
         "photo": "photos/Evan.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1137,19 +635,8 @@
       "type": "Feature",
       "id": "node/357624018",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357624018",
-        "amenity": "hospital",
-        "ele": "11",
-        "gnis:county_id": "047",
-        "gnis:created": "11/22/2006",
-        "gnis:feature_id": "2097575",
-        "gnis:state_id": "36",
-        "name": "Williamsburg-Greenpoint Health Center"
-=======
         "name": "Williamsburg-Greenpoint Health Center",
         "photo": "photos/Ben.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1163,19 +650,8 @@
       "type": "Feature",
       "id": "node/357624501",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357624501",
-        "amenity": "hospital",
-        "ele": "33",
-        "gnis:county_id": "061",
-        "gnis:created": "11/22/2006",
-        "gnis:feature_id": "2099753",
-        "gnis:state_id": "36",
-        "name": "Spence Lower School, formerly Smithers Alcoholism Center (historical)"
-=======
         "name": "Spence Lower School, formerly Smithers Alcoholism Center (historical)",
         "photo": "photos/I-Lin.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1189,19 +665,8 @@
       "type": "Feature",
       "id": "node/357642719",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357642719",
-        "amenity": "hospital",
-        "ele": "10",
-        "gnis:county_id": "081",
-        "gnis:created": "04/18/2008",
-        "gnis:feature_id": "2420550",
-        "gnis:state_id": "36",
-        "name": "Mount Sinai Hospital of Queens"
-=======
         "name": "Mount Sinai Hospital of Queens",
         "photo": "photos/Robert.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1215,20 +680,8 @@
       "type": "Feature",
       "id": "node/357642730",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357642730",
-        "amenity": "hospital",
-        "ele": "10",
-        "gnis:county_id": "061",
-        "gnis:created": "04/18/2008",
-        "gnis:feature_id": "2420554",
-        "gnis:state_id": "36",
-        "name": "Gracie Square Hospital",
-        "wikipedia": "en:Gracie Square Hospital"
-=======
         "name": "Gracie Square Hospital",
         "photo": "photos/Angie.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1242,19 +695,8 @@
       "type": "Feature",
       "id": "node/357642732",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357642732",
-        "amenity": "hospital",
-        "ele": "16",
-        "gnis:county_id": "061",
-        "gnis:created": "04/18/2008",
-        "gnis:feature_id": "2420555",
-        "gnis:state_id": "36",
-        "name": "Cornerstone Medical Arts Hospital"
-=======
         "name": "Cornerstone Medical Arts Hospital",
         "photo": "photos/Leo.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1268,19 +710,8 @@
       "type": "Feature",
       "id": "node/357642735",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357642735",
-        "amenity": "hospital",
-        "ele": "10",
-        "gnis:county_id": "061",
-        "gnis:created": "04/18/2008",
-        "gnis:feature_id": "2420556",
-        "gnis:state_id": "36",
-        "name": "Rockefeller University Hospital"
-=======
         "name": "Rockefeller University Hospital",
         "photo": "photos/Angie.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1294,19 +725,8 @@
       "type": "Feature",
       "id": "node/357642745",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357642745",
-        "amenity": "hospital",
-        "ele": "9",
-        "gnis:county_id": "061",
-        "gnis:created": "04/18/2008",
-        "gnis:feature_id": "2420559",
-        "gnis:state_id": "36",
-        "name": "New York Eye and Ear Infirmary"
-=======
         "name": "New York Eye and Ear Infirmary",
         "photo": "photos/Robert.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1320,19 +740,8 @@
       "type": "Feature",
       "id": "node/357642750",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357642750",
-        "amenity": "hospital",
-        "ele": "20",
-        "gnis:county_id": "061",
-        "gnis:created": "04/18/2008",
-        "gnis:feature_id": "2420561",
-        "gnis:state_id": "36",
-        "name": "Manhattan Eye Ear and Throat Hospital"
-=======
         "name": "Manhattan Eye Ear and Throat Hospital",
         "photo": "photos/Evan.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1346,19 +755,8 @@
       "type": "Feature",
       "id": "node/357642766",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357642766",
-        "amenity": "hospital",
-        "ele": "2",
-        "gnis:county_id": "047",
-        "gnis:created": "04/18/2008",
-        "gnis:feature_id": "2420568",
-        "gnis:state_id": "36",
-        "name": "South Brooklyn Health Center"
-=======
         "name": "South Brooklyn Health Center",
         "photo": "photos/I-Lin.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1372,19 +770,8 @@
       "type": "Feature",
       "id": "node/357642771",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357642771",
-        "amenity": "hospital",
-        "ele": "9",
-        "gnis:county_id": "061",
-        "gnis:created": "04/18/2008",
-        "gnis:feature_id": "2420570",
-        "gnis:state_id": "36",
-        "name": "Renaissance Health Care Network and Diagnostic and Treatment Center"
-=======
         "name": "Renaissance Health Care Network and Diagnostic and Treatment Center",
         "photo": "photos/Ben.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1398,19 +785,8 @@
       "type": "Feature",
       "id": "node/357648645",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357648645",
-        "amenity": "hospital",
-        "ele": "11",
-        "gnis:county_id": "005",
-        "gnis:created": "09/10/2008",
-        "gnis:feature_id": "2493143",
-        "gnis:state_id": "36",
-        "name": "Ajutian Stahl Health Center"
-=======
         "name": "Ajutian Stahl Health Center",
         "photo": "photos/Robert.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1424,19 +800,8 @@
       "type": "Feature",
       "id": "node/357719779",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357719779",
-        "amenity": "hospital",
-        "ele": "33",
-        "gnis:county_id": "017",
-        "gnis:created": "09/08/1979",
-        "gnis:feature_id": "875426",
-        "gnis:state_id": "34",
-        "name": "Christ Hospital"
-=======
         "name": "Christ Hospital",
         "photo": "photos/Angie.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1450,19 +815,8 @@
       "type": "Feature",
       "id": "node/357721532",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357721532",
-        "amenity": "hospital",
-        "ele": "18",
-        "gnis:county_id": "017",
-        "gnis:created": "09/08/1979",
-        "gnis:feature_id": "876263",
-        "gnis:state_id": "34",
-        "name": "Fairmont Hospital"
-=======
         "name": "Fairmont Hospital",
         "photo": "photos/George.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1476,19 +830,8 @@
       "type": "Feature",
       "id": "node/357744903",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/357744903",
-        "amenity": "hospital",
-        "ele": "1",
-        "gnis:county_id": "017",
-        "gnis:created": "07/01/1981",
-        "gnis:feature_id": "2057622",
-        "gnis:state_id": "34",
-        "name": "Palisades Medical Center"
-=======
         "name": "Palisades Medical Center",
         "photo": "photos/Robert.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1502,16 +845,8 @@
       "type": "Feature",
       "id": "node/1581175993",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/1581175993",
-        "addr:housenumber": "333",
-        "amenity": "hospital",
-        "entrance": "yes",
-        "name": "NUY Outpatient Surgery Center"
-=======
         "name": "NUY Outpatient Surgery Center",
         "photo": "photos/Omar.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1525,14 +860,8 @@
       "type": "Feature",
       "id": "node/2279513970",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/2279513970",
-        "amenity": "hospital",
-        "name": "Beth Israel Medical Center"
-=======
         "name": "Beth Israel Medical Center",
         "photo": "photos/Angie.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1546,20 +875,8 @@
       "type": "Feature",
       "id": "node/2369328786",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/2369328786",
-        "addr:city": "Jersey City",
-        "addr:housenumber": "631",
-        "addr:postcode": "07304",
-        "addr:street": "Grand Street",
-        "amenity": "hospital",
-        "designation": "Urgent Care Clinic",
-        "emergency": "yes",
-        "name": "MD Emergent Care"
-=======
         "name": "MD Emergent Care",
         "photo": "photos/Evan.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1573,21 +890,8 @@
       "type": "Feature",
       "id": "node/2826551489",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/2826551489",
-        "addr:city": "New York",
-        "addr:housenumber": "227",
-        "addr:postcode": "10002",
-        "addr:state": "NY",
-        "addr:street": "Madison Street",
-        "amenity": "hospital",
-        "emergency": "no",
-        "name": "Gouverneur Health Medical Center",
-        "source": "http://www.nyc.gov/html/hhc/gouverneur/html/services/services.shtml"
-=======
         "name": "Gouverneur Health Medical Center",
         "photo": "photos/Angie.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1601,17 +905,8 @@
       "type": "Feature",
       "id": "node/3501718995",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/3501718995",
-        "addr:city": "New York",
-        "addr:housenumber": "525",
-        "addr:street": "East 68th Street",
-        "amenity": "hospital",
-        "name": "NewYork-Presbyterian Hospital"
-=======
         "name": "NewYork-Presbyterian Hospital",
         "photo": "photos/Angie.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1625,15 +920,8 @@
       "type": "Feature",
       "id": "node/3501723876",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/3501723876",
-        "amenity": "hospital",
-        "name": "Weill Cornell Medical College",
-        "wikipedia": "en:Weill Cornell Medical College"
-=======
         "name": "Weill Cornell Medical College",
         "photo": "photos/Victoria.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1647,16 +935,8 @@
       "type": "Feature",
       "id": "node/3517606878",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/3517606878",
-        "amenity": "hospital",
-        "emergency": "no",
-        "name": "Memorial Sloan Kettering Cancer Center Outpatient Facility",
-        "wikipedia": "en:Memorial Sloan Kettering Cancer Center"
-=======
         "name": "Memorial Sloan Kettering Cancer Center Outpatient Facility",
         "photo": "photos/George.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1670,13 +950,8 @@
       "type": "Feature",
       "id": "node/3633182667",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/3633182667",
-        "amenity": "hospital"
-=======
         "name": "George.png",
         "photo": "photos/George.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1690,13 +965,8 @@
       "type": "Feature",
       "id": "node/3810174990",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/3810174990",
-        "amenity": "hospital"
-=======
         "name": "George.png",
         "photo": "photos/George.png"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1710,25 +980,8 @@
       "type": "Feature",
       "id": "node/3977462059",
       "properties": {
-<<<<<<< HEAD
-        "@id": "node/3977462059",
-        "Keywords": "Psychotherapy, Adolescent Psychiatry, Psychopharmacology, ADHD, Psychiatry, Panic Attacks, Bipolar Disorder, Anxiety, Depression, Manic Depression",
-        "addr:city": "New York City",
-        "addr:housenumber": "611",
-        "addr:postcode": "10012",
-        "addr:state": "NY",
-        "addr:street": "Broadway #506",
-        "amenity": "hospital",
-        "email": "dhlifschutzmd@gmail.com",
-        "emergency": "no",
-        "name": "Dr. David H. Lifschutz MD",
-        "name_1": "David Lifschutz",
-        "phone": "212-529-2733",
-        "website": "http://drdavidhlifschutzmd.com"
-=======
         "name": "Dr. David H. Lifschutz MD",
         "photo": "photos/Evan.jpg"
->>>>>>> origin/gh-pages
       },
       "geometry": {
         "type": "Point",
@@ -1739,8 +992,4 @@
       }
     }
   ]
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> origin/gh-pages

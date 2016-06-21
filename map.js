@@ -12,19 +12,19 @@ var map = window.map = new mapboxgl.Map({
 
 // настройка данных для пинов
 var markers = new mapboxgl.GeoJSONSource({
-  data: {}, // данных пока нет, они загрузятся позже
+  data: { type: 'FeatureCollection', features: [] }, // данных пока нет, они загрузятся позже
   cluster: true, // объединять точки в кластеры
   clusterRadius: 40 // размер кластера в пикселях
 });
 
 // настройка данных для точек
 var miniMarkers = new mapboxgl.GeoJSONSource({
-  data: {} // данных пока нет, они загрузятся позже
+  data: { type: 'FeatureCollection', features: [] }, // данных пока нет, они загрузятся позже
 });
 
 // настройка данных для ареалов вокруг точек
 var areaMarkers = new mapboxgl.GeoJSONSource({
-  data: {} // данных пока нет, они загрузятся позже
+  data: { type: 'FeatureCollection', features: [] }, // данных пока нет, они загрузятся позже
 });
 
 // эта функция будет выполнена после загрузки карты
@@ -33,7 +33,6 @@ map.on('load', function() {
   map.addSource('miniMarkers', miniMarkers); // добавляем на карту данные маркеров
   map.addSource('areaMarkers', areaMarkers); // добавляем на карту данные ареалов маркера
 
-
   // добавляем на карту слой пинов
   map.addLayer({
     id: 'markers', // идентификатор слоя
@@ -41,7 +40,7 @@ map.on('load', function() {
     source: 'markers', // идентификатор данных
     paint: {
       'circle-radius': 3,
-      'circle-color': 'rgba(#fff,1)', // цвет кружка
+      'circle-color': '#fff', // цвет кружка
       'circle-opacity': 1
     }
   });
@@ -53,31 +52,31 @@ map.on('load', function() {
     source: 'areaMarkers', // идентификатор данных
     paint: {
       'circle-radius': 10, // радиус кружка
-      'circle-color': 'rgba(#ff19da,1)', // цвет кружка
+      'circle-color': '#ff19da', // цвет кружка
       'circle-opacity': {
-    "stops": [
-      [1, 0.1],
-      [2, 0.1],
-      [3, 0.1],
-      [4, 0.1],
-      [5, 0.1],
-      [6, 0.1],
-      [7, 0.2],
-      [8, 0.2],
-      [9, 0.3],
-      [10, 0.4],
-      [11, 0.4],
-      [12, 0.4],
-      [13, 0.5],
-      [14, 0.5],
-      [15, 0.6],
-      [16, 0.7],
-      [17, 0.8],
-      [18, 0.9],
-      [19, 1],
-      [20, 1]
-    ]
-  }
+        'stops': [
+          [1, 0.1],
+          [2, 0.1],
+          [3, 0.1],
+          [4, 0.1],
+          [5, 0.1],
+          [6, 0.1],
+          [7, 0.2],
+          [8, 0.2],
+          [9, 0.3],
+          [10, 0.4],
+          [11, 0.4],
+          [12, 0.4],
+          [13, 0.5],
+          [14, 0.5],
+          [15, 0.6],
+          [16, 0.7],
+          [17, 0.8],
+          [18, 0.9],
+          [19, 1],
+          [20, 1]
+        ]
+      }
     }
   });
 
@@ -87,56 +86,55 @@ map.on('load', function() {
     type: 'circle', // тип отображения слоя
     source: 'miniMarkers', // идентификатор данных
     paint: {
-      'circle-radius':
-      {
-    "stops": [
-      [1, 1],
-      [2, 1],
-      [3, 1],
-      [4, 1],
-      [5, 1],
-      [6, 1],
-      [7, 1],
-      [8, 1],
-      [9, 1],
-      [10, 1],
-      [11, 1.5],
-      [12, 2],
-      [13, 2],
-      [14, 3],
-      [15, 3],
-      [16, 3],
-      [17, 3],
-      [18, 4],
-      [19, 4],
-      [20, 4]
-    ]
-  }, // радиус кружка
+      'circle-radius': {
+        'stops': [
+          [1, 1],
+          [2, 1],
+          [3, 1],
+          [4, 1],
+          [5, 1],
+          [6, 1],
+          [7, 1],
+          [8, 1],
+          [9, 1],
+          [10, 1],
+          [11, 1.5],
+          [12, 2],
+          [13, 2],
+          [14, 3],
+          [15, 3],
+          [16, 3],
+          [17, 3],
+          [18, 4],
+          [19, 4],
+          [20, 4]
+        ]
+      }, // радиус кружка
       'circle-color': '#1987FF', // цвет кружка
       'circle-opacity': {
-    "stops": [
-      [1, 0.1],
-      [2, 0.1],
-      [3, 0.1],
-      [4, 0.2],
-      [5, 0.2],
-      [6, 0.4],
-      [7, 0.4],
-      [8, 0.4],
-      [9, 0.4],
-      [10, 0.6],
-      [11, 0.6],
-      [12, 0.8],
-      [13, 0.8],
-      [14, 0.8],
-      [15, 1],
-      [16, 1],
-      [17, 1],
-      [18, 1],
-      [19, 1],
-      [20, 1]
-    ]
-  }
+        'stops': [
+          [1, 0.1],
+          [2, 0.1],
+          [3, 0.1],
+          [4, 0.2],
+          [5, 0.2],
+          [6, 0.4],
+          [7, 0.4],
+          [8, 0.4],
+          [9, 0.4],
+          [10, 0.6],
+          [11, 0.6],
+          [12, 0.8],
+          [13, 0.8],
+          [14, 0.8],
+          [15, 1],
+          [16, 1],
+          [17, 1],
+          [18, 1],
+          [19, 1],
+          [20, 1]
+        ]
+      }
     }
 });
 });
@@ -144,19 +142,11 @@ map.on('load', function() {
 // загрузка маркеров из файла data.geojson
 
 $.getJSON('med_data.geojson', function(data) {
-  markers.setData(data); // загрузка данных в маркеры
+   // загрузка данных в маркеры
+  markers.setData(data);
   miniMarkers.setData(data);
   document.getElementById('map').classList.remove('loading');
 });
-
-fetch('med_data.geojson')
-  .then(response => response.json().then(data => {
-    markers.setData(data); // загрузка данных в маркеры
-    miniMarkers.setData(data);
-    document.getElementById('map').classList.remove('loading');
-  }))
-  .catch(error => console.error('Error loading med_data.geojson', error));
-
 
 // функция отрисовки содержимого попапа
 var renderFeature = function(feature) {
