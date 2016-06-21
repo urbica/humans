@@ -9,16 +9,17 @@ var map = window.map = new mapboxgl.Map({
   zoom: 12 // начальный уровень приближения
 });
 
+
 // настройка данных для маркеров
 var markers = new mapboxgl.GeoJSONSource({
-  data: {}, // данных пока нет, они загрузяться позже
+  data: {}, // данных пока нет, они загрузятся позже
   cluster: true, // объединять точки в кластеры
   clusterRadius: 40 // размер кластера в пикселях
 });
 
 // настройка данных для точек
 var miniMarkers = new mapboxgl.GeoJSONSource({
-  data: {} // данных пока нет, они загрузяться позже
+  data: {} // данных пока нет, они загрузятся позже
 });
 
 // эта функция будет выполнена после загрузки карты
@@ -75,11 +76,21 @@ map.on('load', function() {
 });
 
 // загрузка маркеров из файла data.geojson
+
 $.getJSON('big_data.geojson', function(data) {
   markers.setData(data); // загрузка данных в маркеры
   miniMarkers.setData(data);
   document.getElementById('map').classList.remove('loading');
 });
+
+fetch('big_data.geojson')
+  .then(response => response.json().then(data => {
+    markers.setData(data); // загрузка данных в маркеры
+    miniMarkers.setData(data);
+    document.getElementById('map').classList.remove('loading');
+  }))
+  .catch(error => console.error('Error loading min_data.geojson', error));
+
 
 // функция отрисовки содержимого попапа
 var renderFeature = function(feature) {
