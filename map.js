@@ -143,19 +143,19 @@ map.on('load', function() {
 
 // загрузка маркеров из файла data.geojson
 
-$.getJSON('big_data.geojson', function(data) {
+$.getJSON('med_data.geojson', function(data) {
   markers.setData(data); // загрузка данных в маркеры
   miniMarkers.setData(data);
   document.getElementById('map').classList.remove('loading');
 });
 
-fetch('big_data.geojson')
+fetch('med_data.geojson')
   .then(response => response.json().then(data => {
     markers.setData(data); // загрузка данных в маркеры
     miniMarkers.setData(data);
     document.getElementById('map').classList.remove('loading');
   }))
-  .catch(error => console.error('Error loading big_data.geojson', error));
+  .catch(error => console.error('Error loading med_data.geojson', error));
 
 
 // функция отрисовки содержимого попапа
