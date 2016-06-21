@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria.eot');
+  src: url('../fonts/Geometria.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Geometria.woff') format('woff'),
+       url('../fonts/Geometria.ttf')  format('truetype'),
+       url('../fonts/Geometria.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-Light.eot');
+  src: url('../fonts/Geometria-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Geometria-Light.woff') format('woff'),
+       url('../fonts/Geometria-Light.ttf')  format('truetype'),
+       url('../fonts/Geometria-Light.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-Medium.eot');
+  src: url('../fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Geometria-Medium.woff') format('woff'),
+       url('../fonts/Geometria-Medium.ttf')  format('truetype'),
+       url('../fonts/Geometria-Medium.svg#svgFontName') format('svg');
+}
