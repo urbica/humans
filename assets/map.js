@@ -1,6 +1,10 @@
 document.getElementById('map').classList.add('loading');
 mapboxgl.accessToken = 'pk.eyJ1IjoiaHVtYW5zIiwiYSI6ImNpcDZzdm80cjAwMTB1d203ZmRqZTdwbWEifQ.up9_Pt9XqDhp6m0KLHcbIw';
 
+var index;
+var clusters;
+var features = [];
+
 // настройка карты
 var map = window.map = new mapboxgl.Map({
   container: 'map', // идентификатор html куда будет рендериться карта
@@ -13,8 +17,8 @@ var map = window.map = new mapboxgl.Map({
 // настройка данных для пинов
 var markers = new mapboxgl.GeoJSONSource({
   data: { type: 'FeatureCollection', features: [] }, // данных пока нет, они загрузятся позже
-  cluster: true, // объединять точки в кластеры
-  clusterRadius: 40 // размер кластера в пикселях
+  // cluster: true, // объединять точки в кластеры
+  // clusterRadius: 40 // размер кластера в пикселях
 });
 
 // настройка данных для точек
@@ -252,13 +256,21 @@ map.on('load', function() {
 });
 
 // загрузка маркеров из файла data.geojson
-
-$.getJSON('med_data.geojson', function(data) {
-   // загрузка данных в маркеры
+$.getJSON('assets/med_data.geojson', function(data) {
+  features = window.features = data.features
+  // загрузка данных в маркеры
   markers.setData(data);
   miniMarkers.setData(data);
   areaMarkers.setData(data);
   whiteMarkers.setData(data);
+
+  index = supercluster({
+    log: true,
+    radius: 40,
+    extent: 256,
+    maxZoom: 18
+  }).load(features);
+
   document.getElementById('map').classList.remove('loading');
 });
 
@@ -284,17 +296,26 @@ var render = function() {
   if (popups.length > 0) popups.forEach(function(popup) { popup.remove() })
 
   // рисуем новые попапы только ближе 12 зума
-  if (map.getZoom() >= 13) {
-    // находим все отрисованные объекты на карте в текущем экстенте
-    var bounds = map.getBounds();
-    var nw = map.project(bounds.getNorthWest());
-    var se = map.project(bounds.getSouthEast());
-    var bbox = [[nw.x, nw.y], [se.x, se.y]];
-    var features = map.queryRenderedFeatures(bbox, { layers: ['markers'] });
+  if (map.getZoom() >= 3) {
+    // находим все кластеры на карте в текущем экстенте
+    var bounds = map.getBounds().toArray();
+    var bbox = bounds[0].concat(bounds[1]);
+
+    clusters = index.getClusters(bbox, Math.floor(map.getZoom())).map(function(cluster) {
+      if (cluster.properties.cluster && cluster.properties.neighbor_ids.length > 0) {
+        return Object.assign({}, cluster, {
+          properties: window.features[cluster.properties.neighbor_ids[0]].properties
+        });
+      }
+      console.warn('cluster neighbors not found :(');
+      return cluster;
+    });
+
+    markers.setData({ type: 'FeatureCollection', features: clusters });
 
     // создаём новые маркеры — из всех найденных объектов выбираем все объекты не-кластеры
-    popups = features.filter(function(feature) { return !feature.properties.cluster })
-    .map(function(feature) {
+    popups = clusters.filter(function(feature) { return !feature.properties.cluster })
+      .map(function(feature) {
       // создаём для каждого объекты новый попап
       return new mapboxgl.Popup({ closeButton: false, closeOnClick: false, anchor: 'bottom' })
         // и добавляем его на карту
