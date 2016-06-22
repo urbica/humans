@@ -80,13 +80,13 @@ map.on('load', function() {
 
 // загрузка маркеров из файла data.geojson
 $.getJSON('assets/big_data.geojson', function(data) {
-  features = data.features
+  features = window.features = data.features
   markers.setData(data); // загрузка данных в маркеры
   miniMarkers.setData(data);
 
   index = supercluster({
     log: true,
-    radius: 60,
+    radius: 40,
     extent: 256,
     maxZoom: 18
   }).load(features);
@@ -117,21 +117,25 @@ var render = function() {
 
   // рисуем новые попапы только ближе 12 зума
   if (map.getZoom() >= 3) {
-    // находим все отрисованные объекты на карте в текущем экстенте
-    var bounds = map.getBounds();
-    var nw = map.project(bounds.getNorthWest());
-    var se = map.project(bounds.getSouthEast());
-    var bbox = [[nw.x, nw.y], [se.x, se.y]];
-    var features = map.queryRenderedFeatures(bbox, { layers: ['markers'] });
+    // находим все кластеры на карте в текущем экстенте
+    var bounds = map.getBounds().toArray();
+    var bbox = bounds[0].concat(bounds[1]);
 
-    var bounds2 = bounds.toArray();
-    var bbox2 = bounds2[0].concat(bounds2[1]);
-    clusters = index.getClusters(bbox2, Math.floor(map.getZoom()));
-    console.log(clusters);
+    clusters = index.getClusters(bbox, Math.floor(map.getZoom())).map(function(cluster) {
+      if (cluster.properties.cluster && cluster.properties.neighbor_ids.length > 0) {
+        return Object.assign({}, cluster, {
+          properties: window.features[cluster.properties.neighbor_ids[0]].properties
+        });
+      }
+      console.warn('cluster neighbors not found :(');
+      return cluster;
+    });
+
+    markers.setData({ type: 'FeatureCollection', features: clusters });
 
     // создаём новые маркеры — из всех найденных объектов выбираем все объекты не-кластеры
-    popups = features.filter(function(feature) { return !feature.properties.cluster })
-    .map(function(feature) {
+    popups = clusters.filter(function(feature) { return !feature.properties.cluster })
+      .map(function(feature) {
       // создаём для каждого объекты новый попап
       return new mapboxgl.Popup({ closeButton: false, closeOnClick: false, anchor: 'bottom' })
         // и добавляем его на карту

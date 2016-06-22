@@ -353,8 +353,6 @@ SuperCluster.prototype = {
                 }
             }
 
-            console.log(nids, neighborIds)
-
             clusters.push(foundNeighbors ? createCluster(wx / numPoints, wy / numPoints, numPoints, -1, neighborIds) : p);
         }
 
