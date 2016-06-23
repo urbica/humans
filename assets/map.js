@@ -233,8 +233,8 @@ map.on('load', function() {
     type: 'circle', // тип отображения слоя
     source: 'markers', // идентификатор данных
     paint: {
-      'circle-radius': 5,
-      'circle-color': '#000', // цвет кружка
+      'circle-radius': 3,
+      'circle-color': '#fff', // цвет кружка
       'circle-opacity': 1
     }
   });
@@ -273,13 +273,12 @@ var renderFeature = function(feature) {
   `;
 };
 
-var popups = [];
-
-
 // функция ранжирования
 var range = function(neighbors) {
   return neighbors[0] // ничего не делаем, возвращаем первый объект
 }
+
+var popups = [];
 
 // функция отрисовки попапов
 var render = function() {
@@ -308,11 +307,9 @@ var render = function() {
     markers.setData({ type: 'FeatureCollection', features: clusters });
 
     // создаём новые маркеры — из всех найденных объектов выбираем все объекты не-кластеры
-    popups = clusters.filter(function(feature) { return !feature.properties.cluster })
-      .map(function(feature) {
-      // создаём для каждого объекты новый попап
+    popups = clusters.map(function(feature) {
+      // создаём для каждого объекты новый попап и добавляем его на карту
       return new mapboxgl.Popup({ closeButton: false, closeOnClick: false, anchor: 'bottom' })
-        // и добавляем его на карту
         .setLngLat(feature.geometry.coordinates)
         .setHTML(renderFeature(feature))
         .addTo(map)
@@ -322,3 +319,13 @@ var render = function() {
 
 // перерисовывать попапы после каждого движения карты
 map.on('moveend', render);
+
+
+// вывод информации о маркере на клике
+map.on('click', function(e) {
+  var clusters = map.queryRenderedFeatures(e.point, { layers: ['markers'] });
+  if (!clusters.length) {
+    return;
+  }
+  console.log(clusters)
+});
