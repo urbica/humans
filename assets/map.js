@@ -286,7 +286,7 @@ var render = function() {
   if (popups.length > 0) popups.forEach(function(popup) { popup.remove() })
 
   // рисуем новые попапы только ближе 12 зума
-  if (map.getZoom() >= 13) {
+  if (map.getZoom() >= 12) {
     // находим все кластеры на карте в текущем экстенте
     var bounds = map.getBounds().toArray();
     var bbox = bounds[0].concat(bounds[1]);
