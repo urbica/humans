@@ -10,7 +10,7 @@ var map = window.map = new mapboxgl.Map({
   container: 'map', // идентификатор html куда будет рендериться карта
   style: 'mapbox://styles/humans/cip9hxybc003edmm2i1eqlap8', // стиль карты по умлочанию
   center: [-74.0059, 40.7127], // начальные координаты карты
-  zoom: 7 // начальный уровень приближения
+  zoom: 10 // начальный уровень приближения
 });
 
 
