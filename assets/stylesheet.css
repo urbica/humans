@@ -24,9 +24,9 @@ body {
   height:75px;
   width:70px;
   font-family: 'Geometria', sans-serif;
-  -webkit-box-shadow:0px 11px 15px -3px rgba(0,0,0,0.4), 0px 5px 5px -5px rgba(0,0,0,0.4);
-  -moz-box-shadow: 0px 11px 15px -3px rgba(0,0,0,0.4), 0px 5px 5px -5px rgba(0,0,0,0.4);
-  box-shadow: 0px 11px 15px -3px rgba(0,0,0,0.4), 0px 5px 5px -5px rgba(0,0,0,0.4);
+  -webkit-box-shadow:0px 5px 15px -3px rgba(0,0,0,0.4), 0px 4px 4px -4px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.4), 0px 4px 4px -4px rgba(0,0,0,0.4);
+  box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.4), 0px 4px 4px -4px rgba(0,0,0,0.4);
 }
 
 .mapboxgl-popup-content > div {
