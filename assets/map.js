@@ -13,12 +13,9 @@ var map = window.map = new mapboxgl.Map({
   zoom: 12 // начальный уровень приближения
 });
 
-
 // настройка данных для пинов
 var markers = new mapboxgl.GeoJSONSource({
   data: { type: 'FeatureCollection', features: [] }, // данных пока нет, они загрузятся позже
-  // cluster: true, // объединять точки в кластеры
-  // clusterRadius: 40 // размер кластера в пикселях
 });
 
 // настройка данных для точек
@@ -26,40 +23,16 @@ var miniMarkers = new mapboxgl.GeoJSONSource({
   data: { type: 'FeatureCollection', features: [] }, // данных пока нет, они загрузятся позже
 });
 
-// настройка данных для ареалов вокруг точек
-var areaMarkers = new mapboxgl.GeoJSONSource({
-  data: { type: 'FeatureCollection', features: [] }, // данных пока нет, они загрузятся позже
-});
-
-// настройка данных для ареалов вокруг точек
-var whiteMarkers = new mapboxgl.GeoJSONSource({
-  data: { type: 'FeatureCollection', features: [] }, // данных пока нет, они загрузятся позже
-});
-
 // эта функция будет выполнена после загрузки карты
 map.on('load', function() {
   map.addSource('markers', markers); // добавляем на карту данные маркеров
   map.addSource('miniMarkers', miniMarkers); // добавляем на карту данные маркеров
-  map.addSource('areaMarkers', areaMarkers); // добавляем на карту данные ареалов маркера
-  map.addSource('whiteMarkers', whiteMarkers); // добавляем на карту данные ареалов маркера
-
-  // добавляем на карту слой пинов
-  map.addLayer({
-    id: 'markers', // идентификатор слоя
-    type: 'circle', // тип отображения слоя
-    source: 'markers', // идентификатор данных
-    paint: {
-      'circle-radius': 3,
-      'circle-color': '#fff', // цвет кружка
-      'circle-opacity': 1
-    }
-  });
 
   // добавляем на карту слой ареалов маркера
   map.addLayer({
     id: 'areaMarkers', // идентификатор слоя
     type: 'circle', // тип отображения слоя
-    source: 'areaMarkers', // идентификатор данных
+    source: 'miniMarkers', // идентификатор данных
     paint: {
       'circle-radius':  {
         'stops': [
@@ -141,7 +114,7 @@ map.on('load', function() {
   map.addLayer({
     id: 'whiteMarkers', // идентификатор слоя
     type: 'circle', // тип отображения слоя
-    source: 'whiteMarkers', // идентификатор данных
+    source: 'miniMarkers', // идентификатор данных
     paint: {
       'circle-radius':  {
         'stops': [
@@ -253,17 +226,29 @@ map.on('load', function() {
       }
     }
   });
+
+  // добавляем на карту слой пинов
+  map.addLayer({
+    id: 'markers', // идентификатор слоя
+    type: 'circle', // тип отображения слоя
+    source: 'markers', // идентификатор данных
+    paint: {
+      'circle-radius': 5,
+      'circle-color': '#000', // цвет кружка
+      'circle-opacity': 1
+    }
+  });
 });
 
 // загрузка маркеров из файла data.geojson
 $.getJSON('assets/med_data.geojson', function(data) {
-  features = window.features = data.features
+  features = data.features
+
   // загрузка данных в маркеры
   markers.setData(data);
   miniMarkers.setData(data);
-  areaMarkers.setData(data);
-  whiteMarkers.setData(data);
 
+  // создание кластеров
   index = supercluster({
     log: true,
     radius: 40,
@@ -290,24 +275,33 @@ var renderFeature = function(feature) {
 
 var popups = [];
 
+
+// функция ранжирования
+var range = function(neighbors) {
+  return neighbors[0] // ничего не делаем, возвращаем первый объект
+}
+
 // функция отрисовки попапов
 var render = function() {
   // удаляем все предыдущие маркеры
   if (popups.length > 0) popups.forEach(function(popup) { popup.remove() })
 
   // рисуем новые попапы только ближе 12 зума
-  if (map.getZoom() >= 3) {
+  if (map.getZoom() >= 13) {
     // находим все кластеры на карте в текущем экстенте
     var bounds = map.getBounds().toArray();
     var bbox = bounds[0].concat(bounds[1]);
 
     clusters = index.getClusters(bbox, Math.floor(map.getZoom())).map(function(cluster) {
       if (cluster.properties.cluster && cluster.properties.neighbor_ids.length > 0) {
-        return Object.assign({}, cluster, {
-          properties: window.features[cluster.properties.neighbor_ids[0]].properties
-        });
+        var neighbors = cluster.properties.neighbor_ids.reduce(function(acc, neighbor_id) {
+          acc.push(features[neighbor_id]);
+          return acc;
+        }, []);
+        var neighbor = range(neighbors);
+        return Object.assign({}, cluster, { properties: neighbor.properties });
       }
-      console.warn('cluster neighbors not found :(');
+      if (cluster.properties.cluster) console.warn('neighbors not found :(', cluster);
       return cluster;
     });
 
