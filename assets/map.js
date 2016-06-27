@@ -10,7 +10,7 @@ var map = window.map = new mapboxgl.Map({
   container: 'map', // идентификатор html куда будет рендериться карта
   style: 'mapbox://styles/humans/cip9hxybc003edmm2i1eqlap8', // стиль карты по умлочанию
   center: [-74.0059, 40.7127], // начальные координаты карты
-  zoom: 11 // начальный уровень приближения
+  zoom: 7 // начальный уровень приближения
 });
 
 
@@ -118,8 +118,8 @@ map.on('load', function() {
           [4, 0.9],
           [5, 0.9],
           [6, 0.9],
-          [7, 0.9],
-          [8, 0.9],
+          [7, 0.8],
+          [8, 0.8],
           [9, 0.7],
           [10, 0.7],
           [11, 0.6],
@@ -198,10 +198,10 @@ map.on('load', function() {
           [2, 0.4],
           [3, 0.4],
           [4, 0.4],
-          [5, 0.5],
-          [6, 0.5],
-          [7, 0.5],
-          [8, 0.5],
+          [5, 0.4],
+          [6, 0.4],
+          [7, 0.4],
+          [8, 0.4],
           [9, 0.4],
           [10, 0.4],
           [11, 0.4],
@@ -239,8 +239,8 @@ map.on('load', function() {
           [9, 0],
           [10, 0],
           [11, 0],
-          [12, 3],
-          [13, 3],
+          [12, 2],
+          [13, 2.5],
           [14, 3],
           [15, 3],
           [16, 3],
@@ -304,7 +304,7 @@ map.on('load', function() {
 });
 
 // загрузка маркеров из файла data.geojson
-$.getJSON('assets/med_data.geojson', function(data) {
+$.getJSON('assets/big_data.geojson', function(data) {
   features = window.features = data.features
   // загрузка данных в маркеры
   markers.setData(data);
