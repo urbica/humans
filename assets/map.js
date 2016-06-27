@@ -242,8 +242,8 @@ map.on('load', function() {
           [12, 2],
           [13, 2.5],
           [14, 3],
-          [15, 3],
-          [16, 3],
+          [15, 3.5],
+          [16, 4],
           [17, 4],
           [18, 4],
           [19, 4],
@@ -284,10 +284,10 @@ map.on('load', function() {
         [6, 0],
         [7, 0],
         [8, 0],
-        [9, 0.5],
-        [10, 0.8],
-        [11, 1],
-        [12, 1],
+        [9, 0],
+        [10, 0],
+        [11, 0.8],
+        [12, 0.8],
         [13, 1],
         [14, 1],
         [15, 1],
@@ -304,7 +304,7 @@ map.on('load', function() {
 });
 
 // загрузка маркеров из файла data.geojson
-$.getJSON('assets/big_data.geojson', function(data) {
+$.getJSON('assets/med_data.geojson', function(data) {
   features = window.features = data.features
   // загрузка данных в маркеры
   markers.setData(data);
