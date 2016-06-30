@@ -1,3 +1,4 @@
+window.moneyRaitingSwitcherState = 'money';
 document.getElementById('map').classList.add('loading');
 mapboxgl.accessToken = 'pk.eyJ1IjoiaHVtYW5zIiwiYSI6ImNpcDZzdm80cjAwMTB1d203ZmRqZTdwbWEifQ.up9_Pt9XqDhp6m0KLHcbIw';
 
@@ -10,7 +11,8 @@ var map = window.map = new mapboxgl.Map({
   container: 'map', // идентификатор html куда будет рендериться карта
   style: 'mapbox://styles/humans/cip9hxybc003edmm2i1eqlap8', // стиль карты по умлочанию
   center: [-74.0059, 40.7127], // начальные координаты карты
-  zoom: 8 // начальный уровень приближения
+  zoom: 8, // начальный уровень приближения,
+  attributionControl: false
 });
 
 
@@ -347,11 +349,17 @@ $.getJSON('assets/med_data.geojson', function(data) {
 // функция отрисовки содержимого попапа
 var renderFeature = function(feature) {
   // сокращаем текст до восьми символов
-  var title = feature.properties.name.substring(0, 8);
+  // var title = feature.properties.name.substring(0, 8);
+
+  var title
+  switch(window.moneyRaitingSwitcherState) {
+    case 'money': title = '$30 hourly'; break;
+    case 'rating': title = '★ 4,7 | 12'; break;
+  }
 
   // отдаём html строчку
   return `
-    <div class='container'>
+    <div class='popupContainer'>
       <img class='photo' src=${feature.properties.photo} />
       <div class='title'>${title}</div>
     </div>
@@ -359,11 +367,19 @@ var renderFeature = function(feature) {
 };
 
 var popups = [];
+var clickListener = function() {
+  document.getElementById('card').style.display = 'block';
+};
 
 // функция отрисовки попапов
 var render = function() {
   // удаляем все предыдущие маркеры
-  if (popups.length > 0) popups.forEach(function(popup) { popup.remove() })
+  if (popups.length > 0) {
+    Array.from(document.getElementsByClassName('popupContainer')).map(function(el) {
+      el.removeEventListener('click', clickListener);
+    });
+    popups.forEach(function(popup) { popup.remove() })
+  }
 
   // рисуем новые попапы только ближе 12 зума
   if (map.getZoom() >= 12) {
@@ -393,8 +409,34 @@ var render = function() {
         .setHTML(renderFeature(feature))
         .addTo(map)
     });
+
+    Array.from(document.getElementsByClassName('popupContainer')).map(function(el) {
+      el.addEventListener('click', clickListener);
+    });
   }
 }
 
 // перерисовывать попапы после каждого движения карты
 map.on('moveend', render);
+map.on('click', function() {
+  if (document.getElementById('card').style.display == 'block') {
+    document.getElementById('card').style.display = 'none';
+  }
+});
+
+// переключалка money/rating
+var moneySwitcher = document.getElementsByClassName('moneySwitcher')[0];
+moneySwitcher.addEventListener('click', function() {
+  window.moneyRaitingSwitcherState = 'money';
+  moneySwitcher.classList.add('active');
+  ratingSwitcher.classList.remove('active');
+  render();
+});
+
+var ratingSwitcher = document.getElementsByClassName('ratingSwitcher')[0];
+ratingSwitcher.addEventListener('click', function() {
+  window.moneyRaitingSwitcherState = 'rating';
+  ratingSwitcher.classList.add('active');
+  moneySwitcher.classList.remove('active');
+  render();
+});
