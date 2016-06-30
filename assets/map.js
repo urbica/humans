@@ -10,7 +10,7 @@ var map = window.map = new mapboxgl.Map({
   container: 'map', // идентификатор html куда будет рендериться карта
   style: 'mapbox://styles/humans/cip9hxybc003edmm2i1eqlap8', // стиль карты по умлочанию
   center: [-74.0059, 40.7127], // начальные координаты карты
-  zoom: 7 // начальный уровень приближения
+  zoom: 8 // начальный уровень приближения
 });
 
 
@@ -32,6 +32,11 @@ var areaMarkers = new mapboxgl.GeoJSONSource({
 });
 
 // настройка данных для ареалов вокруг точек
+var blueMarkers = new mapboxgl.GeoJSONSource({
+  data: { type: 'FeatureCollection', features: [] }, // данных пока нет, они загрузятся позже
+});
+
+// настройка данных для ареалов вокруг точек
 var whiteMarkers = new mapboxgl.GeoJSONSource({
   data: { type: 'FeatureCollection', features: [] }, // данных пока нет, они загрузятся позже
 });
@@ -41,6 +46,7 @@ map.on('load', function() {
   map.addSource('markers', markers); // добавляем на карту данные маркеров
   map.addSource('miniMarkers', miniMarkers); // добавляем на карту данные маркеров
   map.addSource('areaMarkers', areaMarkers); // добавляем на карту данные ареалов маркера
+  map.addSource('blueMarkers', blueMarkers); // добавляем на карту данные ареалов маркера
   map.addSource('whiteMarkers', whiteMarkers); // добавляем на карту данные ареалов маркера
 
   // добавляем на карту слой пинов
@@ -61,7 +67,7 @@ map.on('load', function() {
     type: 'circle', // тип отображения слоя
     source: 'areaMarkers', // идентификатор данных
     paint: {
-      'circle-color': '#00DBFF', // цвет кружка ccff00 ff7ab6 d1a7ff 02ff9e 00FF96
+      'circle-color': '#00DBFF', // цвет кружка
       'circle-radius':  {
         'stops': [
           [1, 17],
@@ -74,16 +80,7 @@ map.on('load', function() {
           [8, 12],
           [9, 10],
           [10, 9],
-          [11, 8],
-          [12, 6],
-          [13, 5],
-          [14, 0],
-          [15, 0],
-          [16, 0],
-          [17, 0],
-          [18, 0],
-          [19, 0],
-          [20, 0]
+          [11, 0]
         ]
       }, // радиус кружка
       'circle-blur': {
@@ -98,16 +95,7 @@ map.on('load', function() {
           [8, 1.4],
           [9, 1],
           [10, 1],
-          [11, 1],
-          [12, 1.2],
-          [13, 1.2],
-          [14, 0],
-          [15, 0],
-          [16, 0],
-          [17, 0],
-          [18, 0],
-          [19, 0],
-          [20, 0]
+          [11, 1]
         ]
       }, // размытие кружка
       'circle-opacity': {
@@ -120,22 +108,55 @@ map.on('load', function() {
           [6, 0.9],
           [7, 0.8],
           [8, 0.8],
-          [9, 0.7],
-          [10, 0.7],
-          [11, 0.6],
-          [12, 0.3],
-          [13, 0.2],
-          [14, 0],
-          [15, 0],
-          [16, 0],
-          [17, 0],
-          [18, 0],
-          [19, 0],
-          [20, 0]
+          [9, 0.6],
+          [10, 0.4],
+          [11, 0.4]
         ]
       } // прозрачность кружка
     }
   });
+
+  // добавляем на карту слой ареалов маркера
+  map.addLayer({
+    id: 'blueMarkers', // идентификатор слоя
+    type: 'circle', // тип отображения слоя
+    source: 'blueMarkers', // идентификатор данных
+    paint: {
+      'circle-color': '#33BDFF', // цвет кружка
+      'circle-radius':  {
+        'stops': [
+          [9, 0],
+          [10, 9],
+          [11, 9],
+          [12, 8],
+          [13, 5],
+          [14, 0]
+        ]
+      }, // радиус кружка
+      'circle-blur': {
+        'stops': [
+          [9, 1],
+          [10, 1],
+          [11, 1],
+          [12, 1.2],
+          [13, 1.2],
+          [14, 0]
+        ]
+      }, // размытие кружка
+      'circle-opacity': {
+        'stops': [
+          [9, 0],
+          [10, 0.5],
+          [11, 0.6],
+          [12, 0.5],
+          [13, 0.2],
+          [14, 0]
+        ]
+      } // прозрачность кружка
+    }
+  });
+
+
 
   // добавляем на карту слой ареалов маркера
   map.addLayer({
@@ -180,7 +201,7 @@ map.on('load', function() {
           [8, 1.8],
           [9, 1.2],
           [10, 1],
-          [11, 0.8],
+          [11, 1],
           [12, 0],
           [13, 0],
           [14, 0],
@@ -204,7 +225,7 @@ map.on('load', function() {
           [8, 0.4],
           [9, 0.4],
           [10, 0.4],
-          [11, 0.4],
+          [11, 0.2],
           [12, 0],
           [13, 0],
           [14, 0],
@@ -239,7 +260,7 @@ map.on('load', function() {
           [9, 0],
           [10, 0],
           [11, 0],
-          [12, 2],
+          [12, 2.2],
           [13, 2.5],
           [14, 3],
           [15, 3.5],
@@ -310,6 +331,7 @@ $.getJSON('assets/med_data.geojson', function(data) {
   markers.setData(data);
   miniMarkers.setData(data);
   areaMarkers.setData(data);
+  blueMarkers.setData(data);
   whiteMarkers.setData(data);
 
   index = supercluster({
