@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: 'Geometria';
+  font-family: 'Geometria-Light';
   src: url('../fonts/Geometria-Light.eot');
   src: url('../fonts/Geometria-Light.eot?#iefix') format('embedded-opentype'),
        url('../fonts/Geometria-Light.woff') format('woff'),
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-  font-family: 'Geometria';
+  font-family: 'Geometria-Medium';
   src: url('../fonts/Geometria-Medium.eot');
   src: url('../fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
        url('../fonts/Geometria-Medium.woff') format('woff'),

@@ -335,7 +335,7 @@ $.getJSON('assets/med_data.geojson', function(data) {
   whiteMarkers.setData(data);
 
   index = supercluster({
-    log: true,
+    log: false,
     radius: 40,
     extent: 256,
     maxZoom: 18
