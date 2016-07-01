@@ -8,13 +8,13 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  height: 120px;
+  height: 86px;
   font-family: 'Geometria', sans-serif;
 }
 
 .header .firstRow {
   display: flex;
-  height: 48px;
+  height: 32px;
   padding: 0 240px;
   align-items: center;
   justify-content: space-between;
@@ -24,41 +24,41 @@ body {
 .logo {
   display: inline-block;
   color: #fff;
-  font-size: 16px;
-  line-height: 48px;
+  font-size: 14px;
+  line-height: 32px;
   font-family: 'Geometria', sans-serif;
 }
 
 .searchTabs {
   color: #fff;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .searchTabs .tab {
-  height: 40px;
+  height: 24px;
   padding: 0 20px;
   margin-top: 8px;
-  line-height: 40px;
+  line-height: 24px;
   display: inline-block;
 }
 
 .searchTabs .tab.active {
   background-color: #525357;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .buttons {
   color: #fff;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: lighter;
 }
 
 .buttons .button {
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .buttons .button:first-child {
@@ -66,18 +66,18 @@ body {
 }
 
 .buttons .button.buttonAbout {
-  padding: 8px 20px;
+  padding: 4px 20px;
   background-color: #7A7E83;
 }
 
 .buttons .button.buttonEnter {
-  padding: 6px 20px;
+  padding: 2px 20px;
   border: solid 2px #7A7E83;
 }
 
 .header .secondRow {
   display: flex;
-  height: 72px;
+  height: 54px;
   padding: 0 240px;
   align-items: center;
   justify-content: space-between;
@@ -92,7 +92,7 @@ body {
   position: absolute;
   width: 24px;
   height: 24px;
-  top: 12px;
+  top: 6px;
   left: 12px;
   background-image: url('search.svg');
 }
@@ -100,10 +100,10 @@ body {
 .search .searchInput {
   display: inline-block;
   width: 595px;
-  height: 48px;
+  height: 36px;
   color: #404040;
   border: none;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 5px;
   padding: 0 290px 0 40px;
   line-height: 48px;
@@ -114,13 +114,13 @@ body {
   position: absolute;
   top: 0;
   right: 115px;
-  height: 48px;
+  height: 36px;
   display: inline-block;
   color: rgba(64,64,64,0.85);
-  line-height: 48px;
+  line-height: 40px;
   padding: 0 10px;
   opacity: 0.5;
-  font-size: 10px;
+  font-size: 8px;
   text-transform: uppercase;
 }
 
@@ -131,32 +131,32 @@ body {
   display: inline-block;
   color: #404040;
   width: 114px;
-  height: 48px;
+  height: 36px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
-  line-height: 48px;
+  line-height: 36px;
   border-radius: 5px;
   background-color: #e5e5e5;
 }
 
 .header .secondRow .or {
   width: 48px;
-  height: 48px;
+  height: 36px;
   color: rgba(255,255,255,0.85);
-  line-height: 48px;
+  line-height: 36px;
   text-align: center;
   font-family: 'Geometria-Medium';
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .header .secondRow .requestButton {
   display: inline-block;
   width: 270px;
-  height: 48px;
+  height: 36px;
   color: rgba(64,64,64,0.85);
-  font-size: 16px;
-  line-height: 48px;
+  font-size: 14px;
+  line-height: 36px;
   text-align: center;
   border-radius: 3px;
   background: #E5E5E5;
@@ -176,7 +176,7 @@ body {
 
 #map {
   position: absolute;
-  top: 120px;
+  top: 86px;
   right: 0;
   bottom: 0;
   left: 0;
