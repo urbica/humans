@@ -349,13 +349,13 @@ $.getJSON('assets/med_data.geojson', function(data) {
 
 // функция отрисовки содержимого попапа
 var renderFeature = function(feature) {
-  // сокращаем текст до восьми символов
-  // var title = feature.properties.name.substring(0, 8);
+  var money = '$ ' + feature.properties.price + ' hourly';
+  var rating = '★ ' + feature.properties.rating + ' | 12';
 
   var title
   switch(window.moneyRaitingSwitcherState) {
-    case 'money': title = '$30 hourly'; break;
-    case 'rating': title = '★ 4,7 | 12'; break;
+    case 'money': title = money; break;
+    case 'rating': title = rating; break;
   }
 
   // отдаём html строчку
@@ -452,4 +452,27 @@ ratingSwitcher.addEventListener('click', function() {
   ratingSwitcher.classList.add('active');
   moneySwitcher.classList.remove('active');
   render();
+});
+
+var list = document.getElementById('list');
+
+// переключалка list/map
+var listSwitcher = document.getElementById('listSwitcher');
+listSwitcher.addEventListener('click', function() {
+  listSwitcher.classList.add('active');
+  mapSwitcher.classList.remove('active');
+  list.style.display = 'flex';
+});
+
+var mapSwitcher = document.getElementById('mapSwitcher');
+mapSwitcher.addEventListener('click', function() {
+  mapSwitcher.classList.add('active');
+  listSwitcher.classList.remove('active');
+  list.style.display = 'none';
+});
+
+list.addEventListener('click', function() {
+  mapSwitcher.classList.add('active');
+  listSwitcher.classList.remove('active');
+  list.style.display = 'none';
 });

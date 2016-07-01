@@ -6,7 +6,9 @@
       "id": "node/295802851",
       "properties": {
         "name": "PromptMD Urgent Care Center",
-        "photo": "photos/I-Lin.png"
+        "photo": "photos/George.png",
+        "price": 26,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -21,7 +23,9 @@
       "id": "node/296766358",
       "properties": {
         "name": "Hoboken University Medical Center",
-        "photo": "photos/George.png"
+        "photo": "photos/Omar.jpg",
+        "price": 25,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -36,7 +40,9 @@
       "id": "node/297456770",
       "properties": {
         "name": "PromptMD Family Practice",
-        "photo": "photos/Angie.jpg"
+        "photo": "photos/Angie.jpg",
+        "price": 142,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -51,7 +57,9 @@
       "id": "node/357549890",
       "properties": {
         "name": "Boulevard Hospital",
-        "photo": "photos/I-Lin.png"
+        "photo": "photos/Ben.jpg",
+        "price": 75,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -66,7 +74,9 @@
       "id": "node/357554659",
       "properties": {
         "name": "Coler - Goldwater Memorial Hospital Coler Campus",
-        "photo": "photos/Leo.jpg"
+        "photo": "photos/Omar.jpg",
+        "price": 88,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -81,7 +91,9 @@
       "id": "node/357558861",
       "properties": {
         "name": "Ewing Memorial Hospital",
-        "photo": "photos/Angie.jpg"
+        "photo": "photos/Evan.jpg",
+        "price": 74,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -96,7 +108,9 @@
       "id": "node/357563570",
       "properties": {
         "name": "Harlem Hospital Center",
-        "photo": "photos/Emil.jpg"
+        "photo": "photos/I-Lin.png",
+        "price": 100,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -111,7 +125,9 @@
       "id": "node/357566747",
       "properties": {
         "name": "Jewish Hospital Medical Center of Brooklyn",
-        "photo": "photos/Victoria.jpg"
+        "photo": "photos/Robert.png",
+        "price": 4,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -126,7 +142,9 @@
       "id": "node/357568917",
       "properties": {
         "name": "Lenox Hill Hospital",
-        "photo": "photos/Evan.jpg"
+        "photo": "photos/George.png",
+        "price": 25,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -141,7 +159,9 @@
       "id": "node/357569063",
       "properties": {
         "name": "Lincoln Hospital",
-        "photo": "photos/Leo.jpg"
+        "photo": "photos/Robert.png",
+        "price": 146,
+        "rating": 2
       },
       "geometry": {
         "type": "Point",
@@ -156,7 +176,9 @@
       "id": "node/357571389",
       "properties": {
         "name": "Metropolitan Hospital Center",
-        "photo": "photos/Ben.jpg"
+        "photo": "photos/Victoria.jpg",
+        "price": 109,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -171,7 +193,9 @@
       "id": "node/357572587",
       "properties": {
         "name": "Mount Sinai Medical Center",
-        "photo": "photos/Evan.jpg"
+        "photo": "photos/Ben.jpg",
+        "price": 6,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -186,7 +210,9 @@
       "id": "node/357573246",
       "properties": {
         "name": "Weill Cornell Medical College",
-        "photo": "photos/Omar.jpg"
+        "photo": "photos/Brian.jpg",
+        "price": 90,
+        "rating": 0
       },
       "geometry": {
         "type": "Point",
@@ -201,7 +227,9 @@
       "id": "node/357577677",
       "properties": {
         "name": "Polyclinic Hospital (historical)",
-        "photo": "photos/Angie.jpg"
+        "photo": "photos/Brian.jpg",
+        "price": 123,
+        "rating": 0
       },
       "geometry": {
         "type": "Point",
@@ -216,7 +244,9 @@
       "id": "node/357585752",
       "properties": {
         "name": "Saint Luke's Hospital Center",
-        "photo": "photos/Victoria.jpg"
+        "photo": "photos/Omar.jpg",
+        "price": 50,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -231,7 +261,9 @@
       "id": "node/357592111",
       "properties": {
         "name": "Sydenham Hospital",
-        "photo": "photos/Angie.jpg"
+        "photo": "photos/George.png",
+        "price": 124,
+        "rating": 2
       },
       "geometry": {
         "type": "Point",
@@ -246,7 +278,9 @@
       "id": "node/357594124",
       "properties": {
         "name": "United States Naval Clinic",
-        "photo": "photos/Leo.jpg"
+        "photo": "photos/Victoria.jpg",
+        "price": 14,
+        "rating": 0
       },
       "geometry": {
         "type": "Point",
@@ -261,7 +295,9 @@
       "id": "node/357607586",
       "properties": {
         "name": "Beth Israel Medical Center - Phillips Ambulatory Care Center",
-        "photo": "photos/Emil.jpg"
+        "photo": "photos/Evan.jpg",
+        "price": 84,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -276,7 +312,9 @@
       "id": "node/357607599",
       "properties": {
         "name": "Columbia Presbyterian Medical Center",
-        "photo": "photos/Angie.jpg"
+        "photo": "photos/Ben.jpg",
+        "price": 91,
+        "rating": 2
       },
       "geometry": {
         "type": "Point",
@@ -291,7 +329,9 @@
       "id": "node/357607688",
       "properties": {
         "name": "Kirby Forensic Psychiatric Center",
-        "photo": "photos/George.png"
+        "photo": "photos/Brian.jpg",
+        "price": 103,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -306,7 +346,9 @@
       "id": "node/357607743",
       "properties": {
         "name": "Memorial Sloan - Kettering Cancer Center",
-        "photo": "photos/Angie.jpg"
+        "photo": "photos/George.png",
+        "price": 67,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -321,7 +363,9 @@
       "id": "node/357609193",
       "properties": {
         "name": "Saint Joseph's Hospital (historical)",
-        "photo": "photos/Emil.jpg"
+        "photo": "photos/Angie.jpg",
+        "price": 77,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -336,7 +380,9 @@
       "id": "node/357609904",
       "properties": {
         "name": "Northern Dispensary (historical)",
-        "photo": "photos/Emil.jpg"
+        "photo": "photos/Omar.jpg",
+        "price": 123,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -351,7 +397,9 @@
       "id": "node/357609910",
       "properties": {
         "name": "William J. Syms Operating Theater Roosevelt Hospital (historical)",
-        "photo": "photos/Evan.jpg"
+        "photo": "photos/George.png",
+        "price": 113,
+        "rating": 0
       },
       "geometry": {
         "type": "Point",
@@ -366,7 +414,9 @@
       "id": "node/357616245",
       "properties": {
         "name": "Manhattan Children's Psychiatric Center",
-        "photo": "photos/I-Lin.png"
+        "photo": "photos/Victoria.jpg",
+        "price": 149,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -381,7 +431,9 @@
       "id": "node/357616405",
       "properties": {
         "name": "Woman's Hospital",
-        "photo": "photos/Ben.jpg"
+        "photo": "photos/Robert.png",
+        "price": 29,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -396,7 +448,9 @@
       "id": "node/357618377",
       "properties": {
         "name": "Western Queens Community Hospital",
-        "photo": "photos/Angie.jpg"
+        "photo": "photos/Omar.jpg",
+        "price": 127,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -411,7 +465,9 @@
       "id": "node/357618839",
       "properties": {
         "name": "Bishop Francis J Mugavero Center for Geriatric Care",
-        "photo": "photos/Robert.png"
+        "photo": "photos/Robert.png",
+        "price": 37,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -426,7 +482,9 @@
       "id": "node/357620244",
       "properties": {
         "name": "Lenox Health Greenwich Village",
-        "photo": "photos/Emil.jpg"
+        "photo": "photos/Emil.jpg",
+        "price": 91,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -441,7 +499,9 @@
       "id": "node/357620336",
       "properties": {
         "name": "Ryan/NENA Comprehensive Heath Service Center",
-        "photo": "photos/Evan.jpg"
+        "photo": "photos/George.png",
+        "price": 130,
+        "rating": 2
       },
       "geometry": {
         "type": "Point",
@@ -456,7 +516,9 @@
       "id": "node/357620365",
       "properties": {
         "name": "New York Foundling Hospital",
-        "photo": "photos/Leo.jpg"
+        "photo": "photos/I-Lin.png",
+        "price": 70,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -471,7 +533,9 @@
       "id": "node/357620384",
       "properties": {
         "name": "Sidney Hillman Health Center",
-        "photo": "photos/Omar.jpg"
+        "photo": "photos/Ben.jpg",
+        "price": 1,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -486,7 +550,9 @@
       "id": "node/357620402",
       "properties": {
         "name": "David B Kriser Psychiatric Day Treatment Program",
-        "photo": "photos/I-Lin.png"
+        "photo": "photos/I-Lin.png",
+        "price": 2,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -501,7 +567,9 @@
       "id": "node/357620414",
       "properties": {
         "name": "Bernstein Pavilion Beth Israel Hospital",
-        "photo": "photos/Emil.jpg"
+        "photo": "photos/Ben.jpg",
+        "price": 18,
+        "rating": 0
       },
       "geometry": {
         "type": "Point",
@@ -516,7 +584,9 @@
       "id": "node/357620439",
       "properties": {
         "name": "Skirball Institute of Biomolecular Medicine",
-        "photo": "photos/Ben.jpg"
+        "photo": "photos/I-Lin.png",
+        "price": 66,
+        "rating": 0
       },
       "geometry": {
         "type": "Point",
@@ -531,7 +601,9 @@
       "id": "node/357620711",
       "properties": {
         "name": "Mount Sinai Dispensary (historical)",
-        "photo": "photos/Emil.jpg"
+        "photo": "photos/Leo.jpg",
+        "price": 57,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -546,7 +618,9 @@
       "id": "node/357620846",
       "properties": {
         "name": "Klingenstein Clinical Center",
-        "photo": "photos/Evan.jpg"
+        "photo": "photos/Robert.png",
+        "price": 1,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -561,7 +635,9 @@
       "id": "node/357620850",
       "properties": {
         "name": "Magdalene and Charles Klingenstein Pavilion",
-        "photo": "photos/George.png"
+        "photo": "photos/Omar.jpg",
+        "price": 8,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -576,7 +652,9 @@
       "id": "node/357620854",
       "properties": {
         "name": "Guggenheim Pavilion",
-        "photo": "photos/Emil.jpg"
+        "photo": "photos/Robert.png",
+        "price": 14,
+        "rating": 2
       },
       "geometry": {
         "type": "Point",
@@ -591,7 +669,9 @@
       "id": "node/357620861",
       "properties": {
         "name": "Terence Cardinal Cooke Health Care Center",
-        "photo": "photos/Victoria.jpg"
+        "photo": "photos/Ben.jpg",
+        "price": 103,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -606,7 +686,9 @@
       "id": "node/357621045",
       "properties": {
         "name": "North General Hospital",
-        "photo": "photos/I-Lin.png"
+        "photo": "photos/Ben.jpg",
+        "price": 132,
+        "rating": 2
       },
       "geometry": {
         "type": "Point",
@@ -621,7 +703,9 @@
       "id": "node/357621099",
       "properties": {
         "name": "North General Hospital Paul Robeson Center",
-        "photo": "photos/Emil.jpg"
+        "photo": "photos/I-Lin.png",
+        "price": 96,
+        "rating": 0
       },
       "geometry": {
         "type": "Point",
@@ -636,7 +720,9 @@
       "id": "node/357624018",
       "properties": {
         "name": "Williamsburg-Greenpoint Health Center",
-        "photo": "photos/Omar.jpg"
+        "photo": "photos/Evan.jpg",
+        "price": 130,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -651,7 +737,9 @@
       "id": "node/357624501",
       "properties": {
         "name": "Spence Lower School, formerly Smithers Alcoholism Center (historical)",
-        "photo": "photos/Robert.png"
+        "photo": "photos/Evan.jpg",
+        "price": 34,
+        "rating": 0
       },
       "geometry": {
         "type": "Point",
@@ -666,7 +754,9 @@
       "id": "node/357642719",
       "properties": {
         "name": "Mount Sinai Hospital of Queens",
-        "photo": "photos/George.png"
+        "photo": "photos/Emil.jpg",
+        "price": 36,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -681,7 +771,9 @@
       "id": "node/357642730",
       "properties": {
         "name": "Gracie Square Hospital",
-        "photo": "photos/Angie.jpg"
+        "photo": "photos/Victoria.jpg",
+        "price": 81,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -696,7 +788,9 @@
       "id": "node/357642732",
       "properties": {
         "name": "Cornerstone Medical Arts Hospital",
-        "photo": "photos/Victoria.jpg"
+        "photo": "photos/Ben.jpg",
+        "price": 98,
+        "rating": 2
       },
       "geometry": {
         "type": "Point",
@@ -711,7 +805,9 @@
       "id": "node/357642735",
       "properties": {
         "name": "Rockefeller University Hospital",
-        "photo": "photos/Angie.jpg"
+        "photo": "photos/Omar.jpg",
+        "price": 87,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -726,7 +822,9 @@
       "id": "node/357642745",
       "properties": {
         "name": "New York Eye and Ear Infirmary",
-        "photo": "photos/Robert.png"
+        "photo": "photos/Omar.jpg",
+        "price": 130,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -741,7 +839,9 @@
       "id": "node/357642750",
       "properties": {
         "name": "Manhattan Eye Ear and Throat Hospital",
-        "photo": "photos/Leo.jpg"
+        "photo": "photos/Angie.jpg",
+        "price": 99,
+        "rating": 2
       },
       "geometry": {
         "type": "Point",
@@ -756,7 +856,9 @@
       "id": "node/357642766",
       "properties": {
         "name": "South Brooklyn Health Center",
-        "photo": "photos/Robert.png"
+        "photo": "photos/Ben.jpg",
+        "price": 114,
+        "rating": 0
       },
       "geometry": {
         "type": "Point",
@@ -771,7 +873,9 @@
       "id": "node/357642771",
       "properties": {
         "name": "Renaissance Health Care Network and Diagnostic and Treatment Center",
-        "photo": "photos/Brian.jpg"
+        "photo": "photos/George.png",
+        "price": 24,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -786,7 +890,9 @@
       "id": "node/357648645",
       "properties": {
         "name": "Ajutian Stahl Health Center",
-        "photo": "photos/Angie.jpg"
+        "photo": "photos/Victoria.jpg",
+        "price": 100,
+        "rating": 0
       },
       "geometry": {
         "type": "Point",
@@ -801,7 +907,9 @@
       "id": "node/357719779",
       "properties": {
         "name": "Christ Hospital",
-        "photo": "photos/Omar.jpg"
+        "photo": "photos/Emil.jpg",
+        "price": 74,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -816,7 +924,9 @@
       "id": "node/357721532",
       "properties": {
         "name": "Fairmont Hospital",
-        "photo": "photos/Victoria.jpg"
+        "photo": "photos/Emil.jpg",
+        "price": 133,
+        "rating": 2
       },
       "geometry": {
         "type": "Point",
@@ -831,7 +941,9 @@
       "id": "node/357744903",
       "properties": {
         "name": "Palisades Medical Center",
-        "photo": "photos/Angie.jpg"
+        "photo": "photos/Omar.jpg",
+        "price": 135,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -846,7 +958,9 @@
       "id": "node/1581175993",
       "properties": {
         "name": "NUY Outpatient Surgery Center",
-        "photo": "photos/Omar.jpg"
+        "photo": "photos/George.png",
+        "price": 104,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -861,7 +975,9 @@
       "id": "node/2279513970",
       "properties": {
         "name": "Beth Israel Medical Center",
-        "photo": "photos/Victoria.jpg"
+        "photo": "photos/Robert.png",
+        "price": 116,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -876,7 +992,9 @@
       "id": "node/2369328786",
       "properties": {
         "name": "MD Emergent Care",
-        "photo": "photos/Victoria.jpg"
+        "photo": "photos/Evan.jpg",
+        "price": 109,
+        "rating": 2
       },
       "geometry": {
         "type": "Point",
@@ -891,7 +1009,9 @@
       "id": "node/2826551489",
       "properties": {
         "name": "Gouverneur Health Medical Center",
-        "photo": "photos/Victoria.jpg"
+        "photo": "photos/Brian.jpg",
+        "price": 106,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -906,7 +1026,9 @@
       "id": "node/3501718995",
       "properties": {
         "name": "NewYork-Presbyterian Hospital",
-        "photo": "photos/George.png"
+        "photo": "photos/Omar.jpg",
+        "price": 101,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -921,7 +1043,9 @@
       "id": "node/3501723876",
       "properties": {
         "name": "Weill Cornell Medical College",
-        "photo": "photos/Robert.png"
+        "photo": "photos/Robert.png",
+        "price": 84,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -936,7 +1060,9 @@
       "id": "node/3517606878",
       "properties": {
         "name": "Memorial Sloan Kettering Cancer Center Outpatient Facility",
-        "photo": "photos/Victoria.jpg"
+        "photo": "photos/Leo.jpg",
+        "price": 0,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -951,7 +1077,9 @@
       "id": "node/3633182667",
       "properties": {
         "name": "Omar.jpg",
-        "photo": "photos/Omar.jpg"
+        "photo": "photos/George.png",
+        "price": 139,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -966,7 +1094,9 @@
       "id": "node/3810174990",
       "properties": {
         "name": "Omar.jpg",
-        "photo": "photos/Omar.jpg"
+        "photo": "photos/Leo.jpg",
+        "price": 62,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -981,7 +1111,9 @@
       "id": "node/3977462059",
       "properties": {
         "name": "Dr. David H. Lifschutz MD",
-        "photo": "photos/Evan.jpg"
+        "photo": "photos/Leo.jpg",
+        "price": 125,
+        "rating": 2
       },
       "geometry": {
         "type": "Point",
