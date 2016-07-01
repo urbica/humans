@@ -1,3 +1,5 @@
+var card = document.getElementById('card');
+
 window.moneyRaitingSwitcherState = 'money';
 document.getElementById('map').classList.add('loading');
 mapboxgl.accessToken = 'pk.eyJ1IjoiaHVtYW5zIiwiYSI6ImNpcDZzdm80cjAwMTB1d203ZmRqZTdwbWEifQ.up9_Pt9XqDhp6m0KLHcbIw';
@@ -14,7 +16,6 @@ var map = window.map = new mapboxgl.Map({
   zoom: 8, // начальный уровень приближения,
   attributionControl: false
 });
-
 
 // настройка данных для пинов
 var markers = new mapboxgl.GeoJSONSource({
@@ -368,7 +369,7 @@ var renderFeature = function(feature) {
 
 var popups = [];
 var clickListener = function() {
-  document.getElementById('card').style.display = 'block';
+  card.style.display = 'block';
 };
 
 // функция отрисовки попапов
@@ -418,10 +419,15 @@ var render = function() {
 
 // перерисовывать попапы после каждого движения карты
 map.on('moveend', render);
+
 map.on('click', function() {
-  if (document.getElementById('card').style.display == 'block') {
-    document.getElementById('card').style.display = 'none';
+  if (card.style.display == 'block') {
+    card.style.display = 'none';
   }
+});
+
+card.addEventListener('click', function() {
+  card.style.display = 'none';
 });
 
 // переключалка money/rating

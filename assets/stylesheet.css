@@ -168,8 +168,8 @@ body {
   position: absolute;
   top: 140px;
   left: 20px;
-  width: 400px;
-  height: 630px;
+  width: 300px;
+  height: 482px;
   background-size: cover;
   background-image: url('card.png');
 }
