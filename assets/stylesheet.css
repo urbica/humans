@@ -434,3 +434,74 @@ body {
   color: #fff;
   background-color: #525357;
 }
+
+.listMapSwitcher {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  width: 180px;
+  height: 36px;
+}
+
+.switcher {
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+}
+
+.switcher .switcherButton {
+  display: inline-block;
+  padding: 0 20px;
+  color: #3F3333;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Geometria;
+  line-height: 36px;
+  border: 1px solid rgba(82, 83, 87, 0.70);
+  background: #fff;
+}
+
+.switcher .switcherButton:first-child {
+  border-radius: 3px 0px 0px 3px;
+}
+
+.switcher .switcherButton:last-child {
+  border-radius: 0px 3px 3px 0px;
+}
+
+.switcher .switcherButton.active {
+  color: #fff;
+  background: #525357;
+}
+
+/*.switcher {
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Geometria-Medium';
+}
+
+.switcher .switcherButton {
+  display: inline-block;
+  background: #FFFFFF;
+  border: 1px solid #525357;
+  font-family: Geometria;
+  font-size: 14px;
+  color: #3F3333;
+  cursor: pointer;
+  border: 1px solid rgba(82,83,87,0.70);
+}
+
+.switcher .switcherButton.active {
+  color: #fff;
+  opacity: 1;
+  background: #525357;
+}
+
+.switcher .switcherButton:first-child {
+  border-radius: 3px 0px 0px 3px;
+}
+
+.switcher .switcherButton:last-child {
+  border-radius: 0px 3px 3px 0px;
+}*/
