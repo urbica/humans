@@ -164,16 +164,16 @@ body {
 }
 
 #card {
-  display: none;
   position: absolute;
   top: 100px;
-  left: 20px;
+  left: -300px;
   width: 300px;
   height: 482px;
   cursor: pointer;
   border-radius: 3px;
   background-size: cover;
   background-image: url('card.png');
+  transition: left ease-out 0.3s;
 }
 
 #filterContainer {
@@ -394,53 +394,12 @@ body {
   position: absolute;
   right: 20px;
   bottom: 20px;
-  width: 180px;
-  height: 36px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  line-height: 36px;
-  text-align: center;
-  cursor: pointer;
-  font-family: 'Geometria-Medium';
-  border: 1px solid rgba(82,83,87,0.70);
-  border-radius: 3px;
-}
-
-.moneyRaitingSwitcher .moneySwitcher {
-  display: inline-block;
-  color: #525357;
-  width: 90px;
-  font-size: 14px;
-  border-radius: 3px 0 0 3px;
-  background-color: #fff;
-}
-
-.moneyRaitingSwitcher .moneySwitcher.active {
-  color: #fff;
-  background-color: #525357;
-}
-
-.moneyRaitingSwitcher .ratingSwitcher {
-  display: inline-block;
-  color: #525357;
-  width: 90px;
-  font-size: 14px;
-  border-radius: 0 3px 3px 0;
-  background-color: #fff;
-}
-
-.moneyRaitingSwitcher .ratingSwitcher.active {
-  color: #fff;
-  background-color: #525357;
 }
 
 .listMapSwitcher {
   position: absolute;
   right: 20px;
   top: 100px;
-  width: 180px;
-  height: 36px;
 }
 
 .switcher {

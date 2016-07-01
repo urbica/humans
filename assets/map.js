@@ -369,7 +369,14 @@ var renderFeature = function(feature) {
 
 var popups = [];
 var clickListener = function() {
-  card.style.display = 'block';
+  if (card.style.left == '20px') {
+    card.style.left = '-300px';
+    setTimeout(function() {
+      card.style.left = '20px';
+    }, 500);
+  } else {
+    card.style.left = '20px';
+  }
 };
 
 // функция отрисовки попапов
@@ -421,17 +428,17 @@ var render = function() {
 map.on('moveend', render);
 
 map.on('click', function() {
-  if (card.style.display == 'block') {
-    card.style.display = 'none';
+  if (card.style.left == '20px') {
+    card.style.left = '-300px';
   }
 });
 
 card.addEventListener('click', function() {
-  card.style.display = 'none';
+  card.style.left = '-300px';
 });
 
 // переключалка money/rating
-var moneySwitcher = document.getElementsByClassName('moneySwitcher')[0];
+var moneySwitcher = document.getElementById('moneySwitcher');
 moneySwitcher.addEventListener('click', function() {
   window.moneyRaitingSwitcherState = 'money';
   moneySwitcher.classList.add('active');
@@ -439,7 +446,7 @@ moneySwitcher.addEventListener('click', function() {
   render();
 });
 
-var ratingSwitcher = document.getElementsByClassName('ratingSwitcher')[0];
+var ratingSwitcher = document.getElementById('ratingSwitcher');
 ratingSwitcher.addEventListener('click', function() {
   window.moneyRaitingSwitcherState = 'rating';
   ratingSwitcher.classList.add('active');
