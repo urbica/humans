@@ -166,12 +166,107 @@ body {
 #card {
   display: none;
   position: absolute;
-  top: 140px;
+  top: 100px;
   left: 20px;
   width: 300px;
   height: 482px;
+  cursor: pointer;
+  border-radius: 3px;
   background-size: cover;
   background-image: url('card.png');
+}
+
+#filterContainer {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  width: 300px;
+  height: 460px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.filterTabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Geometria-Medium';
+}
+
+.filterTabs .filterTab {
+  display: inline-block;
+  color: #3F3333;
+  opacity: 0.69;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filterTabs .filterTab.active {
+  opacity: 1;
+  border-bottom: solid #63686E 5px;
+}
+
+.priceFilter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.priceFilter .priceTitle {
+  font-family: Geometria;
+  font-size: 14px;
+  color: #3F3333;
+  margin-right: 10px;
+}
+
+.priceFilter .priceFilterButton {
+  opacity: 0.69;
+  background: #FFFFFF;
+  border: 1px solid #525357;
+  font-family: Geometria;
+  font-size: 14px;
+  color: #3F3333;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.priceFilter .priceFilterButton.active {
+  color: #fff;
+  opacity: 1;
+  background: #525357;
+}
+
+.priceFilter .priceFilterButton.priceMinimum {
+  border-radius: 3px 0px 0px 3px;
+}
+
+.priceFilter .priceFilterButton.pricePerHour {
+  border-radius: 0px 3px 3px 0px;
+}
+
+.filtersPlaceholder {
+  width: 280px;
+  padding: 10px;
+}
+
+.moreFilters {
+  padding: 20px;
+  text-align: center;
+}
+
+.moreFiltersButton {
+  display: inline-block;
+  width: 120px;
+  border: 1px solid #86878A;
+  border-radius: 3px;
+  font-family: Geometria;
+  font-size: 14px;
+  color: #3F3333;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
 }
 
 #map {
