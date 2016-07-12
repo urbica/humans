@@ -23,7 +23,10 @@ class Header extends React.Component {
           <div className='requestButton'>Publish request</div>
         </div>
         <div className='thirdRow'>
-          <ProfessionalServiceSwitch />
+          <ProfessionalServiceSwitch
+            dispatch={ this.props.dispatch }
+            professionalOrService={ this.props.professionalOrService }
+          />
           <div className='professionals-nearby'>Professionals nearby</div>
           <ListMapSwitch
             dispatch={ this.props.dispatch }

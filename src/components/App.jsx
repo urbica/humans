@@ -22,6 +22,7 @@ class App extends React.Component {
           dispatch={ this.props.dispatch }
           listOrMap={ this.props.listOrMap }
           professionalOrClient={ this.props.professionalOrClient }
+          professionalOrService={ this.props.professionalOrService }
         />
         {
           this.props.mapStyle &&
@@ -59,7 +60,8 @@ const mapStateToProps = (state) => ({
   listOrMap: state.listOrMap,
   priceOrRating: state.priceOrRating,
   fixedOrHourly: state.fixedOrHourly,
-  professionalOrClient: state.professionalOrClient
+  professionalOrClient: state.professionalOrClient,
+  professionalOrService: state.professionalOrService
 });
 
 export default connect(mapStateToProps)(App);

@@ -11,7 +11,8 @@ const initialState = {
   listOrMap: 'map',
   priceOrRating: 'price',
   fixedOrHourly: 'hourly',
-  professionalOrClient: 'professional'
+  professionalOrClient: 'professional',
+  professionalOrService: 'professional'
 };
 
 const reducer = (state = initialState, { type, payload }) => {
@@ -41,6 +42,9 @@ const reducer = (state = initialState, { type, payload }) => {
     }
     case types.SWITCH_PROFESSIONAL_CLIENT: {
       return Object.assign({}, state, { professionalOrClient: payload });
+    }
+    case types.SWITCH_PROFESSIONAL_SERVICE: {
+      return Object.assign({}, state, { professionalOrService: payload });
     }
     case types.SWITCH_LIST_MAP: {
       return Object.assign({}, state, { listOrMap: payload });

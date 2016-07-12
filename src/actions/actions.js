@@ -20,6 +20,12 @@ export const switchProfessionalClient = (professionalOrClient) => ({
   payload: professionalOrClient
 });
 
+export const SWITCH_PROFESSIONAL_SERVICE = 'SWITCH_PROFESSIONAL_SERVICE';
+export const switchProfessionalService = (professionalOrService) => ({
+  type: SWITCH_PROFESSIONAL_SERVICE,
+  payload: professionalOrService
+});
+
 export const SWITCH_LIST_MAP = 'SWITCH_LIST_MAP';
 export const switchListMap = (listOrMap) => ({
   type: SWITCH_LIST_MAP,

@@ -36735,6 +36735,14 @@ var switchProfessionalClient = exports.switchProfessionalClient = function switc
   };
 };
 
+var SWITCH_PROFESSIONAL_SERVICE = exports.SWITCH_PROFESSIONAL_SERVICE = 'SWITCH_PROFESSIONAL_SERVICE';
+var switchProfessionalService = exports.switchProfessionalService = function switchProfessionalService(professionalOrService) {
+  return {
+    type: SWITCH_PROFESSIONAL_SERVICE,
+    payload: professionalOrService
+  };
+};
+
 var SWITCH_LIST_MAP = exports.SWITCH_LIST_MAP = 'SWITCH_LIST_MAP';
 var switchListMap = exports.switchListMap = function switchListMap(listOrMap) {
   return {
@@ -36893,7 +36901,8 @@ var App = function (_React$Component) {
         _react2.default.createElement(_Header2.default, {
           dispatch: this.props.dispatch,
           listOrMap: this.props.listOrMap,
-          professionalOrClient: this.props.professionalOrClient
+          professionalOrClient: this.props.professionalOrClient,
+          professionalOrService: this.props.professionalOrService
         }),
         this.props.mapStyle && _react2.default.createElement(_Map2.default, {
           style: this.props.mapStyle,
@@ -36927,7 +36936,8 @@ var mapStateToProps = function mapStateToProps(state) {
     listOrMap: state.listOrMap,
     priceOrRating: state.priceOrRating,
     fixedOrHourly: state.fixedOrHourly,
-    professionalOrClient: state.professionalOrClient
+    professionalOrClient: state.professionalOrClient,
+    professionalOrService: state.professionalOrService
   };
 };
 
@@ -37289,7 +37299,10 @@ var Header = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { className: 'thirdRow' },
-          _react2.default.createElement(_ProfessionalServiceSwitch2.default, null),
+          _react2.default.createElement(_ProfessionalServiceSwitch2.default, {
+            dispatch: this.props.dispatch,
+            professionalOrService: this.props.professionalOrService
+          }),
           _react2.default.createElement(
             'div',
             { className: 'professionals-nearby' },
@@ -37918,6 +37931,8 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _actions = require('../actions/actions.js');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ProfessionalServiceSwitch = function (_React$Component) {
@@ -37931,17 +37946,37 @@ var ProfessionalServiceSwitch = function (_React$Component) {
   (0, _createClass3.default)(ProfessionalServiceSwitch, [{
     key: 'render',
     value: function render() {
+      var _props = this.props;
+      var dispatch = _props.dispatch;
+      var professionalOrService = _props.professionalOrService;
+
+      var onProfessionalClick = function onProfessionalClick() {
+        return dispatch((0, _actions.switchProfessionalService)('professional'));
+      };
+      var onServiceClick = function onServiceClick() {
+        return dispatch((0, _actions.switchProfessionalService)('service'));
+      };
+
+      var professionalClassName = professionalOrService === 'professional' ? 'tab active' : 'tab';
+      var serviceClassName = professionalOrService === 'service' ? 'tab active' : 'tab';
+
       return _react2.default.createElement(
         'div',
         { className: 'professional-service-switch' },
         _react2.default.createElement(
           'div',
-          { className: 'tab active' },
+          {
+            onClick: onProfessionalClick,
+            className: professionalClassName
+          },
           'Professionals'
         ),
         _react2.default.createElement(
           'div',
-          { className: 'tab' },
+          {
+            onClick: onServiceClick,
+            className: serviceClassName
+          },
           'Services'
         )
       );
@@ -37952,7 +37987,7 @@ var ProfessionalServiceSwitch = function (_React$Component) {
 
 module.exports = ProfessionalServiceSwitch;
 
-},{"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345}],389:[function(require,module,exports){
+},{"../actions/actions.js":373,"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345}],389:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray2 = require('babel-runtime/helpers/slicedToArray');
@@ -38249,7 +38284,8 @@ var initialState = {
   listOrMap: 'map',
   priceOrRating: 'price',
   fixedOrHourly: 'hourly',
-  professionalOrClient: 'professional'
+  professionalOrClient: 'professional',
+  professionalOrService: 'professional'
 }; /* eslint-disable new-cap */
 
 var reducer = function reducer() {
@@ -38291,6 +38327,10 @@ var reducer = function reducer() {
     case types.SWITCH_PROFESSIONAL_CLIENT:
       {
         return (0, _assign2.default)({}, state, { professionalOrClient: payload });
+      }
+    case types.SWITCH_PROFESSIONAL_SERVICE:
+      {
+        return (0, _assign2.default)({}, state, { professionalOrService: payload });
       }
     case types.SWITCH_LIST_MAP:
       {
