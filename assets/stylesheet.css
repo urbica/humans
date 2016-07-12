@@ -8,13 +8,13 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  height: 86px;
+  height: 178px;
   font-family: 'Geometria', sans-serif;
 }
 
 .header .firstRow {
   display: flex;
-  height: 32px;
+  height: 48px;
   padding: 0 240px;
   align-items: center;
   justify-content: space-between;
@@ -24,41 +24,46 @@ body {
 .logo {
   display: inline-block;
   color: #fff;
-  font-size: 14px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 48px;
   font-family: 'Geometria', sans-serif;
+  text-transform: uppercase;
 }
 
-.searchTabs {
+.professional-client-switch {
+  height: 40px;
   color: #fff;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
+  margin-top: 8px;
+  background-color: #5c6064;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-.searchTabs .tab {
-  height: 24px;
+.professional-client-switch .tab {
+  height: 40px;
   padding: 0 20px;
-  margin-top: 8px;
-  line-height: 24px;
+  line-height: 40px;
   display: inline-block;
 }
 
-.searchTabs .tab.active {
-  background-color: #525357;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+.professional-client-switch .tab.active {
+  background-color: #535558;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .buttons {
   color: #fff;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: lighter;
 }
 
 .buttons .button {
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .buttons .button:first-child {
@@ -66,360 +71,124 @@ body {
 }
 
 .buttons .button.buttonAbout {
-  padding: 4px 20px;
+  padding: 8px 20px 8px 40px;
   background-color: #7A7E83;
+  background-image: url('play.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
 }
 
 .buttons .button.buttonEnter {
-  padding: 2px 20px;
+  padding: 6px 20px;
   border: solid 2px #7A7E83;
 }
 
 .header .secondRow {
   display: flex;
-  height: 54px;
+  height: 72px;
   padding: 0 240px;
   align-items: center;
   justify-content: space-between;
-  background-color: #525357;
+  background-color: #535558;
 }
 
 .search {
   position: relative;
 }
 
-.search .searchIcon {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 6px;
-  left: 12px;
-  background-image: url('search.svg');
-}
-
 .search .searchInput {
   display: inline-block;
   width: 595px;
-  height: 36px;
+  height: 45px;
   color: #404040;
   border: none;
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 5px;
-  padding: 0 290px 0 40px;
-  line-height: 48px;
+  padding: 0 130px 0 20px;
+  line-height: 45px;
   box-sizing: border-box;
-}
-
-.search .searchQuality {
-  position: absolute;
-  top: 0;
-  right: 115px;
-  height: 36px;
-  display: inline-block;
-  color: rgba(64,64,64,0.85);
-  line-height: 40px;
-  padding: 0 10px;
-  opacity: 0.5;
-  font-size: 8px;
-  text-transform: uppercase;
 }
 
 .search .searchButton {
   position: absolute;
-  top: 0;
   right: 0px;
   display: inline-block;
   color: #404040;
   width: 114px;
-  height: 36px;
+  height: 45px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
-  line-height: 36px;
+  line-height: 45px;
   border-radius: 5px;
   background-color: #e5e5e5;
 }
 
 .header .secondRow .or {
-  width: 48px;
-  height: 36px;
+  width: 43px;
+  height: 43px;
   color: rgba(255,255,255,0.85);
-  line-height: 36px;
+  border: solid 1px #747578;
+  line-height: 43px;
   text-align: center;
   font-family: 'Geometria-Medium';
-  font-size: 10px;
+  font-size: 12px;
+  border-radius: 24px;
 }
 
 .header .secondRow .requestButton {
   display: inline-block;
   width: 270px;
-  height: 36px;
+  height: 45px;
   color: rgba(64,64,64,0.85);
-  font-size: 14px;
-  line-height: 36px;
+  font-size: 16px;
+  line-height: 45px;
   text-align: center;
   border-radius: 3px;
   background: #E5E5E5;
   cursor: pointer;
 }
 
-#card {
-  position: absolute;
-  top: 100px;
-  left: -300px;
-  width: 300px;
-  height: 482px;
-  cursor: pointer;
-  border-radius: 3px;
-  background-size: cover;
-  background-image: url('card.png');
-  transition: left ease-out 0.3s;
-}
-
-#list {
-  position: absolute;
-  top: 86px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  font-size: 24px;
-  display: none;
+.header .thirdRow {
+  display: flex;
+  height: 57px;
+  padding: 0 240px;
   align-items: center;
-  justify-content: center;
-  font-family: 'Geometria-Medium';
+  justify-content: space-between;
   background-color: #fff;
+  border-bottom: solid 1px #ebeaea;
 }
 
-#filterContainer {
-  position: absolute;
-  top: 100px;
-  left: 20px;
-  width: 300px;
-  height: 460px;
-  border-radius: 3px;
-  background-color: #fff;
-}
-
-.filterTabs {
+.header .thirdRow .professional-service-switch {
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-family: 'Geometria-Medium';
 }
 
-.filterTabs .filterTab {
+.header .thirdRow .professional-service-switch .tab {
   display: inline-block;
-  color: #3F3333;
+  color: #3f3434;
   opacity: 0.69;
-  padding: 20px;
+  padding: 18px;
   cursor: pointer;
   font-size: 14px;
 }
 
-.filterTabs .filterTab.active {
+.header .thirdRow .professional-service-switch .tab.active {
   opacity: 1;
-  border-bottom: solid #63686E 5px;
+  border-bottom: solid #3f3434 3px;
 }
 
-.priceFilter {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 20px;
-}
-
-.priceFilter .priceTitle {
-  font-family: Geometria;
-  font-size: 14px;
-  color: #3F3333;
-  margin-right: 10px;
-}
-
-.priceFilter .priceFilterButton {
+.header .thirdRow .professionals-nearby {
+  color: #3f3434;
   opacity: 0.69;
-  background: #FFFFFF;
-  border: 1px solid #525357;
-  font-family: Geometria;
-  font-size: 14px;
-  color: #3F3333;
-  padding: 6px 10px;
-  cursor: pointer;
-}
-
-.priceFilter .priceFilterButton.active {
-  color: #fff;
-  opacity: 1;
-  background: #525357;
-}
-
-.priceFilter .priceFilterButton.priceMinimum {
-  border-radius: 3px 0px 0px 3px;
-}
-
-.priceFilter .priceFilterButton.pricePerHour {
-  border-radius: 0px 3px 3px 0px;
-}
-
-.filtersPlaceholder {
-  width: 280px;
-  padding: 10px;
-}
-
-.moreFilters {
-  padding: 20px;
-  text-align: center;
-}
-
-.moreFiltersButton {
-  display: inline-block;
-  width: 120px;
-  border: 1px solid #86878A;
-  border-radius: 3px;
-  font-family: Geometria;
-  font-size: 14px;
-  color: #3F3333;
-  padding: 10px 20px;
-  cursor: pointer;
-  text-align: center;
-}
-
-#map {
-  position: absolute;
-  top: 86px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-/* переопределение стилей mapbox-gl-js: контейнер попапа */
-.mapboxgl-popup {
-  padding-bottom:8px;
-}
-
-.mapboxgl-popup-content {
-  padding: 0;
-  border: none;
-  box-shadow: none;
-  background-color: transparent;
-  height:75px;
-  width:70px;
-  font-family: 'Geometria', sans-serif;
-  -webkit-box-shadow:0px 5px 15px -3px rgba(0,0,0,0.4), 0px 4px 4px -4px rgba(0,0,0,0.4);
-  -moz-box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.4), 0px 4px 4px -4px rgba(0,0,0,0.4);
-  box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.4), 0px 4px 4px -4px rgba(0,0,0,0.4);
-}
-
-.mapboxgl-popup-content > div {
-  height:75px;
-  width:70px;
-}
-
-.mapboxgl-popup-content .photo {
-  height: 55px;
-  width: 70px;
-  min-width: 70px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  background: white;
-  padding:0;
-}
-
-.mapboxgl-popup-content .title {
-  color: #000;
-  height: 20px;
-  width: 70px;
-  min-width: 70px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  background: white;
-  padding:0;
-  /*text-indent: 100%;*/
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-/*.mapboxgl-popup-content .title:after {
-  content: "3.9";
-  background: url('stars.svg') 3px 50% no-repeat;
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  display: block;
-  bottom: 0px;
-  color: black;
-  font-weight: 300;
-  text-indent: initial;
-  white-space: normal;
-  overflow: visible;
-  text-align: right;
-  padding: 0 4px;
-}*/
-
-.mapboxgl-popup-tip {
-  display:none;
-}
-
-/* переопределение стилей mapbox-gl-js: хвостик */
-/*
-.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
-  border-top-color: #444;
-  padding-bottom: 4px;
-}
-*/
-
-/* контейнер фотографии и надписи */
-.popupContainer {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
-/* фотография */
-.photo {
-  display: block;
-  width: 75px;
-  height: 50px;
-  padding: 4px;
-  object-fit: cover;
-  border-radius: 0px;
-  background-color: #444;
-}
-
-/* надпись */
-.title {
-  display: block;
-  color: #fff;
-  padding: 2px 2px 8px;
-  min-width: 80px;
-  font-size: 10px;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 0;
-  background-color: #444;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-}
-
-.moneyRaitingSwitcher {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-}
-
-.listMapSwitcher {
-  position: absolute;
-  right: 20px;
-  top: 100px;
+  font-size: 15px;
 }
 
 .switcher {
   height: 36px;
-  text-align: center;
-  line-height: 36px;
+  border-radius: 6px;
 }
 
 .switcher .switcherButton {
@@ -428,53 +197,240 @@ body {
   color: #3F3333;
   cursor: pointer;
   font-size: 14px;
-  font-family: Geometria;
+  font-family: 'Geometria-Medium';
   line-height: 36px;
-  border: 1px solid rgba(82, 83, 87, 0.70);
+  border: 1px solid #dedddd;
   background: #fff;
 }
 
 .switcher .switcherButton:first-child {
-  border-radius: 3px 0px 0px 3px;
+  border-right: none;
+  border-radius: 6px 0px 0px 6px;
 }
 
 .switcher .switcherButton:last-child {
-  border-radius: 0px 3px 3px 0px;
+  border-radius: 0px 6px 6px 0px;
 }
 
 .switcher .switcherButton.active {
   color: #fff;
-  background: #525357;
+  background: #62686f;
 }
 
-/*.switcher {
-  line-height: 36px;
+.filters-panel-container {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  width: 280px;
+  height: 320px;
+  padding: 20px;
+  border-radius: 6px;
+  font-family: 'Geometria';
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.filters-panel-container .title {
+  color: #3f3434;
+  font-size: 19px;
+  padding-bottom: 10px;
+}
+
+.filters-panel-container .all-filters {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  line-height: 56px;
+  color: #000;
+  cursor: pointer;
+  background: #eee;
+  font-size: 15px;
   text-align: center;
+
+  border-radius: 0px 0px 6px 6px;
+}
+
+.filters-panel-container .all-filters img {
+  padding-right: 6px;
+}
+
+.filters-panel-container .price-filter-container,
+.filters-panel-container .rating-filter-container {
+  color: #4a4040;
+  margin: 30px 0;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.filters-panel-container .price-filter-container .price-filter-slider-wrapper {
+  width: 200px;
+  margin: 10px;
+}
+
+.filters-panel-container .rating-filter-container .rating-filter-slider-wrapper {
+  width: 180px;
+  margin: 10px;
+}
+
+.filters-panel-container .price-filter-container .filter-label-min,
+.filters-panel-container .price-filter-container .filter-label-max,
+.filters-panel-container .rating-filter-container .filter-label-max {
+  width: 40px;
+}
+
+.filters-panel-container .rating-filter-container .filter-label-min {
+  width: 60px;
+}
+
+.rc-slider {
+  background-color: #ececec;
+}
+
+.rc-slider-handle {
+  border-color: #ececec;
+  background-color: #fff;
+}
+
+.rc-slider-handle:hover {
+  border-color: #ececec;
+}
+
+.rc-slider-track {
+  background-color: #1599ff;
+}
+
+.online-filter-container {
   cursor: pointer;
-  font-family: 'Geometria-Medium';
+  padding: 8px 0;
+  border: solid 1px #dedddd;
+  text-align: center;
+  border-radius: 6px;
 }
 
-.switcher .switcherButton {
-  display: inline-block;
-  background: #FFFFFF;
-  border: 1px solid #525357;
-  font-family: Geometria;
-  font-size: 14px;
-  color: #3F3333;
+.online-filter-container .online-filter-checkbox {
+  opacity: 0;
+}
+
+.online-filter-container .online-filter-label {
+  position: relative;
   cursor: pointer;
-  border: 1px solid rgba(82,83,87,0.70);
 }
 
-.switcher .switcherButton.active {
-  color: #fff;
-  opacity: 1;
-  background: #525357;
+.online-filter-checkbox:not(checked) + .online-filter-label:before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  width: 18px;
+  height: 18px;
+  border: solid 1px #dedddd;
+  border-radius: 6px;
+  background-color: #fff;
 }
 
-.switcher .switcherButton:first-child {
-  border-radius: 3px 0px 0px 3px;
+.online-filter-checkbox:checked + .online-filter-label:before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  width: 18px;
+  height: 18px;
+  border: solid 1px #1599ff;
+  border-radius: 6px;
+  background-color: #1599ff;
+  background-image: url('./checkmark.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.switcher .switcherButton:last-child {
-  border-radius: 0px 3px 3px 0px;
-}*/
+#map {
+  position: absolute;
+  top: 178px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.mapboxgl-marker {
+  width: 70px;
+  height: 75px;
+  margin-top: -37.5px;
+  margin-left: -37px;
+  cursor: pointer;
+}
+
+.mapboxgl-marker .photo {
+  display: block;
+  width: 70px;
+  height: 55px;
+  padding: 0;
+  min-width: 70px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  object-fit: cover;
+}
+
+.mapboxgl-marker .title {
+  display: block;
+  color: #000;
+  padding: 0;
+  line-height: 20px;
+  min-width: 70px;
+  font-size: 10px;
+  text-align: center;
+  background-color: #fff;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.card-container {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  width: 320px;
+  height: 560px;
+  border-radius: 6px;
+  font-family: 'Geometria';
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 2;
+  transition: left ease-out 0.3s;
+}
+
+.card-container .title {
+  color: #3f3434;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 20px;
+}
+
+.card-container .photo {
+  display: block;
+  width: 320px;
+  height: 160px;
+  cursor: pointer;
+  padding: 0;
+  object-fit: cover;
+}
+
+.card-container .card-mock {
+  display: block;
+  width: 250px;
+  height: 330px;
+  cursor: pointer;
+  padding: 0;
+  object-fit: cover;
+}
+
+.price-rating-switch {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.price-rating-switch .switcherButton {
+  border: none;
+}

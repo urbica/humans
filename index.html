@@ -1,80 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8' />
+  <head>
     <title>Humans</title>
+    <meta charset='utf-8' />
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='assets/mapbox-gl-dev.js'></script>
+    <link href='assets/mapbox-gl.css' rel='stylesheet' />
+    <link href='assets/rc-slider.css' rel='stylesheet' />
     <link href='assets/fonts.css' rel='stylesheet' />
     <link href='assets/stylesheet.css' rel='stylesheet' />
-    <script src='assets/supercluster.js'></script>
-</head>
-<body>
-  <div class='header'>
-    <div class='firstRow'>
-      <div class='logo'>Humans</div>
-      <div class='searchTabs'>
-        <div class='tab active'>Найти исполнителя</div>
-        <div class='tab'>Найти работу</div>
-      </div>
-      <div class='buttons'>
-        <div class='button buttonAbout'>Как это работает?</div>
-        <div class='button buttonEnter'>Войти</div>
-      </div>
-    </div>
-    <div class='secondRow'>
-      <div class='search'>
-        <div class='searchIcon'></div>
-        <input
-          type='text'
-          class='searchInput'
-          placeholder='Поиск исполнителя по тегам'
-        />
-        <div class='searchQuality'>Качетсво запроса: низкое</div>
-        <div class='searchButton'>Найти</div>
-      </div>
-      <div class='or'>или</div>
-      <div class='requestButton'>Оставить заявку</div>
-    </div>
-  </div>
-  <div id='map'></div>
-
-  <div id='filterContainer'>
-    <div class='filterTabs'>
-      <div class='filterTab active'>Freelancers</div>
-      <div class='filterTab'>Offers</div>
-    </div>
-    <div class='priceFilter'>
-      <div class='priceTitle'>Price</div>
-      <div class='priceFilterButton priceMinimum'>Minimum</div>
-      <div class='priceFilterButton pricePerHour active'>Per hour</div>
-    </div>
-    <img class='filtersPlaceholder' src='assets/filters.png' />
-    <div class='moreFilters'>
-      <div class='moreFiltersButton'>More filters <img src='assets/dropdown.svg'/></div>
-    </div>
-  </div>
-
-  <div id='card'></div>
-  <div id='list'>Coming soon!</div>
-
-  <div class='moneyRaitingSwitcher switcher'>
-    <div id='moneySwitcher' class='switcherButton active'>
-      $ Money
-    </div><div id='ratingSwitcher' class='switcherButton'>
-      ★ Rating
-    </div>
-  </div>
-
-  <div class='listMapSwitcher switcher'>
-    <div id='listSwitcher' class='switcherButton'>
-      ☰ List
-    </div><div id='mapSwitcher' class='switcherButton active'>
-      <img src='assets/pin.svg'/> Map
-    </div>
-  </div>
-
-  <script src='assets/map.js'></script>
-</body>
+  </head>
+  <body>
+    <div id='root'></div>
+    <script src='assets/app.js'></script>
+  </body>
+</html>
