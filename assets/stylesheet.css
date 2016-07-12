@@ -1,0 +1,436 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 178px;
+  font-family: 'Geometria', sans-serif;
+}
+
+.header .firstRow {
+  display: flex;
+  height: 48px;
+  padding: 0 240px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #63686E;
+}
+
+.logo {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  line-height: 48px;
+  font-family: 'Geometria', sans-serif;
+  text-transform: uppercase;
+}
+
+.professional-client-switch {
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 8px;
+  background-color: #5c6064;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.professional-client-switch .tab {
+  height: 40px;
+  padding: 0 20px;
+  line-height: 40px;
+  display: inline-block;
+}
+
+.professional-client-switch .tab.active {
+  background-color: #535558;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.buttons {
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.buttons .button {
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.buttons .button:first-child {
+  margin-right: 10px;
+}
+
+.buttons .button.buttonAbout {
+  padding: 8px 20px 8px 40px;
+  background-color: #7A7E83;
+  background-image: url('play.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.buttons .button.buttonEnter {
+  padding: 6px 20px;
+  border: solid 2px #7A7E83;
+}
+
+.header .secondRow {
+  display: flex;
+  height: 72px;
+  padding: 0 240px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #535558;
+}
+
+.search {
+  position: relative;
+}
+
+.search .searchInput {
+  display: inline-block;
+  width: 595px;
+  height: 45px;
+  color: #404040;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 0 130px 0 20px;
+  line-height: 45px;
+  box-sizing: border-box;
+}
+
+.search .searchButton {
+  position: absolute;
+  right: 0px;
+  display: inline-block;
+  color: #404040;
+  width: 114px;
+  height: 45px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+}
+
+.header .secondRow .or {
+  width: 43px;
+  height: 43px;
+  color: rgba(255,255,255,0.85);
+  border: solid 1px #747578;
+  line-height: 43px;
+  text-align: center;
+  font-family: 'Geometria-Medium';
+  font-size: 12px;
+  border-radius: 24px;
+}
+
+.header .secondRow .requestButton {
+  display: inline-block;
+  width: 270px;
+  height: 45px;
+  color: rgba(64,64,64,0.85);
+  font-size: 16px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 3px;
+  background: #E5E5E5;
+  cursor: pointer;
+}
+
+.header .thirdRow {
+  display: flex;
+  height: 57px;
+  padding: 0 240px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: solid 1px #ebeaea;
+}
+
+.header .thirdRow .professional-service-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Geometria-Medium';
+}
+
+.header .thirdRow .professional-service-switch .tab {
+  display: inline-block;
+  color: #3f3434;
+  opacity: 0.69;
+  padding: 18px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.header .thirdRow .professional-service-switch .tab.active {
+  opacity: 1;
+  border-bottom: solid #3f3434 3px;
+}
+
+.header .thirdRow .professionals-nearby {
+  color: #3f3434;
+  opacity: 0.69;
+  font-size: 15px;
+}
+
+.switcher {
+  height: 36px;
+  border-radius: 6px;
+}
+
+.switcher .switcherButton {
+  display: inline-block;
+  padding: 0 20px;
+  color: #3F3333;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Geometria-Medium';
+  line-height: 36px;
+  border: 1px solid #dedddd;
+  background: #fff;
+}
+
+.switcher .switcherButton:first-child {
+  border-right: none;
+  border-radius: 6px 0px 0px 6px;
+}
+
+.switcher .switcherButton:last-child {
+  border-radius: 0px 6px 6px 0px;
+}
+
+.switcher .switcherButton.active {
+  color: #fff;
+  background: #62686f;
+}
+
+.filters-panel-container {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  width: 280px;
+  height: 320px;
+  padding: 20px;
+  border-radius: 6px;
+  font-family: 'Geometria';
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.filters-panel-container .title {
+  color: #3f3434;
+  font-size: 19px;
+  padding-bottom: 10px;
+}
+
+.filters-panel-container .all-filters {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  line-height: 56px;
+  color: #000;
+  cursor: pointer;
+  background: #eee;
+  font-size: 15px;
+  text-align: center;
+
+  border-radius: 0px 0px 6px 6px;
+}
+
+.filters-panel-container .all-filters img {
+  padding-right: 6px;
+}
+
+.filters-panel-container .price-filter-container,
+.filters-panel-container .rating-filter-container {
+  color: #4a4040;
+  margin: 30px 0;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.filters-panel-container .price-filter-container .price-filter-slider-wrapper {
+  width: 200px;
+  margin: 10px;
+}
+
+.filters-panel-container .rating-filter-container .rating-filter-slider-wrapper {
+  width: 180px;
+  margin: 10px;
+}
+
+.filters-panel-container .price-filter-container .filter-label-min,
+.filters-panel-container .price-filter-container .filter-label-max,
+.filters-panel-container .rating-filter-container .filter-label-max {
+  width: 40px;
+}
+
+.filters-panel-container .rating-filter-container .filter-label-min {
+  width: 60px;
+}
+
+.rc-slider {
+  background-color: #ececec;
+}
+
+.rc-slider-handle {
+  border-color: #ececec;
+  background-color: #fff;
+}
+
+.rc-slider-handle:hover {
+  border-color: #ececec;
+}
+
+.rc-slider-track {
+  background-color: #1599ff;
+}
+
+.online-filter-container {
+  cursor: pointer;
+  padding: 8px 0;
+  border: solid 1px #dedddd;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.online-filter-container .online-filter-checkbox {
+  opacity: 0;
+}
+
+.online-filter-container .online-filter-label {
+  position: relative;
+  cursor: pointer;
+}
+
+.online-filter-checkbox:not(checked) + .online-filter-label:before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  width: 18px;
+  height: 18px;
+  border: solid 1px #dedddd;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.online-filter-checkbox:checked + .online-filter-label:before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  width: 18px;
+  height: 18px;
+  border: solid 1px #1599ff;
+  border-radius: 6px;
+  background-color: #1599ff;
+  background-image: url('./checkmark.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#map {
+  position: absolute;
+  top: 178px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.mapboxgl-marker {
+  width: 70px;
+  height: 75px;
+  margin-top: -37.5px;
+  margin-left: -37px;
+  cursor: pointer;
+}
+
+.mapboxgl-marker .photo {
+  display: block;
+  width: 70px;
+  height: 55px;
+  padding: 0;
+  min-width: 70px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  object-fit: cover;
+}
+
+.mapboxgl-marker .title {
+  display: block;
+  color: #000;
+  padding: 0;
+  line-height: 20px;
+  min-width: 70px;
+  font-size: 10px;
+  text-align: center;
+  background-color: #fff;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.card-container {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  width: 320px;
+  height: 560px;
+  border-radius: 6px;
+  font-family: 'Geometria';
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 2;
+  transition: left ease-out 0.3s;
+}
+
+.card-container .title {
+  color: #3f3434;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 20px;
+}
+
+.card-container .photo {
+  display: block;
+  width: 320px;
+  height: 160px;
+  cursor: pointer;
+  padding: 0;
+  object-fit: cover;
+}
+
+.card-container .card-mock {
+  display: block;
+  width: 250px;
+  height: 330px;
+  cursor: pointer;
+  padding: 0;
+  object-fit: cover;
+}
+
+.price-rating-switch {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.price-rating-switch .switcherButton {
+  border: none;
+}

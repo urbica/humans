@@ -1,0 +1,28 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb-base",
+  "plugins": [
+    "babel",
+    "import",
+    "react"
+  ],
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "mapboxgl": true
+  },
+  "rules": {
+    "comma-dangle": ["error", "never"],
+    "no-param-reassign": ["error", { "props": false }],
+    "react/jsx-uses-vars": "error",
+    "react/jsx-uses-react": "error",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true, "optionalDependencies": false }]
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}
