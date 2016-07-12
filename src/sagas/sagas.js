@@ -22,7 +22,7 @@ export const callApi = (endpoint) =>
     });
 
 const styleUrl = 'https://api.mapbox.com/styles/v1/humans/cip9hxybc003edmm2i1eqlap8?access_token=pk.eyJ1IjoiaHVtYW5zIiwiYSI6ImNpcDZzdm80cjAwMTB1d203ZmRqZTdwbWEifQ.up9_Pt9XqDhp6m0KLHcbIw';
-const dataUrl = '/assets/med_data.geojson';
+const dataUrl = 'assets/med_data.geojson';
 
 function* fetchStyle() {
   /* eslint-disable no-console */
