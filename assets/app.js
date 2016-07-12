@@ -36861,6 +36861,10 @@ var _Card = require('./Card.jsx');
 
 var _Card2 = _interopRequireDefault(_Card);
 
+var _List = require('./List.jsx');
+
+var _List2 = _interopRequireDefault(_List);
+
 var _Header = require('./Header.jsx');
 
 var _Header2 = _interopRequireDefault(_Header);
@@ -36910,6 +36914,7 @@ var App = function (_React$Component) {
           priceOrRating: this.props.priceOrRating,
           fixedOrHourly: this.props.fixedOrHourly
         }),
+        this.props.listOrMap === 'list' && _react2.default.createElement(_List2.default, null),
         _react2.default.createElement(_FiltersPanel2.default, {
           dispatch: this.props.dispatch,
           fixedOrHourly: this.props.fixedOrHourly
@@ -36943,7 +36948,7 @@ var mapStateToProps = function mapStateToProps(state) {
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps)(App);
 
-},{"../actions/actions.js":373,"./Card.jsx":377,"./FiltersPanel.jsx":378,"./Header.jsx":380,"./Map.jsx":382,"./PriceRatingSwitch.jsx":386,"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345,"react-redux":199}],376:[function(require,module,exports){
+},{"../actions/actions.js":373,"./Card.jsx":377,"./FiltersPanel.jsx":378,"./Header.jsx":380,"./List.jsx":381,"./Map.jsx":383,"./PriceRatingSwitch.jsx":387,"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345,"react-redux":199}],376:[function(require,module,exports){
 'use strict';
 
 var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
@@ -37127,7 +37132,7 @@ var FiltersPanel = function (_React$Component) {
 
 module.exports = FiltersPanel;
 
-},{"./AllFilters.jsx":374,"./FixedHourlySwitch.jsx":379,"./OnlineFilter.jsx":384,"./PriceFilter.jsx":385,"./RatingFilter.jsx":389,"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345}],379:[function(require,module,exports){
+},{"./AllFilters.jsx":374,"./FixedHourlySwitch.jsx":379,"./OnlineFilter.jsx":385,"./PriceFilter.jsx":386,"./RatingFilter.jsx":390,"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345}],379:[function(require,module,exports){
 'use strict';
 
 var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
@@ -37321,7 +37326,33 @@ var Header = function (_React$Component) {
 
 module.exports = Header;
 
-},{"./Buttons.jsx":376,"./ListMapSwitch.jsx":381,"./ProfessionalClientSwitch.jsx":387,"./ProfessionalServiceSwitch.jsx":388,"./Search.jsx":390,"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345}],381:[function(require,module,exports){
+},{"./Buttons.jsx":376,"./ListMapSwitch.jsx":382,"./ProfessionalClientSwitch.jsx":388,"./ProfessionalServiceSwitch.jsx":389,"./Search.jsx":391,"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345}],381:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var List = _react2.default.createClass({
+  displayName: 'List',
+  render: function render() {
+    return _react2.default.createElement(
+      'div',
+      { className: 'list', onClick: this.props.onClick },
+      'Coming soon!'
+    );
+  }
+});
+
+exports.default = List;
+
+},{"react":345}],382:[function(require,module,exports){
 'use strict';
 
 var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
@@ -37399,7 +37430,7 @@ var ListMapSwitch = function (_React$Component) {
 
 module.exports = ListMapSwitch;
 
-},{"../actions/actions.js":373,"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345}],382:[function(require,module,exports){
+},{"../actions/actions.js":373,"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345}],383:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -37575,7 +37606,7 @@ var Map = _react2.default.createClass({
 
 exports.default = Map;
 
-},{"../actions/actions.js":373,"./Marker.jsx":383,"react":345,"react-dom":196,"supercluster":369}],383:[function(require,module,exports){
+},{"../actions/actions.js":373,"./Marker.jsx":384,"react":345,"react-dom":196,"supercluster":369}],384:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -37637,7 +37668,7 @@ var mapStateToProps = function mapStateToProps(state) {
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps)(Marker);
 
-},{"react":345,"react-redux":199}],384:[function(require,module,exports){
+},{"react":345,"react-redux":199}],385:[function(require,module,exports){
 'use strict';
 
 var _react = require('react');
@@ -37671,7 +37702,7 @@ var OnlineFilter = _react2.default.createClass({
 
 module.exports = OnlineFilter;
 
-},{"react":345}],385:[function(require,module,exports){
+},{"react":345}],386:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray2 = require('babel-runtime/helpers/slicedToArray');
@@ -37744,7 +37775,7 @@ var PriceFilter = _react2.default.createClass({
 
 module.exports = PriceFilter;
 
-},{"babel-runtime/helpers/slicedToArray":18,"rc-slider":183,"react":345}],386:[function(require,module,exports){
+},{"babel-runtime/helpers/slicedToArray":18,"rc-slider":183,"react":345}],387:[function(require,module,exports){
 'use strict';
 
 var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
@@ -37821,7 +37852,7 @@ var PriceRatingSwitch = function (_React$Component) {
 
 module.exports = PriceRatingSwitch;
 
-},{"../actions/actions.js":373,"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345}],387:[function(require,module,exports){
+},{"../actions/actions.js":373,"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345}],388:[function(require,module,exports){
 'use strict';
 
 var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
@@ -37904,7 +37935,7 @@ var ProfessionalClientSwitch = function (_React$Component) {
 
 module.exports = ProfessionalClientSwitch;
 
-},{"../actions/actions.js":373,"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345}],388:[function(require,module,exports){
+},{"../actions/actions.js":373,"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345}],389:[function(require,module,exports){
 'use strict';
 
 var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
@@ -37987,7 +38018,7 @@ var ProfessionalServiceSwitch = function (_React$Component) {
 
 module.exports = ProfessionalServiceSwitch;
 
-},{"../actions/actions.js":373,"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345}],389:[function(require,module,exports){
+},{"../actions/actions.js":373,"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345}],390:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray2 = require('babel-runtime/helpers/slicedToArray');
@@ -38059,7 +38090,7 @@ var RatingFilter = _react2.default.createClass({
 
 module.exports = RatingFilter;
 
-},{"babel-runtime/helpers/slicedToArray":18,"rc-slider":183,"react":345}],390:[function(require,module,exports){
+},{"babel-runtime/helpers/slicedToArray":18,"rc-slider":183,"react":345}],391:[function(require,module,exports){
 'use strict';
 
 var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
@@ -38120,7 +38151,7 @@ var Search = function (_React$Component) {
 
 module.exports = Search;
 
-},{"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345}],391:[function(require,module,exports){
+},{"babel-runtime/core-js/object/get-prototype-of":9,"babel-runtime/helpers/classCallCheck":14,"babel-runtime/helpers/createClass":15,"babel-runtime/helpers/inherits":16,"babel-runtime/helpers/possibleConstructorReturn":17,"react":345}],392:[function(require,module,exports){
 'use strict';
 
 var _react = require('react');
@@ -38169,7 +38200,7 @@ _reactDom2.default.render(_react2.default.createElement(
   _react2.default.createElement(_App2.default, null)
 ), document.querySelector('#root'));
 
-},{"./components/App.jsx":375,"./reducers/reducer.js":393,"./sagas/sagas.js":394,"react":345,"react-dom":196,"react-redux":199,"redux":365,"redux-logger":346,"redux-saga":349}],392:[function(require,module,exports){
+},{"./components/App.jsx":375,"./reducers/reducer.js":394,"./sagas/sagas.js":395,"react":345,"react-dom":196,"react-redux":199,"redux":365,"redux-logger":346,"redux-saga":349}],393:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -38250,7 +38281,7 @@ exports.default = [{
   }
 }];
 
-},{}],393:[function(require,module,exports){
+},{}],394:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -38351,7 +38382,7 @@ var reducer = function reducer() {
 
 exports.default = reducer;
 
-},{"../actions/actions.js":373,"../layers.js":392,"babel-runtime/core-js/object/assign":6,"immutable":159}],394:[function(require,module,exports){
+},{"../actions/actions.js":373,"../layers.js":393,"babel-runtime/core-js/object/assign":6,"immutable":159}],395:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -38478,4 +38509,4 @@ function Saga() {
 
 exports.default = Saga;
 
-},{"../actions/actions.js":373,"babel-runtime/core-js/promise":11,"babel-runtime/regenerator":20,"immutable":159,"redux-saga":349,"redux-saga/effects":347}]},{},[391]);
+},{"../actions/actions.js":373,"babel-runtime/core-js/promise":11,"babel-runtime/regenerator":20,"immutable":159,"redux-saga":349,"redux-saga/effects":347}]},{},[392]);

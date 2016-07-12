@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import Map from './Map.jsx';
 import Card from './Card.jsx';
+import List from './List.jsx';
 import Header from './Header.jsx';
 import FiltersPanel from './FiltersPanel.jsx';
 import PriceRatingSwitch from './PriceRatingSwitch.jsx';
@@ -33,6 +34,7 @@ class App extends React.Component {
               fixedOrHourly={ this.props.fixedOrHourly }
             />
         }
+        { this.props.listOrMap === 'list' && <List /> }
         <FiltersPanel
           dispatch={ this.props.dispatch }
           fixedOrHourly={ this.props.fixedOrHourly }
