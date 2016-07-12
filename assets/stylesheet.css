@@ -439,6 +439,24 @@ body {
   object-fit: cover;
 }
 
+.card-animation-enter {
+  left: -300px;
+}
+
+.card-animation-enter.card-animation-enter-active {
+  left: 20px;
+  transition: left ease-out 0.3s;
+}
+
+.card-animation-leave {
+  left: 20px;
+}
+
+.card-animation-leave.card-animation-leave-active {
+  left: -300px;
+  transition: left ease-out 0.2s;
+}
+
 .price-rating-switch {
   position: absolute;
   right: 25px;

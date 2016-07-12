@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { connect } from 'react-redux';
 
 import Map from './Map.jsx';
@@ -39,13 +40,20 @@ class App extends React.Component {
           dispatch={ this.props.dispatch }
           fixedOrHourly={ this.props.fixedOrHourly }
         />
-        {
-          this.props.cardFeature &&
-            <Card
-              feature={ this.props.cardFeature }
-              dispatch={ this.props.dispatch }
-            />
-        }
+        <ReactCSSTransitionGroup
+          transitionName='card-animation'
+          transitionEnterTimeout={ 300 }
+          transitionLeaveTimeout={ 200 }
+        >
+          {
+            this.props.cardFeature &&
+                <Card
+                  key='card'
+                  feature={ this.props.cardFeature }
+                  dispatch={ this.props.dispatch }
+                />
+          }
+        </ReactCSSTransitionGroup>
         <PriceRatingSwitch
           dispatch={ this.props.dispatch }
           priceOrRating={ this.props.priceOrRating }

@@ -36,6 +36,7 @@
     "histoslider": "github:samhogg/histoslider",
     "immutable": "3.8.1",
     "rc-slider": "3.7.4",
+    "react-addons-css-transition-group": "15.2.1",
     "react-map-gl": "1.0.0",
     "react-redux": "4.4.5",
     "redux": "3.5.2",
