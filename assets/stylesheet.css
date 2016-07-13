@@ -188,6 +188,7 @@ body {
 
 .switcher {
   height: 36px;
+  white-space: nowrap;
   border-radius: 6px;
 }
 
@@ -240,7 +241,7 @@ body {
   padding-bottom: 10px;
 }
 
-.filters-panel-container .all-filters {
+.filters-panel-container .filters-panel-toggle {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -252,11 +253,11 @@ body {
   background: #eee;
   font-size: 15px;
   text-align: center;
-
+  z-index: 3;
   border-radius: 0px 0px 6px 6px;
 }
 
-.filters-panel-container .all-filters img {
+.filters-panel-container .filters-panel-toggle img {
   padding-right: 6px;
 }
 

@@ -39463,7 +39463,7 @@ var FiltersPanelToggle = function (_React$Component) {
       if (this.props.opened) {
         return _react2.default.createElement(
           'div',
-          { className: 'all-filters', onClick: this.props.onClick },
+          { className: 'filters-panel-toggle', onClick: this.props.onClick },
           _react2.default.createElement('img', { src: 'assets/images/close-filters.png' }),
           'Hide all filters'
         );
@@ -39471,7 +39471,7 @@ var FiltersPanelToggle = function (_React$Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: 'all-filters', onClick: this.props.onClick },
+        { className: 'filters-panel-toggle', onClick: this.props.onClick },
         _react2.default.createElement('img', { src: 'assets/images/open-filters.png' }),
         'All filters'
       );
