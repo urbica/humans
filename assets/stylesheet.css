@@ -73,7 +73,7 @@ body {
 .buttons .button.buttonAbout {
   padding: 8px 20px 8px 40px;
   background-color: #7A7E83;
-  background-image: url('play.png');
+  background-image: url('images/play.png');
   background-repeat: no-repeat;
   background-position: 10px center;
 }
@@ -230,6 +230,10 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.filters-panel-container.opened {
+  height: 480px;
+}
+
 .filters-panel-container .title {
   color: #3f3434;
   font-size: 19px;
@@ -257,7 +261,8 @@ body {
 }
 
 .filters-panel-container .price-filter-container,
-.filters-panel-container .rating-filter-container {
+.filters-panel-container .rating-filter-container,
+.filters-panel-container .jobs-filter-container {
   color: #4a4040;
   margin: 30px 0;
   display: flex;
@@ -271,7 +276,8 @@ body {
   margin: 10px;
 }
 
-.filters-panel-container .rating-filter-container .rating-filter-slider-wrapper {
+.filters-panel-container .rating-filter-container .rating-filter-slider-wrapper,
+.filters-panel-container .jobs-filter-container .jobs-filter-slider-wrapper {
   width: 180px;
   margin: 10px;
 }
@@ -340,9 +346,14 @@ body {
   border: solid 1px #1599ff;
   border-radius: 6px;
   background-color: #1599ff;
-  background-image: url('./checkmark.png');
+  background-image: url('images/checkmark.png');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.filters-panel-container .language-filter-container,
+.filters-panel-container .city-filter-container {
+  padding: 6px 0;
 }
 
 #map {

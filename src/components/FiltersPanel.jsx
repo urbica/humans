@@ -1,10 +1,12 @@
 import React from 'react';
-import AllFilters from './AllFilters.jsx';
+import CityFilter from './CityFilter.jsx';
 import JobsFilter from './JobsFilter.jsx';
 import PriceFilter from './PriceFilter.jsx';
 import RatingFilter from './RatingFilter.jsx';
 import OnlineFilter from './OnlineFilter.jsx';
+import LanguageFilter from './LanguageFilter.jsx';
 import FixedHourlySwitch from './FixedHourlySwitch.jsx';
+import FiltersPanelToggle from './FiltersPanelToggle.jsx';
 
 const FiltersPanel = React.createClass({
   getInitialState() {
@@ -14,7 +16,6 @@ const FiltersPanel = React.createClass({
   },
 
   toggle() {
-    console.log('toggle');
     this.setState({ opened: !this.state.opened });
   },
 
@@ -34,9 +35,13 @@ const FiltersPanel = React.createClass({
         <OnlineFilter />
         {
           this.state.opened &&
-            <JobsFilter />
+            <div>
+              <JobsFilter />
+              <LanguageFilter />
+              <CityFilter />
+            </div>
         }
-        <AllFilters onClick={ this.toggle } />
+        <FiltersPanelToggle onClick={ this.toggle } opened={ this.state.opened } />
       </div>
     );
   }

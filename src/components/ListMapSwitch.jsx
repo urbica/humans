@@ -13,7 +13,12 @@ class ListMapSwitch extends React.Component {
     return (
       <div className='switcher list-map-switch'>
         <div className={ listClassName } onClick={ onListClick }>☰ List</div>
-        <div className={ mapClassName } onClick={ onMapClick }><img src='assets/pin.svg'/> Map</div>
+        <div
+          className={ mapClassName }
+          onClick={ onMapClick }
+        >
+          <img src='assets/images/pin.svg'/> Map
+        </div>
       </div>
     );
   }

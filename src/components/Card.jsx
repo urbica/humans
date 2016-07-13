@@ -11,7 +11,7 @@ const Card = React.createClass({
       <div className='card-container'>
         <div className='title' onClick={ onClick }>← Filters</div>
         <img className='photo' src={ photo } />
-        <img className='card-mock' src='assets/card-mock.png' />
+        <img className='card-mock' src='assets/images/card-mock.png' />
       </div>
     );
   }

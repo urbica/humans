@@ -17,17 +17,17 @@ const JobsFilter = React.createClass({
     const { min, max } = this.state;
 
     return (
-      <div className='rating-filter-container'>
+      <div className='jobs-filter-container'>
         <span className='filter-label-min'>Jobs { min }</span>
-        <div className='rating-filter-slider-wrapper'>
+        <div className='jobs-filter-slider-wrapper'>
           <Slider
             range
             min={ 0 }
-            max={ 5 }
+            max={ 50 }
+            onChange={ this.handleOnChange }
             allowCross={ true }
             tipFormatter={ null }
             defaultValue={ [min, max] }
-            onChange={ this.handleOnChange }
           />
         </div>
         <span className='filter-label-max'>{ max }</span>
