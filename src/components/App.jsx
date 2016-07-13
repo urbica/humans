@@ -29,6 +29,7 @@ class App extends React.Component {
         {
           this.props.mapStyle &&
             <Map
+              data={ this.props.data }
               style={ this.props.mapStyle }
               dispatch={ this.props.dispatch }
               priceOrRating={ this.props.priceOrRating }

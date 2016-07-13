@@ -121,13 +121,14 @@ const Map = React.createClass({
     const bbox = bounds[0].concat(bounds[1]);
 
     const clusters = this.state.cluster.getClusters(bbox, Math.floor(zoom));
-    this.map.getSource('clusters').setData({
-      type: 'FeatureCollection',
-      features: clusters
-    });
+    // this.map.getSource('clusters').setData({
+    //   type: 'FeatureCollection',
+    //   features: clusters
+    // });
 
     if (zoom >= 12) {
-      const newMarkers = clusters.map(feature => this.renderMarker(feature));
+      // const newMarkers = clusters.map(feature => this.renderMarker(feature));
+      const newMarkers = this.props.data.features.map(feature => this.renderMarker(feature));
       this.state.markers.forEach(marker => marker.remove());
 
       this.setState({ markers: newMarkers }, () =>
