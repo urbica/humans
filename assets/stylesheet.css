@@ -361,6 +361,10 @@ body {
   cursor: pointer;
 }
 
+.mapboxgl-marker .marker-container {
+  margin-top: -45px;
+}
+
 .mapboxgl-marker .photo {
   display: block;
   width: 70px;

@@ -67,9 +67,9 @@ const Map = React.createClass({
               const features = newSource.getIn(['data', 'features']).toJS();
               const cluster = supercluster({
                 log: false,
-                radius: 40,
+                radius: 20,
                 extent: 256,
-                maxZoom: 17
+                maxZoom: 14
               }).load(features);
               this.setState({ cluster });
             }

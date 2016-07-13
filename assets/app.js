@@ -38343,9 +38343,9 @@ var Map = _react2.default.createClass({
             var features = newSource.getIn(['data', 'features']).toJS();
             var cluster = (0, _supercluster2.default)({
               log: false,
-              radius: 40,
+              radius: 20,
               extent: 256,
-              maxZoom: 17
+              maxZoom: 14
             }).load(features);
             _this.setState({ cluster: cluster });
           }
@@ -38472,7 +38472,7 @@ var Marker = _react2.default.createClass({
 
     return _react2.default.createElement(
       'div',
-      { onClick: this.props.onClick },
+      { className: 'marker-container', onClick: this.props.onClick },
       _react2.default.createElement('img', { className: 'photo', src: photo }),
       _react2.default.createElement(
         'div',
@@ -39094,7 +39094,7 @@ exports.default = [{
   paint: {
     'circle-color': '#4A90E2',
     'circle-radius': {
-      stops: [[1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 2.2], [13, 2.5], [14, 3], [15, 3.5], [16, 4], [17, 4], [18, 4], [19, 4], [20, 4]]
+      stops: [[1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 2], [13, 2.2], [14, 2.5], [15, 3], [16, 3.5], [17, 4], [18, 4], [19, 4], [20, 4]]
     },
     'circle-blur': {
       stops: [[1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0.4], [12, 0.6], [13, 0], [14, 0], [15, 0], [16, 0], [17, 0], [18, 0], [19, 0], [20, 0]]
