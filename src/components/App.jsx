@@ -47,11 +47,11 @@ class App extends React.Component {
         >
           {
             this.props.cardFeature &&
-                <Card
-                  key='card'
-                  feature={ this.props.cardFeature }
-                  dispatch={ this.props.dispatch }
-                />
+              <Card
+                key='card'
+                feature={ this.props.cardFeature }
+                dispatch={ this.props.dispatch }
+              />
           }
         </ReactCSSTransitionGroup>
         <PriceRatingSwitch

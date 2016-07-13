@@ -39237,18 +39237,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _marked = [fetchStyle, Saga].map(_regenerator2.default.mark);
 
 var callApi = exports.callApi = function callApi(endpoint) {
-  return fetch(endpoint).then(function (response) {
-    return response.json().then(function (data) {
-      return { data: data, response: response };
-    });
-  }).then(function (_ref) {
-    var data = _ref.data;
-    var response = _ref.response;
+  return new _promise2.default(function (resolve, reject) {
+    var request = new XMLHttpRequest();
+    request.open('GET', endpoint, true);
 
-    if (!response.ok) {
-      return _promise2.default.reject(data);
-    }
-    return data;
+    request.onload = function () {
+      if (request.status >= 200 && request.status < 400) {
+        resolve(JSON.parse(request.responseText));
+      } else {
+        reject(Error('It broke'));
+      }
+    };
+
+    request.onerror = function () {
+      return reject(Error('Cant call api'));
+    };
+    request.send();
   });
 };
 

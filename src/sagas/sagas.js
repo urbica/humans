@@ -12,14 +12,21 @@ import {
 } from '../actions/actions.js';
 
 export const callApi = (endpoint) =>
-  fetch(endpoint)
-    .then(response => response.json().then(data => ({ data, response })))
-    .then(({ data, response }) => {
-      if (!response.ok) {
-        return Promise.reject(data);
+  new Promise((resolve, reject) => {
+    const request = new XMLHttpRequest();
+    request.open('GET', endpoint, true);
+
+    request.onload = () => {
+      if (request.status >= 200 && request.status < 400) {
+        resolve(JSON.parse(request.responseText));
+      } else {
+        reject(Error('It broke'));
       }
-      return data;
-    });
+    };
+
+    request.onerror = () => reject(Error('Cant call api'));
+    request.send();
+  });
 
 const styleUrl = 'https://api.mapbox.com/styles/v1/humans/cip9hxybc003edmm2i1eqlap8?access_token=pk.eyJ1IjoiaHVtYW5zIiwiYSI6ImNpcDZzdm80cjAwMTB1d203ZmRqZTdwbWEifQ.up9_Pt9XqDhp6m0KLHcbIw';
 const dataUrl = 'assets/med_data.geojson';
