@@ -38339,14 +38339,10 @@ var Map = _react2.default.createClass({
           source.setData(newSource.get('data').toJS());
         } else {
           _this.map.addSource(key, newSource.toJS());
-          if (key === 'markers') {
+          if (key === 'clusters') {
             var features = newSource.getIn(['data', 'features']).toJS();
-            var cluster = (0, _supercluster2.default)({
-              log: false,
-              radius: 20,
-              extent: 256,
-              maxZoom: 14
-            }).load(features);
+            var options = { radius: 20, extent: 256, maxZoom: 14 };
+            var cluster = (0, _supercluster2.default)(options).load(features);
             _this.setState({ cluster: cluster });
           }
         }
@@ -38398,19 +38394,24 @@ var Map = _react2.default.createClass({
     var _this3 = this;
 
     var zoom = this.map.getZoom();
+    var bounds = this.map.getBounds().toArray();
+    var bbox = bounds[0].concat(bounds[1]);
+
+    var clusters = this.state.cluster.getClusters(bbox, Math.floor(zoom));
+    this.map.getSource('clusters').setData({
+      type: 'FeatureCollection',
+      features: clusters
+    });
+
     if (zoom >= 12) {
       (function () {
-        var bounds = _this3.map.getBounds().toArray();
-        var bbox = bounds[0].concat(bounds[1]);
-
-        var clusters = _this3.state.cluster.getClusters(bbox, Math.floor(zoom));
         var newMarkers = clusters.map(function (feature) {
           return _this3.renderMarker(feature);
         });
-
         _this3.state.markers.forEach(function (marker) {
           return marker.remove();
         });
+
         _this3.setState({ markers: newMarkers }, function () {
           return newMarkers.forEach(function (marker) {
             return marker.addTo(_this3.map);
@@ -39031,34 +39032,26 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = [{
-  id: 'markers',
+  id: 'clusters',
   type: 'circle',
-  source: 'markers',
+  source: 'clusters',
   paint: {
-    'circle-radius': 1,
-    'circle-color': '#fff',
-    'circle-opacity': 1
-  }
-}, {
-  id: 'areaMarkers',
-  type: 'circle',
-  source: 'markers',
-  paint: {
-    'circle-color': '#00DBFF',
+    'circle-color': '#4A90E2',
     'circle-radius': {
-      stops: [[1, 17], [2, 17], [3, 17], [4, 16], [5, 16], [6, 16], [7, 15], [8, 12], [9, 10], [10, 9], [11, 0]]
+      stops: [[1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 2], [13, 2.2], [14, 2.5], [15, 3], [16, 3.5], [17, 4], [18, 4], [19, 4], [20, 4]]
     },
     'circle-blur': {
-      stops: [[1, 5], [2, 5], [3, 5], [4, 5], [5, 4], [6, 3], [7, 2], [8, 1.4], [9, 1], [10, 1], [11, 1]]
+      stops: [[1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0.4], [12, 0.6], [13, 0], [14, 0], [15, 0], [16, 0], [17, 0], [18, 0], [19, 0], [20, 0]]
     },
     'circle-opacity': {
-      stops: [[1, 0.8], [2, 0.8], [3, 0.8], [4, 0.9], [5, 0.9], [6, 0.9], [7, 0.8], [8, 0.8], [9, 0.6], [10, 0.4], [11, 0]]
+      stops: [[1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0.8], [12, 0.8], [13, 1], [14, 1], [15, 1], [16, 1], [17, 1], [18, 1], [19, 1], [20, 1]]
     }
   }
 }, {
   id: 'blueMarkers',
   type: 'circle',
-  source: 'markers',
+  source: 'clusters',
+  // filter: ['==', 'cluster', true],
   paint: {
     'circle-color': '#33BDFF',
     'circle-radius': {
@@ -39069,6 +39062,22 @@ exports.default = [{
     },
     'circle-opacity': {
       stops: [[9, 0], [10, 0.3], [11, 0.6], [12, 0.5], [13, 0.2], [14, 0]]
+    }
+  }
+}, {
+  id: 'areaMarkers',
+  type: 'circle',
+  source: 'markers',
+  paint: {
+    'circle-color': '#00DBFF',
+    'circle-radius': {
+      stops: [[1, 17], [2, 17], [3, 17], [4, 16], [5, 16], [6, 16], [7, 15], [8, 12], [9, 10], [10, 9], [11, 4]]
+    },
+    'circle-blur': {
+      stops: [[1, 5], [2, 5], [3, 5], [4, 5], [5, 4], [6, 3], [7, 2], [8, 1.4], [9, 1], [10, 1], [11, 1]]
+    },
+    'circle-opacity': {
+      stops: [[1, 0.8], [2, 0.8], [3, 0.8], [4, 0.9], [5, 0.9], [6, 0.9], [7, 0.8], [8, 0.8], [9, 0.6], [10, 0.4], [11, 0.1]]
     }
   }
 }, {
@@ -39085,22 +39094,6 @@ exports.default = [{
     },
     'circle-opacity': {
       stops: [[1, 0.4], [2, 0.4], [3, 0.4], [4, 0.4], [5, 0.4], [6, 0.4], [7, 0.4], [8, 0.4], [9, 0.4], [10, 0.4], [11, 0.2], [12, 0], [13, 0], [14, 0], [15, 0], [16, 0], [17, 0], [18, 0], [19, 0], [20, 0]]
-    }
-  }
-}, {
-  id: 'miniMarkers',
-  type: 'circle',
-  source: 'markers',
-  paint: {
-    'circle-color': '#4A90E2',
-    'circle-radius': {
-      stops: [[1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 2], [13, 2.2], [14, 2.5], [15, 3], [16, 3.5], [17, 4], [18, 4], [19, 4], [20, 4]]
-    },
-    'circle-blur': {
-      stops: [[1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0.4], [12, 0.6], [13, 0], [14, 0], [15, 0], [16, 0], [17, 0], [18, 0], [19, 0], [20, 0]]
-    },
-    'circle-opacity': {
-      stops: [[1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0.8], [12, 0.8], [13, 1], [14, 1], [15, 1], [16, 1], [17, 1], [18, 1], [19, 1], [20, 1]]
     }
   }
 }];
@@ -39157,7 +39150,8 @@ var reducer = function reducer() {
           data: payload,
           mapStyle: mapStyle.mergeDeep({
             sources: {
-              markers: { type: 'geojson', data: payload }
+              markers: { type: 'geojson', data: payload },
+              clusters: { type: 'geojson', data: payload }
             }
           }).update('layers', function (existingLayers) {
             return existingLayers.concat(_layers2.default);

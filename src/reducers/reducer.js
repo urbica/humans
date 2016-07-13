@@ -23,7 +23,8 @@ const reducer = (state = initialState, { type, payload }) => {
         data: payload,
         mapStyle: mapStyle.mergeDeep({
           sources: {
-            markers: { type: 'geojson', data: payload }
+            markers: { type: 'geojson', data: payload },
+            clusters: { type: 'geojson', data: payload }
           }
         }).update('layers', (existingLayers) => existingLayers.concat(layers))
       });

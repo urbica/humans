@@ -449,7 +449,7 @@ body {
 
 .card-animation-enter.card-animation-enter-active {
   left: 20px;
-  transition: left ease-out 0.3s;
+  transition: left ease-out 0.2s;
 }
 
 .card-animation-leave {
@@ -458,7 +458,7 @@ body {
 
 .card-animation-leave.card-animation-leave-active {
   left: -300px;
-  transition: left ease-out 0.2s;
+  transition: left ease-out 0.15s;
 }
 
 .price-rating-switch {

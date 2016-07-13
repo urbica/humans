@@ -63,14 +63,10 @@ const Map = React.createClass({
             source.setData(newSource.get('data').toJS());
           } else {
             this.map.addSource(key, newSource.toJS());
-            if (key === 'markers') {
+            if (key === 'clusters') {
               const features = newSource.getIn(['data', 'features']).toJS();
-              const cluster = supercluster({
-                log: false,
-                radius: 20,
-                extent: 256,
-                maxZoom: 14
-              }).load(features);
+              const options = { radius: 20, extent: 256, maxZoom: 14 };
+              const cluster = supercluster(options).load(features);
               this.setState({ cluster });
             }
           }
@@ -121,19 +117,21 @@ const Map = React.createClass({
 
   onMoveEnd() {
     const zoom = this.map.getZoom();
+    const bounds = this.map.getBounds().toArray();
+    const bbox = bounds[0].concat(bounds[1]);
+
+    const clusters = this.state.cluster.getClusters(bbox, Math.floor(zoom));
+    this.map.getSource('clusters').setData({
+      type: 'FeatureCollection',
+      features: clusters
+    });
+
     if (zoom >= 12) {
-      const bounds = this.map.getBounds().toArray();
-      const bbox = bounds[0].concat(bounds[1]);
-
-      const clusters = this.state.cluster.getClusters(bbox, Math.floor(zoom));
-      const newMarkers = clusters.map(feature =>
-        this.renderMarker(feature)
-      );
-
+      const newMarkers = clusters.map(feature => this.renderMarker(feature));
       this.state.markers.forEach(marker => marker.remove());
-      this.setState(
-        { markers: newMarkers },
-        () => newMarkers.forEach(marker => marker.addTo(this.map))
+
+      this.setState({ markers: newMarkers }, () =>
+        newMarkers.forEach(marker => marker.addTo(this.map))
       );
     } else if (this.state.markers.length > 0) {
       this.state.markers.forEach(marker => marker.remove());
