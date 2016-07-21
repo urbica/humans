@@ -40035,19 +40035,25 @@ var Map = _react2.default.createClass({
   onMoveEnd: function onMoveEnd() {
     var _this3 = this;
 
-    var zoom = this.map.getZoom();
-    var bounds = this.map.getBounds().toArray();
-    var bbox = bounds[0].concat(bounds[1]);
+    var bounds = this.map.getBounds();
+    var nw = this.map.project(bounds.getNorthWest());
+    var se = this.map.project(bounds.getSouthEast());
+    var bbox = [[nw.x, nw.y], [se.x, se.y]];
 
-    var clusters = this.state.cluster.getClusters(bbox, Math.floor(zoom));
-    this.map.getSource('clusters').setData({
-      type: 'FeatureCollection',
-      features: clusters
-    });
+    var zoom = this.map.getZoom();
+    // const bounds = this.map.getBounds().toArray();
+    // const bbox = bounds[0].concat(bounds[1]);
+    //
+    // const clusters = this.state.cluster.getClusters(bbox, Math.floor(zoom));
+    // this.map.getSource('clusters').setData({
+    //   type: 'FeatureCollection',
+    //   features: clusters
+    // });
 
     if (zoom >= 12) {
       (function () {
-        var newMarkers = clusters.map(function (feature) {
+        var features = _this3.map.queryRenderedFeatures(bbox, { layers: ['clusters'] });
+        var newMarkers = features.map(function (feature) {
           return _this3.renderMarker(feature);
         });
         _this3.state.markers.forEach(function (marker) {
@@ -40059,6 +40065,13 @@ var Map = _react2.default.createClass({
             return marker.addTo(_this3.map);
           });
         });
+
+        // const newMarkers = clusters.map(feature => this.renderMarker(feature));
+        // this.state.markers.forEach(marker => marker.remove());
+        //
+        // this.setState({ markers: newMarkers }, () =>
+        //   newMarkers.forEach(marker => marker.addTo(this.map))
+        // );
       })();
     } else if (this.state.markers.length > 0) {
       this.state.markers.forEach(function (marker) {
@@ -40676,7 +40689,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = [{
   id: 'clusters',
   type: 'circle',
-  source: 'clusters',
+  source: 'markers',
+  // source: 'clusters',
   paint: {
     'circle-color': '#4A90E2',
     'circle-radius': {
@@ -40692,8 +40706,8 @@ exports.default = [{
 }, {
   id: 'blueMarkers',
   type: 'circle',
-  source: 'clusters',
-  // filter: ['==', 'cluster', true],
+  source: 'markers',
+  // source: 'clusters',
   paint: {
     'circle-color': '#33BDFF',
     'circle-radius': {

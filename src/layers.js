@@ -2,7 +2,8 @@ export default [
   {
     id: 'clusters',
     type: 'circle',
-    source: 'clusters',
+    source: 'markers',
+    // source: 'clusters',
     paint: {
       'circle-color': '#4A90E2',
       'circle-radius': {
@@ -82,8 +83,8 @@ export default [
   {
     id: 'blueMarkers',
     type: 'circle',
-    source: 'clusters',
-    // filter: ['==', 'cluster', true],
+    source: 'markers',
+    // source: 'clusters',
     paint: {
       'circle-color': '#33BDFF',
       'circle-radius': {
