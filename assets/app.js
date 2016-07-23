@@ -40907,7 +40907,7 @@ var callApi = exports.callApi = function callApi(endpoint) {
 };
 
 var styleUrl = 'https://api.mapbox.com/styles/v1/humans/cip9hxybc003edmm2i1eqlap8?access_token=pk.eyJ1IjoiaHVtYW5zIiwiYSI6ImNpcDZzdm80cjAwMTB1d203ZmRqZTdwbWEifQ.up9_Pt9XqDhp6m0KLHcbIw';
-var dataUrl = 'assets/med_data.geojson';
+var dataUrl = 'assets/big_data.geojson';
 
 function fetchStyle() {
   var style, data;
