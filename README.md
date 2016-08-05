@@ -5,7 +5,7 @@
 ## Installation and usage
 
 ```
-git clone https://github.com/urbica/humans.git
+git clone https://github.com/humansmap/humans.git
 cd humans
 npm i
 npm start
