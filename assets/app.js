@@ -39983,7 +39983,7 @@ var Map = _react2.default.createClass({
           _this.map.addSource(key, newSource.toJS());
           if (key === 'clusters') {
             var features = newSource.getIn(['data', 'features']).toJS();
-            var options = { radius: 20, extent: 256, maxZoom: 14 };
+            var options = { radius: 30, extent: 256, maxZoom: 16 };
             var cluster = (0, _supercluster2.default)(options).load(features);
             _this.setState({ cluster: cluster });
           }
@@ -40035,25 +40035,32 @@ var Map = _react2.default.createClass({
   onMoveEnd: function onMoveEnd() {
     var _this3 = this;
 
-    var bounds = this.map.getBounds();
-    var nw = this.map.project(bounds.getNorthWest());
-    var se = this.map.project(bounds.getSouthEast());
-    var bbox = [[nw.x, nw.y], [se.x, se.y]];
+    // const bounds = this.map.getBounds();
+    // const nw = this.map.project(bounds.getNorthWest());
+    // const se = this.map.project(bounds.getSouthEast());
+    // const bbox = [[nw.x, nw.y], [se.x, se.y]];
 
     var zoom = this.map.getZoom();
-    // const bounds = this.map.getBounds().toArray();
-    // const bbox = bounds[0].concat(bounds[1]);
-    //
-    // const clusters = this.state.cluster.getClusters(bbox, Math.floor(zoom));
-    // this.map.getSource('clusters').setData({
-    //   type: 'FeatureCollection',
-    //   features: clusters
-    // });
+    var bounds = this.map.getBounds().toArray();
+    var bbox = bounds[0].concat(bounds[1]);
+
+    var clusters = this.state.cluster.getClusters(bbox, Math.floor(zoom));
+    this.map.getSource('clusters').setData({
+      type: 'FeatureCollection',
+      features: clusters
+    });
 
     if (zoom >= 12) {
       (function () {
-        var features = _this3.map.queryRenderedFeatures(bbox, { layers: ['clusters'] });
-        var newMarkers = features.map(function (feature) {
+        // const features = this.map.queryRenderedFeatures(bbox, { layers: ['clusters'] });
+        // const newMarkers = features.map(feature => this.renderMarker(feature));
+        // this.state.markers.forEach(marker => marker.remove());
+        //
+        // this.setState({ markers: newMarkers }, () =>
+        //   newMarkers.forEach(marker => marker.addTo(this.map))
+        // );
+
+        var newMarkers = clusters.map(function (feature) {
           return _this3.renderMarker(feature);
         });
         _this3.state.markers.forEach(function (marker) {
@@ -40065,13 +40072,6 @@ var Map = _react2.default.createClass({
             return marker.addTo(_this3.map);
           });
         });
-
-        // const newMarkers = clusters.map(feature => this.renderMarker(feature));
-        // this.state.markers.forEach(marker => marker.remove());
-        //
-        // this.setState({ markers: newMarkers }, () =>
-        //   newMarkers.forEach(marker => marker.addTo(this.map))
-        // );
       })();
     } else if (this.state.markers.length > 0) {
       this.state.markers.forEach(function (marker) {
