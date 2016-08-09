@@ -4,11 +4,7 @@ import { connect } from 'react-redux';
 const Marker = React.createClass({
   render() {
     const { feature, priceOrRating, fixedOrHourly } = this.props;
-    const { properties } = feature;
-
-    const photo = properties.photo || 'photos/Emil.jpg';
-    const price = properties.price || 25;
-    const rating = properties.rating || 4.8;
+    const { photo, price, rating } = feature.properties;
 
     let title;
     if (priceOrRating === 'price') {

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import supercluster from 'supercluster';
+// import supercluster from 'supercluster';
 import { showCard } from '../actions/actions.js';
 
 // import mapboxgl from 'mapbox-gl';
@@ -17,7 +17,8 @@ const Map = React.createClass({
 
   getInitialState() {
     return {
-      markers: []
+      markers: [],
+      features: [] // not-clusterized
     };
   },
 
@@ -66,8 +67,9 @@ const Map = React.createClass({
             if (key === 'clusters') {
               const features = newSource.getIn(['data', 'features']).toJS();
               const options = { radius: 30, extent: 256, maxZoom: 16 };
+              // eslint-disable-next-line
               const cluster = supercluster(options).load(features);
-              this.setState({ cluster });
+              this.setState({ cluster, features });
             }
           }
         });
@@ -101,7 +103,15 @@ const Map = React.createClass({
     }
   },
 
-  renderMarker(feature) {
+  renderMarker(clusterOrFeature) {
+    let feature;
+    if (clusterOrFeature.properties.cluster) {
+      const neighborId = clusterOrFeature.properties.neighbor_ids[0] || 0;
+      feature = this.state.features[neighborId];
+    } else {
+      feature = clusterOrFeature;
+    }
+
     const div = document.createElement('div');
     const onClick = () => this.props.dispatch(showCard(feature));
     ReactDOM.render(
