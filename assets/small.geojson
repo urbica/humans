@@ -1,0 +1,1451 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2016-10-20T15:28:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/73305540",
+      "properties": {
+        "@id": "way/73305540",
+        "addr:housenumber": "682",
+        "addr:street": "Commerce Drive",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "Bright Horizons",
+        "phone": "+1 203 3844951"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.2345411,
+              41.1629323
+            ],
+            [
+              -73.2342638,
+              41.1631166
+            ],
+            [
+              -73.2343798,
+              41.1632133
+            ],
+            [
+              -73.2343366,
+              41.1632431
+            ],
+            [
+              -73.2343988,
+              41.1632945
+            ],
+            [
+              -73.2344416,
+              41.1632677
+            ],
+            [
+              -73.2345039,
+              41.1633215
+            ],
+            [
+              -73.2347766,
+              41.1631422
+            ],
+            [
+              -73.2345411,
+              41.1629323
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/160176376",
+      "properties": {
+        "@id": "way/160176376",
+        "addr:city": "Fairfield",
+        "addr:housenumber": "414",
+        "addr:street": "Greenfield St",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "Teadybear Corner Daycare",
+        "source": "Bing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.2325331,
+              41.1782582
+            ],
+            [
+              -73.2323151,
+              41.178257
+            ],
+            [
+              -73.232313,
+              41.1784785
+            ],
+            [
+              -73.2324039,
+              41.178479
+            ],
+            [
+              -73.2324055,
+              41.1783172
+            ],
+            [
+              -73.2324632,
+              41.1783175
+            ],
+            [
+              -73.2324631,
+              41.1783308
+            ],
+            [
+              -73.2325323,
+              41.1783312
+            ],
+            [
+              -73.2325331,
+              41.1782582
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/160176377",
+      "properties": {
+        "@id": "way/160176377",
+        "addr:city": "Fairfield",
+        "addr:housenumber": "435",
+        "addr:state": "CT",
+        "addr:street": "Old Stratfield Rd",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "Teadybear Corner Daycare",
+        "source": "Bing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.2323834,
+              41.1785413
+            ],
+            [
+              -73.2322919,
+              41.1785405
+            ],
+            [
+              -73.2322914,
+              41.1785777
+            ],
+            [
+              -73.2322103,
+              41.178577
+            ],
+            [
+              -73.2322101,
+              41.178588
+            ],
+            [
+              -73.2321643,
+              41.1785875
+            ],
+            [
+              -73.2321636,
+              41.1786286
+            ],
+            [
+              -73.232382,
+              41.1786306
+            ],
+            [
+              -73.2323834,
+              41.1785413
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/203311702",
+      "properties": {
+        "@id": "way/203311702",
+        "addr:housename": "Calvin Hall",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "email": "preschoolfairfield@gmail.com",
+        "name": "Kings Highway Preschool of Fairfield"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.2326353,
+              41.1671705
+            ],
+            [
+              -73.232401,
+              41.1669924
+            ],
+            [
+              -73.2323052,
+              41.1670639
+            ],
+            [
+              -73.2325395,
+              41.167242
+            ],
+            [
+              -73.2326353,
+              41.1671705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/206310630",
+      "properties": {
+        "@id": "way/206310630",
+        "addr:housenumber": "2363",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "KDM Family Daycare",
+        "phone": "+1 203 6128505"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.2155522,
+              41.1784201
+            ],
+            [
+              -73.2155761,
+              41.1784388
+            ],
+            [
+              -73.2155598,
+              41.1784506
+            ],
+            [
+              -73.2155855,
+              41.1784707
+            ],
+            [
+              -73.2156151,
+              41.1784493
+            ],
+            [
+              -73.2156797,
+              41.1784026
+            ],
+            [
+              -73.2156277,
+              41.1783619
+            ],
+            [
+              -73.21564,
+              41.178353
+            ],
+            [
+              -73.2155988,
+              41.1783207
+            ],
+            [
+              -73.2155866,
+              41.1783296
+            ],
+            [
+              -73.2155581,
+              41.1783073
+            ],
+            [
+              -73.2155361,
+              41.1783232
+            ],
+            [
+              -73.2155158,
+              41.1783073
+            ],
+            [
+              -73.2154663,
+              41.178343
+            ],
+            [
+              -73.215537,
+              41.1783985
+            ],
+            [
+              -73.2155191,
+              41.1784114
+            ],
+            [
+              -73.2155408,
+              41.1784284
+            ],
+            [
+              -73.2155522,
+              41.1784201
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/206380431",
+      "properties": {
+        "@id": "way/206380431",
+        "addr:housenumber": "1245",
+        "addr:street": "Fairfield Avenue",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "Child World Academy",
+        "phone": "+1 203 3300801"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.2079124,
+              41.1735222
+            ],
+            [
+              -73.2079805,
+              41.1737389
+            ],
+            [
+              -73.2081274,
+              41.1737128
+            ],
+            [
+              -73.2080593,
+              41.173496
+            ],
+            [
+              -73.2079124,
+              41.1735222
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/223868490",
+      "properties": {
+        "@id": "way/223868490",
+        "amenity": "kindergarten"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9670125,
+              40.6266232
+            ],
+            [
+              -73.9668697,
+              40.6266374
+            ],
+            [
+              -73.9666248,
+              40.6266619
+            ],
+            [
+              -73.966679,
+              40.6269461
+            ],
+            [
+              -73.9670636,
+              40.6269031
+            ],
+            [
+              -73.9670543,
+              40.6268418
+            ],
+            [
+              -73.9670125,
+              40.6266232
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/239142148",
+      "properties": {
+        "@id": "way/239142148",
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Phyllis Bodel Childcare Center at Yale School of Medicine",
+        "operator": "Yale University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.9339407,
+              41.3042963
+            ],
+            [
+              -72.9340253,
+              41.304179
+            ],
+            [
+              -72.9339979,
+              41.304128
+            ],
+            [
+              -72.9339525,
+              41.3041125
+            ],
+            [
+              -72.9339217,
+              41.3041236
+            ],
+            [
+              -72.9338278,
+              41.3040859
+            ],
+            [
+              -72.9338202,
+              41.3040907
+            ],
+            [
+              -72.9339407,
+              41.3042963
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/255909383",
+      "properties": {
+        "@id": "way/255909383",
+        "amenity": "kindergarten"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.0783565,
+              40.1859596
+            ],
+            [
+              -75.0786055,
+              40.1857104
+            ],
+            [
+              -75.0777151,
+              40.1851847
+            ],
+            [
+              -75.0775698,
+              40.1853291
+            ],
+            [
+              -75.0776176,
+              40.185354
+            ],
+            [
+              -75.0775495,
+              40.1854254
+            ],
+            [
+              -75.0775179,
+              40.1854565
+            ],
+            [
+              -75.0783565,
+              40.1859596
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/263538310",
+      "properties": {
+        "@id": "way/263538310",
+        "addr:city": "Upper Saddle River",
+        "addr:country": "US",
+        "addr:housenumber": "500",
+        "addr:postcode": "07458",
+        "addr:street": "East Saddle River Road",
+        "amenity": "kindergarten",
+        "name": "Early Enrishment Center"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.0836472,
+              41.0716174
+            ],
+            [
+              -74.0838322,
+              41.0713354
+            ],
+            [
+              -74.0836505,
+              41.0712677
+            ],
+            [
+              -74.0834655,
+              41.0715496
+            ],
+            [
+              -74.0836472,
+              41.0716174
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/279777192",
+      "properties": {
+        "@id": "way/279777192",
+        "addr:housenumber": "152",
+        "addr:postcode": "11211",
+        "addr:street": "North 5th Street",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "height": "9.8",
+        "name": "Williamsburg Northside Preschool",
+        "nycdoitt:bin": "3062327"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9587794,
+              40.7161796
+            ],
+            [
+              -73.958639,
+              40.7160919
+            ],
+            [
+              -73.9585569,
+              40.7160406
+            ],
+            [
+              -73.9583906,
+              40.7161949
+            ],
+            [
+              -73.9583979,
+              40.7161995
+            ],
+            [
+              -73.9583364,
+              40.7162566
+            ],
+            [
+              -73.9585516,
+              40.7163909
+            ],
+            [
+              -73.9587794,
+              40.7161796
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/291492078",
+      "properties": {
+        "@id": "way/291492078",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "The Goddard School",
+        "website": "http://www.goddardschool.com/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.5141087,
+              40.6404383
+            ],
+            [
+              -74.5140721,
+              40.6401229
+            ],
+            [
+              -74.5138729,
+              40.6401352
+            ],
+            [
+              -74.5138627,
+              40.6400149
+            ],
+            [
+              -74.5136666,
+              40.6400226
+            ],
+            [
+              -74.5136808,
+              40.6401599
+            ],
+            [
+              -74.5138282,
+              40.6401537
+            ],
+            [
+              -74.5138587,
+              40.6404491
+            ],
+            [
+              -74.5141087,
+              40.6404383
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/316895862",
+      "properties": {
+        "@id": "way/316895862",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "leisure": "playground",
+        "name": "Children's Learning Center",
+        "operator": "Brookdale Community College"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.1301574,
+              40.327099
+            ],
+            [
+              -74.1303135,
+              40.3270508
+            ],
+            [
+              -74.1303195,
+              40.3270622
+            ],
+            [
+              -74.130408,
+              40.3270348
+            ],
+            [
+              -74.1304277,
+              40.3270718
+            ],
+            [
+              -74.1305953,
+              40.32702
+            ],
+            [
+              -74.1305755,
+              40.3269828
+            ],
+            [
+              -74.1306336,
+              40.3269649
+            ],
+            [
+              -74.1306264,
+              40.3269514
+            ],
+            [
+              -74.1307745,
+              40.3269056
+            ],
+            [
+              -74.1307078,
+              40.3267802
+            ],
+            [
+              -74.1305607,
+              40.3268257
+            ],
+            [
+              -74.1305547,
+              40.3268143
+            ],
+            [
+              -74.130496,
+              40.3268325
+            ],
+            [
+              -74.1304824,
+              40.326807
+            ],
+            [
+              -74.1303137,
+              40.3268592
+            ],
+            [
+              -74.1303283,
+              40.3268867
+            ],
+            [
+              -74.1302428,
+              40.3269131
+            ],
+            [
+              -74.1302491,
+              40.3269249
+            ],
+            [
+              -74.1300908,
+              40.3269738
+            ],
+            [
+              -74.1301574,
+              40.327099
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/344552007",
+      "properties": {
+        "@id": "way/344552007",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "Children's Campus (CH)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.689755,
+              40.613707
+            ],
+            [
+              -74.6899498,
+              40.6135872
+            ],
+            [
+              -74.6899022,
+              40.6135438
+            ],
+            [
+              -74.6899033,
+              40.6134908
+            ],
+            [
+              -74.6898387,
+              40.6134868
+            ],
+            [
+              -74.6897466,
+              40.6133984
+            ],
+            [
+              -74.6897344,
+              40.613406
+            ],
+            [
+              -74.6897185,
+              40.6133899
+            ],
+            [
+              -74.6896899,
+              40.6134056
+            ],
+            [
+              -74.6897074,
+              40.6134225
+            ],
+            [
+              -74.6895663,
+              40.6135124
+            ],
+            [
+              -74.689556,
+              40.6135189
+            ],
+            [
+              -74.689755,
+              40.613707
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/351702568",
+      "properties": {
+        "@id": "way/351702568",
+        "amenity": "kindergarten"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9822815,
+              40.6353622
+            ],
+            [
+              -73.9826208,
+              40.6355393
+            ],
+            [
+              -73.9828729,
+              40.6353063
+            ],
+            [
+              -73.9827763,
+              40.6352523
+            ],
+            [
+              -73.9827964,
+              40.6352289
+            ],
+            [
+              -73.9821313,
+              40.6348371
+            ],
+            [
+              -73.9820159,
+              40.6349491
+            ],
+            [
+              -73.9824424,
+              40.6352045
+            ],
+            [
+              -73.9822815,
+              40.6353622
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/364447185",
+      "properties": {
+        "@id": "way/364447185",
+        "amenity": "kindergarten",
+        "ele": "46",
+        "gnis:county_name": "New Haven",
+        "gnis:feature_id": "1933406",
+        "gnis:import_uuid": "57871b70-0100-4405-bb30-88b2e001a944",
+        "gnis:reviewed": "no",
+        "name": "Calvin Hill Day Care Center",
+        "operator": "Yale University",
+        "source": "USGS Geonames"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.9209817,
+              41.3283539
+            ],
+            [
+              -72.9210171,
+              41.3280746
+            ],
+            [
+              -72.9207613,
+              41.3280623
+            ],
+            [
+              -72.9207504,
+              41.3280869
+            ],
+            [
+              -72.9207322,
+              41.3280869
+            ],
+            [
+              -72.9207204,
+              41.3282524
+            ],
+            [
+              -72.920754,
+              41.3282538
+            ],
+            [
+              -72.9207449,
+              41.3283403
+            ],
+            [
+              -72.9209817,
+              41.3283539
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/391988888",
+      "properties": {
+        "@id": "way/391988888",
+        "amenity": "kindergarten",
+        "building": "school"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.726047,
+              41.110449
+            ],
+            [
+              -73.7261579,
+              41.1102791
+            ],
+            [
+              -73.7261222,
+              41.1102692
+            ],
+            [
+              -73.7262538,
+              41.1100723
+            ],
+            [
+              -73.7262857,
+              41.1100837
+            ],
+            [
+              -73.7264525,
+              41.1098413
+            ],
+            [
+              -73.7262013,
+              41.1097482
+            ],
+            [
+              -73.7260537,
+              41.109971
+            ],
+            [
+              -73.7259853,
+              41.109948
+            ],
+            [
+              -73.7259102,
+              41.1100666
+            ],
+            [
+              -73.7259727,
+              41.1100912
+            ],
+            [
+              -73.7259102,
+              41.1101928
+            ],
+            [
+              -73.725869,
+              41.1101793
+            ],
+            [
+              -73.7257627,
+              41.1103385
+            ],
+            [
+              -73.726047,
+              41.110449
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/357366129",
+      "properties": {
+        "@id": "node/357366129",
+        "addr:housename": "Schoolhouse Learning Center ",
+        "addr:housenumber": "295",
+        "addr:postcode": "18974",
+        "addr:street": "Street Road",
+        "amenity": "kindergarten",
+        "ele": "98",
+        "gnis:county_id": "017",
+        "gnis:created": "08/30/1990",
+        "gnis:feature_id": "1213938",
+        "gnis:state_id": "42",
+        "name": "Schoolhouse Learning Center",
+        "old_name": "Warminster Elementary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.0887824,
+          40.2009419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/367138133",
+      "properties": {
+        "@id": "node/367138133",
+        "addr:state": "CT",
+        "amenity": "kindergarten",
+        "ele": "16",
+        "gnis:county_name": "New Haven",
+        "gnis:feature_id": "1934057",
+        "gnis:import_uuid": "57871b70-0100-4405-bb30-88b2e001a944",
+        "gnis:reviewed": "no",
+        "name": "Leila Day Child Care Center",
+        "source": "USGS Geonames"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.9116152,
+          41.3249402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/368049361",
+      "properties": {
+        "@id": "node/368049361",
+        "addr:state": "NY",
+        "amenity": "kindergarten",
+        "ele": "4",
+        "gnis:county_name": "Nassau",
+        "gnis:feature_id": "2508829",
+        "gnis:import_uuid": "57871b70-0100-4405-bb30-88b2e001a944",
+        "gnis:reviewed": "no",
+        "name": "Hi-Hello Child Day Care Center",
+        "source": "USGS Geonames"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5858333,
+          40.6497222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/368049523",
+      "properties": {
+        "@id": "node/368049523",
+        "addr:state": "NY",
+        "amenity": "kindergarten",
+        "ele": "5",
+        "gnis:county_name": "Kings",
+        "gnis:feature_id": "2507776",
+        "gnis:import_uuid": "57871b70-0100-4405-bb30-88b2e001a944",
+        "gnis:reviewed": "no",
+        "name": "Fiesta de los Ninos Day Care Center",
+        "source": "USGS Geonames"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0013889,
+          40.6747222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/368049537",
+      "properties": {
+        "@id": "node/368049537",
+        "addr:state": "NY",
+        "amenity": "kindergarten",
+        "ele": "5",
+        "gnis:county_name": "Bronx",
+        "gnis:feature_id": "2073678",
+        "gnis:import_uuid": "57871b70-0100-4405-bb30-88b2e001a944",
+        "gnis:reviewed": "no",
+        "name": "East Bronx NAACP Day Care Center",
+        "source": "USGS Geonames"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8808333,
+          40.8261111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1277492516",
+      "properties": {
+        "@id": "node/1277492516",
+        "amenity": "kindergarten",
+        "name": "Bright Beginnings Child Development Center & Early Intervention"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2834349,
+          40.6532096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1308405194",
+      "properties": {
+        "@id": "node/1308405194",
+        "amenity": "kindergarten"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.5197868,
+          40.5683178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1656975633",
+      "properties": {
+        "@id": "node/1656975633",
+        "addr:housenumber": "80",
+        "addr:postcode": "11501",
+        "addr:street": "Herricks Road",
+        "amenity": "kindergarten",
+        "name": "Learn & Play Daycare",
+        "website": "learnandplayny.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6516203,
+          40.7379739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1745852807",
+      "properties": {
+        "@id": "node/1745852807",
+        "amenity": "kindergarten",
+        "name": "Kiddy College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0045187,
+          40.8466638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1786450424",
+      "properties": {
+        "@id": "node/1786450424",
+        "amenity": "kindergarten",
+        "name": "Cranbury Presbyterian Nursery School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.5187014,
+          40.3076304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2077549267",
+      "properties": {
+        "@id": "node/2077549267",
+        "addr:housenumber": "344",
+        "addr:street": "Amboy Avenue",
+        "amenity": "kindergarten",
+        "name": "Little Genius Academy of Metuchen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.3633948,
+          40.5383193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2091642032",
+      "properties": {
+        "@id": "node/2091642032",
+        "addr:city": "New York",
+        "addr:country": "US",
+        "addr:housenumber": "103",
+        "addr:postcode": "10025",
+        "addr:state": "NY",
+        "addr:street": "West 96th Street",
+        "amenity": "kindergarten",
+        "email": "info@uppervalleypreschool.org",
+        "name": "Upper Valley Preschool",
+        "website": "http://www.uppervalleypreschool.org/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9678437,
+          40.7932026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2186614176",
+      "properties": {
+        "@id": "node/2186614176",
+        "amenity": "kindergarten",
+        "name": "Bright Horizons Child Care & Early Education"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0085955,
+          40.704892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2401037029",
+      "properties": {
+        "@id": "node/2401037029",
+        "amenity": "kindergarten",
+        "building": "entrance",
+        "name": "Our Back Yard Play Place"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.2295424,
+          41.1750162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2409172261",
+      "properties": {
+        "@id": "node/2409172261",
+        "amenity": "kindergarten",
+        "name": "yishivah gadoleh building"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7132915,
+          41.2383145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2970516073",
+      "properties": {
+        "@id": "node/2970516073",
+        "amenity": "kindergarten",
+        "name": "Kiddie Korner Daycare"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.9157179,
+          41.3081414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3124449090",
+      "properties": {
+        "@id": "node/3124449090",
+        "addr:city": "Keyport",
+        "addr:housenumber": "60",
+        "addr:postcode": "07735",
+        "addr:street": "Maple Place",
+        "amenity": "kindergarten",
+        "name": "Good News Christian Preschool",
+        "website": "http://childcarecenter.us/provider_detail/good_news_christian_preschool_keyport_nj"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2012955,
+          40.4323826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3589888056",
+      "properties": {
+        "@id": "node/3589888056",
+        "amenity": "kindergarten"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9503869,
+          40.7863421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3825712096",
+      "properties": {
+        "@id": "node/3825712096",
+        "amenity": "kindergarten",
+        "name": "Michael's Energy Factory"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1782022,
+          40.9123984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3888482053",
+      "properties": {
+        "@id": "node/3888482053",
+        "amenity": "kindergarten",
+        "name": "Phyllis Bodel Childcare",
+        "operator": "Yale University"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.9299091,
+          41.299327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3931472595",
+      "properties": {
+        "@id": "node/3931472595",
+        "amenity": "kindergarten",
+        "name": "Daughters of Charity The Most Precious Blood Convent Preschool",
+        "opening_hours": "Mo-Fr 07:00-17:00; Sa-Su off",
+        "phone": "+1 203 3347000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.203902,
+          41.1862002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3931472601",
+      "properties": {
+        "@id": "node/3931472601",
+        "amenity": "kindergarten",
+        "name": "Precious Memories Early Childhood Learning Center II",
+        "opening_hours": "Mo-Fr 07:00-17:30; Sa-Su off"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.2022121,
+          41.1882378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4105506789",
+      "properties": {
+        "@id": "node/4105506789",
+        "addr:city": "Brooklyn",
+        "addr:housenumber": "843",
+        "addr:postcode": "11218",
+        "addr:state": "NY",
+        "addr:street": "Coney Island Avenue",
+        "amenity": "kindergarten",
+        "name": "Kaleidoscope Early Childhood Development Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9678346,
+          40.6366473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4447663691",
+      "properties": {
+        "@id": "node/4447663691",
+        "addr:city": "Brooklyn",
+        "addr:housenumber": "351",
+        "addr:postcode": "11215",
+        "addr:state": "NY",
+        "addr:street": "8th Street",
+        "amenity": "kindergarten",
+        "max_age": "5",
+        "name": "Beansprouts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9835953,
+          40.6689363
+        ]
+      }
+    }
+  ]
+}
