@@ -1,8 +1,5 @@
 {
   "type": "FeatureCollection",
-  "generator": "overpass-turbo",
-  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2016-10-20T15:28:03Z",
   "features": [
     {
       "type": "Feature",
@@ -14,7 +11,10 @@
         "amenity": "kindergarten",
         "building": "yes",
         "name": "Bright Horizons",
-        "phone": "+1 203 3844951"
+        "phone": "+1 203 3844951",
+        "photo": "photos/Omar.jpg",
+        "price": 42,
+        "rating": 2
       },
       "geometry": {
         "type": "Polygon",
@@ -71,7 +71,10 @@
         "amenity": "kindergarten",
         "building": "yes",
         "name": "Teadybear Corner Daycare",
-        "source": "Bing"
+        "source": "Bing",
+        "photo": "photos/Robert.png",
+        "price": 35,
+        "rating": 2
       },
       "geometry": {
         "type": "Polygon",
@@ -129,7 +132,10 @@
         "amenity": "kindergarten",
         "building": "yes",
         "name": "Teadybear Corner Daycare",
-        "source": "Bing"
+        "source": "Bing",
+        "photo": "photos/Evan.jpg",
+        "price": 11,
+        "rating": 2
       },
       "geometry": {
         "type": "Polygon",
@@ -184,7 +190,10 @@
         "amenity": "kindergarten",
         "building": "yes",
         "email": "preschoolfairfield@gmail.com",
-        "name": "Kings Highway Preschool of Fairfield"
+        "name": "Kings Highway Preschool of Fairfield",
+        "photo": "photos/Emil.jpg",
+        "price": 48,
+        "rating": 1
       },
       "geometry": {
         "type": "Polygon",
@@ -223,7 +232,10 @@
         "amenity": "kindergarten",
         "building": "yes",
         "name": "KDM Family Daycare",
-        "phone": "+1 203 6128505"
+        "phone": "+1 203 6128505",
+        "photo": "photos/Emil.jpg",
+        "price": 49,
+        "rating": 4
       },
       "geometry": {
         "type": "Polygon",
@@ -315,7 +327,10 @@
         "amenity": "kindergarten",
         "building": "yes",
         "name": "Child World Academy",
-        "phone": "+1 203 3300801"
+        "phone": "+1 203 3300801",
+        "photo": "photos/Evan.jpg",
+        "price": 47,
+        "rating": 1
       },
       "geometry": {
         "type": "Polygon",
@@ -350,7 +365,10 @@
       "id": "way/223868490",
       "properties": {
         "@id": "way/223868490",
-        "amenity": "kindergarten"
+        "amenity": "kindergarten",
+        "photo": "photos/Leo.jpg",
+        "price": 41,
+        "rating": 3
       },
       "geometry": {
         "type": "Polygon",
@@ -396,7 +414,10 @@
         "amenity": "kindergarten",
         "barrier": "fence",
         "name": "Phyllis Bodel Childcare Center at Yale School of Medicine",
-        "operator": "Yale University"
+        "operator": "Yale University",
+        "photo": "photos/Omar.jpg",
+        "price": 28,
+        "rating": 3
       },
       "geometry": {
         "type": "Polygon",
@@ -443,7 +464,10 @@
       "id": "way/255909383",
       "properties": {
         "@id": "way/255909383",
-        "amenity": "kindergarten"
+        "amenity": "kindergarten",
+        "photo": "photos/Omar.jpg",
+        "price": 37,
+        "rating": 1
       },
       "geometry": {
         "type": "Polygon",
@@ -496,7 +520,10 @@
         "addr:postcode": "07458",
         "addr:street": "East Saddle River Road",
         "amenity": "kindergarten",
-        "name": "Early Enrishment Center"
+        "name": "Early Enrishment Center",
+        "photo": "photos/Evan.jpg",
+        "price": 12,
+        "rating": 3
       },
       "geometry": {
         "type": "Polygon",
@@ -538,7 +565,10 @@
         "building": "yes",
         "height": "9.8",
         "name": "Williamsburg Northside Preschool",
-        "nycdoitt:bin": "3062327"
+        "nycdoitt:bin": "3062327",
+        "photo": "photos/Emil.jpg",
+        "price": 47,
+        "rating": 3
       },
       "geometry": {
         "type": "Polygon",
@@ -588,7 +618,10 @@
         "amenity": "kindergarten",
         "building": "yes",
         "name": "The Goddard School",
-        "website": "http://www.goddardschool.com/"
+        "website": "http://www.goddardschool.com/",
+        "photo": "photos/Angie.jpg",
+        "price": 42,
+        "rating": 1
       },
       "geometry": {
         "type": "Polygon",
@@ -643,7 +676,10 @@
         "building": "yes",
         "leisure": "playground",
         "name": "Children's Learning Center",
-        "operator": "Brookdale Community College"
+        "operator": "Brookdale Community College",
+        "photo": "photos/Leo.jpg",
+        "price": 13,
+        "rating": 4
       },
       "geometry": {
         "type": "Polygon",
@@ -744,7 +780,10 @@
         "@id": "way/344552007",
         "amenity": "kindergarten",
         "building": "yes",
-        "name": "Children's Campus (CH)"
+        "name": "Children's Campus (CH)",
+        "photo": "photos/Angie.jpg",
+        "price": 44,
+        "rating": 3
       },
       "geometry": {
         "type": "Polygon",
@@ -811,7 +850,10 @@
       "id": "way/351702568",
       "properties": {
         "@id": "way/351702568",
-        "amenity": "kindergarten"
+        "amenity": "kindergarten",
+        "photo": "photos/Robert.png",
+        "price": 27,
+        "rating": 1
       },
       "geometry": {
         "type": "Polygon",
@@ -870,7 +912,10 @@
         "gnis:reviewed": "no",
         "name": "Calvin Hill Day Care Center",
         "operator": "Yale University",
-        "source": "USGS Geonames"
+        "source": "USGS Geonames",
+        "photo": "photos/Omar.jpg",
+        "price": 30,
+        "rating": 4
       },
       "geometry": {
         "type": "Polygon",
@@ -922,7 +967,10 @@
       "properties": {
         "@id": "way/391988888",
         "amenity": "kindergarten",
-        "building": "school"
+        "building": "school",
+        "photo": "photos/Evan.jpg",
+        "price": 44,
+        "rating": 2
       },
       "geometry": {
         "type": "Polygon",
@@ -1008,7 +1056,10 @@
         "gnis:feature_id": "1213938",
         "gnis:state_id": "42",
         "name": "Schoolhouse Learning Center",
-        "old_name": "Warminster Elementary School"
+        "old_name": "Warminster Elementary School",
+        "photo": "photos/Ben.jpg",
+        "price": 36,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -1031,7 +1082,10 @@
         "gnis:import_uuid": "57871b70-0100-4405-bb30-88b2e001a944",
         "gnis:reviewed": "no",
         "name": "Leila Day Child Care Center",
-        "source": "USGS Geonames"
+        "source": "USGS Geonames",
+        "photo": "photos/Ben.jpg",
+        "price": 11,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -1054,7 +1108,10 @@
         "gnis:import_uuid": "57871b70-0100-4405-bb30-88b2e001a944",
         "gnis:reviewed": "no",
         "name": "Hi-Hello Child Day Care Center",
-        "source": "USGS Geonames"
+        "source": "USGS Geonames",
+        "photo": "photos/I-Lin.png",
+        "price": 18,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -1077,7 +1134,10 @@
         "gnis:import_uuid": "57871b70-0100-4405-bb30-88b2e001a944",
         "gnis:reviewed": "no",
         "name": "Fiesta de los Ninos Day Care Center",
-        "source": "USGS Geonames"
+        "source": "USGS Geonames",
+        "photo": "photos/Emil.jpg",
+        "price": 43,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -1100,7 +1160,10 @@
         "gnis:import_uuid": "57871b70-0100-4405-bb30-88b2e001a944",
         "gnis:reviewed": "no",
         "name": "East Bronx NAACP Day Care Center",
-        "source": "USGS Geonames"
+        "source": "USGS Geonames",
+        "photo": "photos/Leo.jpg",
+        "price": 44,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -1116,7 +1179,10 @@
       "properties": {
         "@id": "node/1277492516",
         "amenity": "kindergarten",
-        "name": "Bright Beginnings Child Development Center & Early Intervention"
+        "name": "Bright Beginnings Child Development Center & Early Intervention",
+        "photo": "photos/Victoria.jpg",
+        "price": 36,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -1131,7 +1197,10 @@
       "id": "node/1308405194",
       "properties": {
         "@id": "node/1308405194",
-        "amenity": "kindergarten"
+        "amenity": "kindergarten",
+        "photo": "photos/I-Lin.png",
+        "price": 49,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -1151,7 +1220,10 @@
         "addr:street": "Herricks Road",
         "amenity": "kindergarten",
         "name": "Learn & Play Daycare",
-        "website": "learnandplayny.com"
+        "website": "learnandplayny.com",
+        "photo": "photos/Angie.jpg",
+        "price": 11,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -1167,7 +1239,10 @@
       "properties": {
         "@id": "node/1745852807",
         "amenity": "kindergarten",
-        "name": "Kiddy College"
+        "name": "Kiddy College",
+        "photo": "photos/Victoria.jpg",
+        "price": 14,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -1183,7 +1258,10 @@
       "properties": {
         "@id": "node/1786450424",
         "amenity": "kindergarten",
-        "name": "Cranbury Presbyterian Nursery School"
+        "name": "Cranbury Presbyterian Nursery School",
+        "photo": "photos/Ben.jpg",
+        "price": 35,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -1201,7 +1279,10 @@
         "addr:housenumber": "344",
         "addr:street": "Amboy Avenue",
         "amenity": "kindergarten",
-        "name": "Little Genius Academy of Metuchen"
+        "name": "Little Genius Academy of Metuchen",
+        "photo": "photos/Evan.jpg",
+        "price": 29,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -1225,7 +1306,10 @@
         "amenity": "kindergarten",
         "email": "info@uppervalleypreschool.org",
         "name": "Upper Valley Preschool",
-        "website": "http://www.uppervalleypreschool.org/"
+        "website": "http://www.uppervalleypreschool.org/",
+        "photo": "photos/Ben.jpg",
+        "price": 20,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -1241,7 +1325,10 @@
       "properties": {
         "@id": "node/2186614176",
         "amenity": "kindergarten",
-        "name": "Bright Horizons Child Care & Early Education"
+        "name": "Bright Horizons Child Care & Early Education",
+        "photo": "photos/Ben.jpg",
+        "price": 38,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -1258,7 +1345,10 @@
         "@id": "node/2401037029",
         "amenity": "kindergarten",
         "building": "entrance",
-        "name": "Our Back Yard Play Place"
+        "name": "Our Back Yard Play Place",
+        "photo": "photos/Emil.jpg",
+        "price": 42,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -1274,7 +1364,10 @@
       "properties": {
         "@id": "node/2409172261",
         "amenity": "kindergarten",
-        "name": "yishivah gadoleh building"
+        "name": "yishivah gadoleh building",
+        "photo": "photos/Leo.jpg",
+        "price": 36,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -1290,7 +1383,10 @@
       "properties": {
         "@id": "node/2970516073",
         "amenity": "kindergarten",
-        "name": "Kiddie Korner Daycare"
+        "name": "Kiddie Korner Daycare",
+        "photo": "photos/Victoria.jpg",
+        "price": 11,
+        "rating": 2
       },
       "geometry": {
         "type": "Point",
@@ -1311,7 +1407,10 @@
         "addr:street": "Maple Place",
         "amenity": "kindergarten",
         "name": "Good News Christian Preschool",
-        "website": "http://childcarecenter.us/provider_detail/good_news_christian_preschool_keyport_nj"
+        "website": "http://childcarecenter.us/provider_detail/good_news_christian_preschool_keyport_nj",
+        "photo": "photos/Evan.jpg",
+        "price": 41,
+        "rating": 2
       },
       "geometry": {
         "type": "Point",
@@ -1326,7 +1425,10 @@
       "id": "node/3589888056",
       "properties": {
         "@id": "node/3589888056",
-        "amenity": "kindergarten"
+        "amenity": "kindergarten",
+        "photo": "photos/I-Lin.png",
+        "price": 20,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -1342,7 +1444,10 @@
       "properties": {
         "@id": "node/3825712096",
         "amenity": "kindergarten",
-        "name": "Michael's Energy Factory"
+        "name": "Michael's Energy Factory",
+        "photo": "photos/Emil.jpg",
+        "price": 43,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
@@ -1359,7 +1464,10 @@
         "@id": "node/3888482053",
         "amenity": "kindergarten",
         "name": "Phyllis Bodel Childcare",
-        "operator": "Yale University"
+        "operator": "Yale University",
+        "photo": "photos/Brian.jpg",
+        "price": 37,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -1377,7 +1485,10 @@
         "amenity": "kindergarten",
         "name": "Daughters of Charity The Most Precious Blood Convent Preschool",
         "opening_hours": "Mo-Fr 07:00-17:00; Sa-Su off",
-        "phone": "+1 203 3347000"
+        "phone": "+1 203 3347000",
+        "photo": "photos/Ben.jpg",
+        "price": 18,
+        "rating": 1
       },
       "geometry": {
         "type": "Point",
@@ -1394,7 +1505,10 @@
         "@id": "node/3931472601",
         "amenity": "kindergarten",
         "name": "Precious Memories Early Childhood Learning Center II",
-        "opening_hours": "Mo-Fr 07:00-17:30; Sa-Su off"
+        "opening_hours": "Mo-Fr 07:00-17:30; Sa-Su off",
+        "photo": "photos/Ben.jpg",
+        "price": 34,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -1415,7 +1529,10 @@
         "addr:state": "NY",
         "addr:street": "Coney Island Avenue",
         "amenity": "kindergarten",
-        "name": "Kaleidoscope Early Childhood Development Center"
+        "name": "Kaleidoscope Early Childhood Development Center",
+        "photo": "photos/Leo.jpg",
+        "price": 23,
+        "rating": 4
       },
       "geometry": {
         "type": "Point",
@@ -1437,7 +1554,10 @@
         "addr:street": "8th Street",
         "amenity": "kindergarten",
         "max_age": "5",
-        "name": "Beansprouts"
+        "name": "Beansprouts",
+        "photo": "photos/Evan.jpg",
+        "price": 34,
+        "rating": 3
       },
       "geometry": {
         "type": "Point",
