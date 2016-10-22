@@ -35,7 +35,7 @@ const args = location.search.replace(/^\?/, '').split('&').reduce((o, param) => 
 }, {});
 
 const dataUrl = `assets/${args.data || 'small'}.geojson`;
-const styleUrl = 'https://api.mapbox.com/styles/v1/humans/cip9hxybc003edmm2i1eqlap8?access_token=pk.eyJ1IjoiaHVtYW5zIiwiYSI6ImNpcDZzdm80cjAwMTB1d203ZmRqZTdwbWEifQ.up9_Pt9XqDhp6m0KLHcbIw';
+const styleUrl = 'https://api.mapbox.com/styles/v1/humans/ciuflxfzd00h52io6gwp3872p?access_token=pk.eyJ1IjoiaHVtYW5zIiwiYSI6ImNpcDZzdm80cjAwMTB1d203ZmRqZTdwbWEifQ.up9_Pt9XqDhp6m0KLHcbIw';
 
 function* fetchStyle() {
   /* eslint-disable no-console */
