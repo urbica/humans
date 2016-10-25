@@ -100,7 +100,7 @@ body {
 .buttons .button.buttonAbout {
   padding: 8px 20px 8px 40px;
   background-color: #7A7E83;
-  background-image: url('/images/play.png');
+  background-image: url('images/play.png');
   background-repeat: no-repeat;
   background-position: 10px center;
 }
