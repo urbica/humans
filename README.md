@@ -5,11 +5,10 @@
 ## Installation and usage
 
 ```
-git clone https://github.com/humansmap/humans.git
+git clone https://github.com/urbica/humans.git
 cd humans
 npm i
 npm start
-open http://127.0.0.1:8080
 ```
 
 Building static version
@@ -17,5 +16,3 @@ Building static version
 ```
 npm run build
 ```
-
-👯

@@ -8,7 +8,6 @@ import { applyMiddleware, createStore } from 'redux';
 import App from './components/App';
 import Saga from './sagas/sagas';
 import reducer from './reducers/reducer';
-import './index.css';
 
 const logger = createLogger({ collapsed: true });
 
