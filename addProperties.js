@@ -11,7 +11,7 @@ if (!fileName) {
 }
 
 const data = JSON.parse(fs.readFileSync(fileName));
-const photos = fs.readdirSync(path.join(__dirname, 'photos'));
+const photos = fs.readdirSync(path.join(__dirname, 'public', 'photos'));
 const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
 const features = data.features.map(feature => {

@@ -1,8 +1,7 @@
-/* global window document mapboxgl */
+/* global window document mapboxgl supercluster */
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import supercluster from 'supercluster';
 import Marker from './Marker';
 import { showCard } from '../actions/actions';
 
@@ -32,8 +31,8 @@ const Map = React.createClass({
       attributionControl: false
     });
 
-    this.map.addControl(new mapboxgl.NavigationControl());
-    // this.map.addControl(new mapboxgl.Navigation({ position: 'top-right' }));
+    this.map.addControl(new mapboxgl.NavigationControl({ position: 'top-right' }));
+    this.map.addControl(new mapboxgl.GeolocateControl({ position: 'top-right' }));
 
     this.map.on('moveend', this.onMoveEnd);
   },
@@ -67,7 +66,6 @@ const Map = React.createClass({
             if (key === 'clusters') {
               const features = newSource.getIn(['data', 'features']).toJS();
               const options = { radius: 30, extent: 256, maxZoom: 16 };
-              // eslint-disable-next-line
               const cluster = supercluster(options).load(features);
               this.setState({ cluster, features });
             }
