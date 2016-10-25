@@ -19,7 +19,7 @@ const Marker = React.createClass({
 
     return (
       <div className='marker-container' onClick={ this.props.onClick }>
-        <img className='photo' src={ photo } />
+        <img className='photo' src={ photo } alt='card' />
         <div className='title'>{ title }</div>
       </div>
     );

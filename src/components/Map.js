@@ -1,10 +1,10 @@
+/* global window document mapboxgl */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import supercluster from 'supercluster';
-import { showCard } from '../actions/actions.js';
-
-// import mapboxgl from 'mapbox-gl';
-import Marker from './Marker.jsx';
+import supercluster from 'supercluster';
+import Marker from './Marker';
+import { showCard } from '../actions/actions';
 
 /* eslint-disable max-len */
 const accessToken = 'pk.eyJ1IjoiaHVtYW5zIiwiYSI6ImNpcDZzdm80cjAwMTB1d203ZmRqZTdwbWEifQ.up9_Pt9XqDhp6m0KLHcbIw';
@@ -32,8 +32,8 @@ const Map = React.createClass({
       attributionControl: false
     });
 
-    this.map.addControl(new mapboxgl.Navigation({ position: 'top-right' }));
-    this.map.addControl(new mapboxgl.Geolocate({ position: 'top-right' }));
+    this.map.addControl(new mapboxgl.NavigationControl());
+    // this.map.addControl(new mapboxgl.Navigation({ position: 'top-right' }));
 
     this.map.on('moveend', this.onMoveEnd);
   },

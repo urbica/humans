@@ -2,13 +2,13 @@ import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { connect } from 'react-redux';
 
-import Map from './Map.jsx';
-import Card from './Card.jsx';
-import List from './List.jsx';
-import Header from './Header.jsx';
-import FiltersPanel from './FiltersPanel.jsx';
-import PriceRatingSwitch from './PriceRatingSwitch.jsx';
-import { fetchStyle } from '../actions/actions.js';
+import Map from './Map';
+import Card from './Card';
+import List from './List';
+import Header from './Header';
+import FiltersPanel from './FiltersPanel';
+import PriceRatingSwitch from './PriceRatingSwitch';
+import { fetchStyle } from '../actions/actions';
 
 class App extends React.Component {
   componentWillMount() {

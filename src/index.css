@@ -3,6 +3,33 @@ body {
   padding: 0;
 }
 
+@font-face {
+  font-family: 'Geometria';
+  src: url('/fonts/Geometria.eot');
+  src: url('/fonts/Geometria.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Geometria.woff') format('woff'),
+       url('/fonts/Geometria.ttf')  format('truetype'),
+       url('/fonts/Geometria.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'Geometria-Light';
+  src: url('/fonts/Geometria-Light.eot');
+  src: url('/fonts/Geometria-Light.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Geometria-Light.woff') format('woff'),
+       url('/fonts/Geometria-Light.ttf')  format('truetype'),
+       url('/fonts/Geometria-Light.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'Geometria-Medium';
+  src: url('/fonts/Geometria-Medium.eot');
+  src: url('/fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Geometria-Medium.woff') format('woff'),
+       url('/fonts/Geometria-Medium.ttf')  format('truetype'),
+       url('/fonts/Geometria-Medium.svg#svgFontName') format('svg');
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -73,7 +100,7 @@ body {
 .buttons .button.buttonAbout {
   padding: 8px 20px 8px 40px;
   background-color: #7A7E83;
-  background-image: url('images/play.png');
+  background-image: url('/images/play.png');
   background-repeat: no-repeat;
   background-position: 10px center;
 }
@@ -347,7 +374,7 @@ body {
   border: solid 1px #1599ff;
   border-radius: 6px;
   background-color: #1599ff;
-  background-image: url('images/checkmark.png');
+  background-image: url('/images/checkmark.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -413,7 +440,7 @@ body {
   justify-content: center;
   font-family: 'Geometria-Medium';
   background-color: #fff;
-  z-index: 3;
+  z-index: 6;
 }
 
 .card-container {

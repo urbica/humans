@@ -5,14 +5,14 @@ class FiltersPanelToggle extends React.Component {
     if (this.props.opened) {
       return (
         <div className='filters-panel-toggle' onClick={ this.props.onClick }>
-          <img src='assets/images/close-filters.png'/>Hide all filters
+          <img src='images/close-filters.png' alt='hide' />Hide all filters
         </div>
       );
     }
 
     return (
       <div className='filters-panel-toggle' onClick={ this.props.onClick }>
-        <img src='assets/images/open-filters.png'/>All filters
+        <img src='images/open-filters.png' alt='all' />All filters
       </div>
     );
   }

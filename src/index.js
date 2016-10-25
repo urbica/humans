@@ -5,9 +5,10 @@ import createSagaMiddleware from 'redux-saga';
 import { Provider } from 'react-redux';
 import { applyMiddleware, createStore } from 'redux';
 
-import App from './components/App.jsx';
-import Saga from './sagas/sagas.js';
-import reducer from './reducers/reducer.js';
+import App from './components/App';
+import Saga from './sagas/sagas';
+import reducer from './reducers/reducer';
+import './index.css';
 
 const logger = createLogger({ collapsed: true });
 
@@ -18,5 +19,6 @@ sagaMiddleware.run(Saga);
 ReactDOM.render(
   <Provider store={ store }>
     <App />
-  </Provider>
-, document.querySelector('#root'));
+  </Provider>,
+  document.getElementById('root')
+);

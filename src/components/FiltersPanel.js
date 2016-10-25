@@ -1,12 +1,12 @@
 import React from 'react';
-import CityFilter from './CityFilter.jsx';
-import JobsFilter from './JobsFilter.jsx';
-import PriceFilter from './PriceFilter.jsx';
-import RatingFilter from './RatingFilter.jsx';
-import OnlineFilter from './OnlineFilter.jsx';
-import LanguageFilter from './LanguageFilter.jsx';
-import FixedHourlySwitch from './FixedHourlySwitch.jsx';
-import FiltersPanelToggle from './FiltersPanelToggle.jsx';
+import CityFilter from './CityFilter';
+import JobsFilter from './JobsFilter';
+import PriceFilter from './PriceFilter';
+import RatingFilter from './RatingFilter';
+import OnlineFilter from './OnlineFilter';
+import LanguageFilter from './LanguageFilter';
+import FixedHourlySwitch from './FixedHourlySwitch';
+import FiltersPanelToggle from './FiltersPanelToggle';
 
 const FiltersPanel = React.createClass({
   getInitialState() {

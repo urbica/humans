@@ -1,9 +1,9 @@
 import React from 'react';
-import Buttons from './Buttons.jsx';
-import Search from './Search.jsx';
-import ListMapSwitch from './ListMapSwitch.jsx';
-import ProfessionalClientSwitch from './ProfessionalClientSwitch.jsx';
-import ProfessionalServiceSwitch from './ProfessionalServiceSwitch.jsx';
+import Buttons from './Buttons';
+import Search from './Search';
+import ListMapSwitch from './ListMapSwitch';
+import ProfessionalClientSwitch from './ProfessionalClientSwitch';
+import ProfessionalServiceSwitch from './ProfessionalServiceSwitch';
 
 class Header extends React.Component {
   render() {

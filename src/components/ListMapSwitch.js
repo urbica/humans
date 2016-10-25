@@ -17,7 +17,7 @@ class ListMapSwitch extends React.Component {
           className={ mapClassName }
           onClick={ onMapClick }
         >
-          <img src='assets/images/pin.svg'/> Map
+          <img src='images/pin.svg' alt='map' /> Map
         </div>
       </div>
     );

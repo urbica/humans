@@ -10,8 +10,8 @@ const Card = React.createClass({
     return (
       <div className='card-container'>
         <div className='title' onClick={ onClick }>← Filters</div>
-        <img className='photo' src={ photo } />
-        <img className='card-mock' src='assets/images/card-mock.png' />
+        <img className='photo' src={ photo } alt='card' />
+        <img className='card-mock' src='images/card-mock.png' alt='card' />
       </div>
     );
   }
