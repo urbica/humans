@@ -4,20 +4,20 @@
   "private": true,
   "homepage": "http://urbica.github.io/humans",
   "devDependencies": {
-    "gh-pages": "0.12.0",
-    "react-scripts": "0.8.4",
-    "redux-logger": "2.7.4"
+    "gh-pages": "1.1.0",
+    "react-scripts": "1.0.17",
+    "redux-logger": "3.0.6"
   },
   "dependencies": {
-    "immutable": "3.8.1",
-    "rc-slider": "5.4.0",
-    "react": "15.4.1",
-    "react-addons-css-transition-group": "15.4.1",
-    "react-dom": "15.4.1",
-    "react-redux": "5.0.1",
-    "react-select": "1.0.0-rc.2",
-    "redux": "3.6.0",
-    "redux-saga": "0.13.0"
+    "immutable": "3.8.2",
+    "rc-slider": "8.5.0",
+    "react": "16.2.0",
+    "react-addons-css-transition-group": "15.6.2",
+    "react-dom": "16.2.0",
+    "react-redux": "5.0.6",
+    "react-select": "1.1.0",
+    "redux": "3.7.2",
+    "redux-saga": "0.16.0"
   },
   "scripts": {
     "start": "react-scripts start",
