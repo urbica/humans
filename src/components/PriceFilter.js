@@ -17,23 +17,23 @@ const PriceFilter = React.createClass({
     const { min, max } = this.state;
 
     return (
-      <div className='price-filter-container'>
-        <span className='filter-label-min'>${ min }</span>
-        <div className='price-filter-slider-wrapper'>
+      <div className="price-filter-container">
+        <span className="filter-label-min">${min}</span>
+        <div className="price-filter-slider-wrapper">
           <Slider
             range
-            min={ 0 }
-            max={ 150 }
-            allowCross={ true }
-            tipFormatter={ null }
-            defaultValue={ [min, max] }
-            onChange={ this.handleOnChange }
+            min={0}
+            max={150}
+            allowCross={true}
+            tipFormatter={null}
+            defaultValue={[min, max]}
+            onChange={this.handleOnChange}
           />
         </div>
-        <span className='filter-label-max'>${ max }</span>
+        <span className="filter-label-max">${max}</span>
       </div>
     );
   }
 });
 
-module.exports = PriceFilter;
+export default PriceFilter;

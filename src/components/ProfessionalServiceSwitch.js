@@ -4,24 +4,21 @@ import { switchProfessionalService } from '../actions/actions.js';
 class ProfessionalServiceSwitch extends React.Component {
   render() {
     const { dispatch, professionalOrService } = this.props;
-    const onProfessionalClick = () => dispatch(switchProfessionalService('professional'));
+    const onProfessionalClick = () =>
+      dispatch(switchProfessionalService('professional'));
     const onServiceClick = () => dispatch(switchProfessionalService('service'));
 
-    const professionalClassName = professionalOrService === 'professional' ? 'tab active' : 'tab';
-    const serviceClassName = professionalOrService === 'service' ? 'tab active' : 'tab';
+    const professionalClassName =
+      professionalOrService === 'professional' ? 'tab active' : 'tab';
+    const serviceClassName =
+      professionalOrService === 'service' ? 'tab active' : 'tab';
 
     return (
-      <div className='professional-service-switch'>
-        <div
-          onClick={ onProfessionalClick }
-          className={ professionalClassName }
-        >
+      <div className="professional-service-switch">
+        <div onClick={onProfessionalClick} className={professionalClassName}>
           Professionals
         </div>
-        <div
-          onClick={ onServiceClick }
-          className={ serviceClassName }
-        >
+        <div onClick={onServiceClick} className={serviceClassName}>
           Services
         </div>
       </div>
@@ -29,4 +26,4 @@ class ProfessionalServiceSwitch extends React.Component {
   }
 }
 
-module.exports = ProfessionalServiceSwitch;
+export default ProfessionalServiceSwitch;

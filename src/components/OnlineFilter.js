@@ -3,16 +3,13 @@ import React from 'react';
 const OnlineFilter = React.createClass({
   render() {
     return (
-      <div className='online-filter-container'>
+      <div className="online-filter-container">
         <input
-          id='online-filter-checkbox'
-          type='checkbox'
-          className='online-filter-checkbox'
+          id="online-filter-checkbox"
+          type="checkbox"
+          className="online-filter-checkbox"
         />
-        <label
-          htmlFor='online-filter-checkbox'
-          className='online-filter-label'
-        >
+        <label htmlFor="online-filter-checkbox" className="online-filter-label">
           only online
         </label>
       </div>
@@ -20,4 +17,4 @@ const OnlineFilter = React.createClass({
   }
 });
 
-module.exports = OnlineFilter;
+export default OnlineFilter;

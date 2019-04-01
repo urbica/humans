@@ -8,13 +8,15 @@ const Card = React.createClass({
     const onClick = () => this.props.dispatch(hideCard());
 
     return (
-      <div className='card-container'>
-        <div className='title' onClick={ onClick }>← Filters</div>
-        <img className='photo' src={ photo } alt='card' />
-        <img className='card-mock' src='images/card-mock.png' alt='card' />
+      <div className="card-container">
+        <div className="title" onClick={onClick}>
+          ← Filters
+        </div>
+        <img className="photo" src={photo} alt="card" />
+        <img className="card-mock" src="images/card-mock.png" alt="card" />
       </div>
     );
   }
 });
 
-module.exports = Card;
+export default Card;

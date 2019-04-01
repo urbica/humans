@@ -7,16 +7,22 @@ class FixedHourlySwitch extends React.Component {
     const onFixedClick = () => dispatch(switchFixedHourly('fixed'));
     const onHourlyClick = () => dispatch(switchFixedHourly('hourly'));
 
-    const fixedClassName = fixedOrHourly === 'fixed' ? 'switcherButton active' : 'switcherButton';
-    const hourlyClassName = fixedOrHourly === 'hourly' ? 'switcherButton active' : 'switcherButton';
+    const fixedClassName =
+      fixedOrHourly === 'fixed' ? 'switcherButton active' : 'switcherButton';
+    const hourlyClassName =
+      fixedOrHourly === 'hourly' ? 'switcherButton active' : 'switcherButton';
 
     return (
-      <div className='switcher price-hour-switch'>
-        <div className={ fixedClassName } onClick={ onFixedClick }>Fixed price</div>
-        <div className={ hourlyClassName } onClick={ onHourlyClick }>Hourly based</div>
+      <div className="switcher price-hour-switch">
+        <div className={fixedClassName} onClick={onFixedClick}>
+          Fixed price
+        </div>
+        <div className={hourlyClassName} onClick={onHourlyClick}>
+          Hourly based
+        </div>
       </div>
     );
   }
 }
 
-module.exports = FixedHourlySwitch;
+export default FixedHourlySwitch;

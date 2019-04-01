@@ -19,16 +19,16 @@ const LanguageFilter = React.createClass({
     ];
 
     return (
-      <div className='language-filter-container'>
+      <div className="language-filter-container">
         <Select
-          value={ this.state.value }
-          options={ options }
-          onChange={ this.handleOnChange }
-          placeholder='Speaks'
+          value={this.state.value}
+          options={options}
+          onChange={this.handleOnChange}
+          placeholder="Speaks"
         />
       </div>
     );
   }
 });
 
-module.exports = LanguageFilter;
+export default LanguageFilter;

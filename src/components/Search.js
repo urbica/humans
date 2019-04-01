@@ -3,16 +3,16 @@ import React from 'react';
 class Search extends React.Component {
   render() {
     return (
-      <div className='search'>
+      <div className="search">
         <input
-          type='text'
-          className='searchInput'
-          placeholder='What service do you need?'
+          type="text"
+          className="searchInput"
+          placeholder="What service do you need?"
         />
-        <div className='searchButton'>Find</div>
+        <div className="searchButton">Find</div>
       </div>
     );
   }
 }
 
-module.exports = Search;
+export default Search;

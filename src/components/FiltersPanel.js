@@ -20,31 +20,31 @@ const FiltersPanel = React.createClass({
   },
 
   render() {
-    const className = this.state.opened ?
-      'filters-panel-container opened' : 'filters-panel-container';
+    const className = this.state.opened
+      ? 'filters-panel-container opened'
+      : 'filters-panel-container';
 
     return (
-      <div className={ className }>
-        <div className='title'>Filter results</div>
+      <div className={className}>
+        <div className="title">Filter results</div>
         <FixedHourlySwitch
-          dispatch={ this.props.dispatch }
-          fixedOrHourly={ this.props.fixedOrHourly }
+          dispatch={this.props.dispatch}
+          fixedOrHourly={this.props.fixedOrHourly}
         />
         <PriceFilter />
         <RatingFilter />
         <OnlineFilter />
-        {
-          this.state.opened &&
-            <div>
-              <JobsFilter />
-              <LanguageFilter />
-              <CityFilter />
-            </div>
-        }
-        <FiltersPanelToggle onClick={ this.toggle } opened={ this.state.opened } />
+        {this.state.opened && (
+          <div>
+            <JobsFilter />
+            <LanguageFilter />
+            <CityFilter />
+          </div>
+        )}
+        <FiltersPanelToggle onClick={this.toggle} opened={this.state.opened} />
       </div>
     );
   }
 });
 
-module.exports = FiltersPanel;
+export default FiltersPanel;

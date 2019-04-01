@@ -7,16 +7,22 @@ class PriceRatingSwitch extends React.Component {
     const onPriceClick = () => dispatch(switchPriceRating('price'));
     const onRatingClick = () => dispatch(switchPriceRating('rating'));
 
-    const priceClassName = priceOrRating === 'price' ? 'switcherButton active' : 'switcherButton';
-    const ratingClassName = priceOrRating === 'rating' ? 'switcherButton active' : 'switcherButton';
+    const priceClassName =
+      priceOrRating === 'price' ? 'switcherButton active' : 'switcherButton';
+    const ratingClassName =
+      priceOrRating === 'rating' ? 'switcherButton active' : 'switcherButton';
 
     return (
-      <div className='switcher price-rating-switch'>
-        <div className={ priceClassName } onClick={ onPriceClick }>Price</div>
-        <div className={ ratingClassName } onClick={ onRatingClick }>Rating</div>
+      <div className="switcher price-rating-switch">
+        <div className={priceClassName} onClick={onPriceClick}>
+          Price
+        </div>
+        <div className={ratingClassName} onClick={onRatingClick}>
+          Rating
+        </div>
       </div>
     );
   }
 }
 
-module.exports = PriceRatingSwitch;
+export default PriceRatingSwitch;

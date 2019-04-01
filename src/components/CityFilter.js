@@ -20,16 +20,16 @@ const CityFilter = React.createClass({
     ];
 
     return (
-      <div className='city-filter-container'>
+      <div className="city-filter-container">
         <Select
-          value={ this.state.value }
-          options={ options }
-          onChange={ this.handleOnChange }
-          placeholder='City'
+          value={this.state.value}
+          options={options}
+          onChange={this.handleOnChange}
+          placeholder="City"
         />
       </div>
     );
   }
 });
 
-module.exports = CityFilter;
+export default CityFilter;
